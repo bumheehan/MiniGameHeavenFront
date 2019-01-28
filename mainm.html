@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/mainh.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -20,6 +23,42 @@
     <div class="cont">
         <div class="lsection">
 
+        </div>
+        <div class="esection">
+           <div class="slider">
+               <div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
+                      </a>
+                      </div>
+                      <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                      </div>
+                      <div class="item">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
+                      </a>
+                  </div>
+                      <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                  </div>
+                      <div class="item">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
+                      </a>
+                  </div>
+                   <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                  </div>
+                </div>
+           </div>
         </div>
         <div class="msection">
             <atricle></atricle>
@@ -37,11 +76,31 @@
 
     </footer>
     <script>
+
+    //슬라이더
+     $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:500,
+        nav:true,
+        items:1,
+        center:true,
+         navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>']
+        });
+
+
+    //초기 사이드바 위치
+    $(".lsection").css("right",$(window).width()/2+$(".msection").width()/2+50);
+    $(".rsection").css("left",$(window).width()/2+$(".msection").width()/2+50);
+    $(window).resize(function(){
+        $(".lsection").css("right",$(window).width()/2+$(".msection").width()/2+50);
+        $(".rsection").css("left",$(window).width()/2+$(".msection").width()/2+50);
+    });
+
+
     $("footer").slideUp();
     //헤더 스크롤
     var lastScrollTop = 0;
     //side top
-    var sidetop = $(".rsection").css("top")-"px";
     $(window).on("scroll",(function(event){
 
         st = $(this).scrollTop();
@@ -56,20 +115,28 @@
 
         //사이드 메뉴 따라다니기
         //초기 top 이 100
-        let delta = st+100;
-        $(".lsection").css(
-            "top",delta
-        );
-         $(".rsection").css(
-            "top",delta
-        );
+        let delta = st+150;
+        $(".lsection").stop().animate({
+            top:delta
 
+        },500)
+        $(".rsection").stop().animate({
+            top:delta
 
+        },500)
+
+        console.log(st);
+        $(".slider").css("opacity",1-st/600);
+        if(st>600){
+            $(".slider").css("display","none");
+        }else{
+            $(".slider").css("display","block");
+        }
         lastScrollTop = st;
 
+        //footer
         var scrollHeight = $(document).height();
         var scrollPosition = $(window).height() + $(window).scrollTop();
-        console.log((scrollHeight - scrollPosition) / scrollHeight);
         if ((scrollHeight - scrollPosition) / scrollHeight <0.001) {
             $("footer").slideDown();
         } else {
