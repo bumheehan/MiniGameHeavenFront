@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mainh.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav></nav>
+    </header>
+    <div class="headerdummy"></div>
+
+    <div class="cont">
+        <div class="lsection">
+
+        </div>
+        <div class="msection">
+            <atricle></atricle>
+            <atricle></atricle>
+            <atricle></atricle>
+            <atricle></atricle>
+            <atricle></atricle>
+        </div>
+
+        <div class="rsection"></div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+    <script>
+    $("footer").slideUp();
+    //헤더 스크롤
+    var lastScrollTop = 0;
+    //side top
+    var sidetop = $(".rsection").css("top")-"px";
+    $(window).on("scroll",(function(event){
+
+        st = $(this).scrollTop();
+        if(st < lastScrollTop){
+            //$(".header").stop().animate({top:"0px"},500);
+            $(".header").slideDown()
+        }else{
+            //$(".header").stop().animate({top:"-100px"},500);
+            $(".header").slideUp()
+        }
+
+
+        //사이드 메뉴 따라다니기
+        //초기 top 이 100
+        let delta = st+100;
+        $(".lsection").css(
+            "top",delta
+        );
+         $(".rsection").css(
+            "top",delta
+        );
+
+
+        lastScrollTop = st;
+
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        console.log((scrollHeight - scrollPosition) / scrollHeight);
+        if ((scrollHeight - scrollPosition) / scrollHeight <0.001) {
+            $("footer").slideDown();
+        } else {
+            $("footer").slideUp();
+        }
+
+    }));
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
