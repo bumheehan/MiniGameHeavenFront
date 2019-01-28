@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>v0.0.1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cute+Font');
+        *{
+            font-family: 'Cute Font', cursive;
+            font-size: 18px;
+        }
+        header {
+            position: fixed;
+            background: linear-gradient(to bottom, #475884, #b9afca) fixed;
+            height: 100px;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            transition: all 0.5s;
+        }
+
+        .h{
+            position: absolute;
+            font-size: 80px;
+            left: 100px;
+            color: #f4fbfb;
+        }
+
+        form {
+            width: 840px;
+            margin-left: auto;
+            margin: auto;
+            margin-top: 120px;
+        }
+
+       .list_join {
+            margin: 16px 20px 0;
+        }
+
+
+
+        .wrap_join {
+            margin-top: 5px;
+            padding-top: 10px;
+            border-top: 1px solid #000;
+        }
+
+
+        .wrap_join .list_set {
+            margin-top: 30px
+        }
+
+        .wrap_join .list_set2 {
+            margin-top: 10px
+        }
+
+        .wrap_join .list_set:after {
+            display: block;
+            height: 0;
+            font-size: 0;
+            clear: both;
+            visibility: hidden;
+            content: '';
+        }
+
+        .list_set .tit_set {
+            width: 147px;
+            margin-top: 5px;
+            padding: 0 20px;
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            color: #475884;
+        }
+
+        .list_set .txt_set {
+            float: left;
+            width: 613px;
+        }
+
+        .list_set .txt_set .desc_txt {
+            float: left;
+            width: 100%;
+            margin-top: 6px;
+            color: #475884;
+            letter-spacing: -1px
+        }
+
+        .list_set .txt_set .info_item {
+            position: relative;
+            float: left;
+            width: 256px;
+            height: 36px;
+            padding: 0 13px;
+            border: 1px solid #cfcfcf;
+            border-radius: 3px;
+                font-size: 18px;
+        }
+
+        .list_set .txt_set .info_item2 {
+            width: 115px
+        }
+
+        .info_item .tf_join {
+            position: absolute;
+            top: 0;
+            left: 13px;
+            right: 13px;
+            width: 256px;
+            border: 0 none;
+            height: 36px;
+            background: transparent;
+            line-height: 36px;
+            z-index: 10
+        }
+
+        .info_item2 .tf_join {
+            width: 116px
+        }
+
+        .list_set .txt_set .info_id,
+        .info_id .tf_join {
+            width: 155px
+        }
+
+
+        .list_set .txt_set .info_domain {
+            width: 125px;
+            height: 38px;
+            margin-left: 8px;
+            font-size: 18px;
+        }
+
+
+
+        .info_item .box_keyword {
+            display: none;
+            position: absolute;
+            top: 36px;
+            left: -1px;
+            width: 100%;
+            z-index: 10;
+            background-color: #fff;
+            border: 1px solid #d4d4d4
+        }
+
+
+
+        .txt_set .txt_at {
+            float: left;
+            line-height: 38px;
+            margin: 0 6px;
+            color: #525252
+        }
+
+        .wrap_join .tit_info {
+            display: block;
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 27px;
+            color: #4c4c4c;
+            text-align: center;
+            letter-spacing: -1px
+        }
+
+        .wrap_join .decs_info {
+            margin-top: 6px;
+            color: #777;
+            text-align: center
+        }
+
+        .wrap_btn {
+            text-align: center;
+            height: auto;
+            margin-top: 30px
+        }
+
+        .wrap_btn .btn_next {
+            position: relative;
+            width: 100px;
+            height: 46px;
+            margin-top: 40px;
+            border: 1px solid #d4d4d4;
+            border-radius: 3px;
+            font-size: 16px;
+            line-height: 18px;
+            background-color: #b9afca;
+            color: #1e1e1e
+        }
+
+    </style>
+    <script type="text/javascript">
+        function selEmail(email) {
+            if (email != "1") {
+                document.getElementById("domain").value = email;
+                document.getElementById("domain").readOnly = true;
+                document.getElementById("domain").focus();
+            } else {
+                document.getElementById("domain").readOnly = false;
+                document.getElementById("domain").value = "";
+                document.getElementById("domain").focus();
+            }
+        }
+
+    </script>
+    <script type="text/javascript">
+     function chk(){
+            var re = /^.*(?=^.{8,32}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+            var re2 = /^[\w\Wㄱ-ㅎㅏ-ㅣ가-힣]{2,6}$/;
+            var pw - document.getElementById("password");
+            if(!check(re,pw,"비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요")){
+                return false;
+            }
+            if(document.signup.password.value!=document.signup.password_confirm.value){
+                alert("비밀번호가 다릅니다. 다시 확인해 주세요");
+                document.signup.password_confirm.value="";
+                document.signup.password_confirm.focus();
+                return false;
+            }
+        }</script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h class="h">Sign Up</h>
+        </div>
+    </header>
+    <div class="wrap_join">
+        <form name="signup" action="#" method="post">
+            <dl class="list_set">
+                <dt class="tit_set">
+                    <label for="id">이메일</label>
+                </dt>
+                <dd class="txt_set">
+                    <div class="info_item info_id">
+                        <div class="km-input-wrapper">
+                            <div><input autocapitalize="off" autocorrect="off" class="tf_join" id="id" moveFocus="true" name="email_id" type="text" validator="email_id" /></div>
+                            <div class="button"></div>
+                        </div>
+                    </div>
+                    <span class="txt_at">@</span>
+
+                    <div class="info_item info_item2">
+                        <div class="km-input-wrapper">
+                            <div><input autocapitalize="off" autocorrect="off" class="tf_join" id="domain" moveFocus="true" name="email_host" type="text" validator="email_host" /></div>
+                        </div>
+                    </div>
+
+                    <select name="emailaddr" accesskey="" id="selectemail" class="info_item info_domain" onChange="selEmail(this.value)">
+                        <option value="1">직접입력</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                        <option value="nate.com">nate.com</option>
+                    </select>
+
+                    <div class="box_keyword">
+
+
+
+                    </div>
+                    <p class="desc_txt">
+                        &middot; 입력한 이메일로 인증메일이 발송됩니다.<br>
+                        &middot; 꼭 실제로 사용중인 이메일주소를 입력해주세요. 비밀번호 분실 시 이메일을 통해 재설정이 가능합니다.
+                    </p>
+                </dd>
+            </dl>
+            <dl class="list_set">
+                <dt class="tit_set">
+                    <label for="pwd">비밀번호(8~32)자리</label>
+                </dt>
+                <dd class="txt_set">
+                    <div class="info_item">
+                        <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" movefocus="true" name="password" placeholder="비밀번호(8~32)자리" send="true" type="password">
+                    </div>
+                </dd>
+            </dl>
+            <dl class="list_set list_set2">
+                <dt class="tit_set">
+                    <label for="repw">비밀번호 재입력</label>
+                </dt>
+                <dd class="txt_set">
+                    <div class="info_item">
+
+                        <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" moveFocus="true" name="password_confirm" placeholder="비밀번호 재입력" send="true" type="password" />
+
+                    </div>
+                    <p class="desc_txt">
+                        &middot; 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.<br>
+
+                    </p>
+                </dd>
+            </dl>
+            <dl class="list_set">
+                <dt class="tit_set">
+                    <label for="">닉네임</label>
+                </dt>
+                <dd class="txt_set">
+                    <div class="info_item">
+                        <input type="text" class="tf_join" name="nick">
+                    </div>
+                    <p class="desc_txt">
+                        &middot; 한글로 6자리 이내로.<br>
+
+                    </p>
+                </dd>
+            </dl>
+
+            <div class="wrap_btn">
+                <button type="#" class="disabled btn_next submit">다음</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
