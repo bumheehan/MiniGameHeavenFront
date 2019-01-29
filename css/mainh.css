@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     white-space: nowrap;
 }
 a{
     text-decoration: none;
@@ -72,19 +73,9 @@ nav{
     font-size: 20px;
     color: #fc7f75;
 }
-.logoimg{
-    position: absolute;
-    top:20px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height:60px;
-}
 .logotext{
     position: absolute;
-    top:10px;
+    top:7px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -130,14 +121,21 @@ nav{
     position: absolute;
     top: 150px;
 }
+.upcover{
+
+}
+.downcover{
+
+}
 
 .msection {
     width: 800px;
-    height: 600px;
+    height: 1000px;
     z-index: 1;
     position: relative;
     top: 600px;
     padding: 10px;
+    background: white;
 }
 
 .esection {
@@ -259,3 +257,40 @@ footer {
         display: block;
     }
 }
+
+
+
+.owl-carousel .item  a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor:grab;
+  cursor:-webkit-grab;
+}
+.owl-carousel .item{
+    width: 800px;
+    margin:0 auto;
+}
+.owl-carousel .item iframe{
+    width: 800px;
+    height:500px;
+    margin:0 auto;
+}
+.owl-next, .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+  }
+ .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
+.owl-dots{
+    position: relative;
+    top: -50px;
+}
+
