@@ -1,0 +1,89 @@
+<ul class="conbox">
+                <li>
+                    <div class="gamecont">
+                        <img src="${pageContext.request.contextPath}/resources/res/aa.png" alt="">
+                        <div class="gamesub">
+                            GAME SUBJECT
+                        </div>
+                    </div>
+                    <div class="videocont conboxanioff">
+                        <video loop="loop" preload="auto">
+                            <source src="${pageContext.request.contextPath}/resources/res/vid2.mp4" type="video/mp4" />
+                        </video>
+
+                        <div class="gamedes">
+                            <h4>GAME DESCRIPTION2</h4>
+                        </div>
+                    </div>
+
+
+
+                </li>
+                      <li>
+                    <div class="gamecont">
+                        <img src="${pageContext.request.contextPath}/resources/res/aa.png" alt="">
+                        <div class="gamesub">
+                            가나다라마
+                        </div>
+                    </div>
+                    <div class="videocont conboxanioff">
+                        <video loop="loop" preload="auto">
+                            <source src="${pageContext.request.contextPath}/resources/res/vid2.mp4" type="video/mp4" />
+                        </video>
+
+                        <div class="gamedes">
+                            <h4>ㄱㄱㄱ</h4>
+                        </div>
+                    </div>
+
+
+
+                </li>
+
+                      <li>
+                    <div class="gamecont">
+                        <img src="${pageContext.request.contextPath}/resources/res/aa.png" alt="">
+                        <div class="gamesub">
+                            가나다라마
+                        </div>
+                    </div>
+                    <div class="videocont conboxanioff">
+                        <video loop="loop" preload="auto">
+                            <source src="${pageContext.request.contextPath}/resources/res/vid2.mp4" type="video/mp4" />
+                        </video>
+
+                        <div class="gamedes">
+                            <h4>ㄱㄱㄱ</h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <script type="text/javascript">
+            // 마우스 오버시
+            $(".conbox li").on("mouseover", function() {
+
+                // 변수 vid에 video파일 참조
+                var vid = $(this).find("video").get(0);
+                // 동영상의 재생위치를 처음(0)으로 설정
+                vid.currentTime = 0;
+                // 동영상을 재생
+                vid.play();
+                $(this).children(".videocont").removeClass("conboxanioff");
+                $(this).children(".videocont").addClass("conboxanion");
+                $(this).children(".videocont").children(".gamedes").find("h4").stop().animate({ left: "0px",opacity: 1}, 500);
+            });
+
+            // 마우스 아웃시
+            $(".conbox li").on("mouseout", function() {
+
+                // 변수 vid에 video파일 참조
+                var vid = $(this).find("video").get(0);
+                // 동영상을 정지
+                vid.pause();
+                $(this).children(".videocont").removeClass("conboxanion");
+                $(this).children(".videocont").addClass("conboxanioff");
+                 $(this).children(".videocont").children(".gamedes").find("h4").stop().animate({ left: "200px",opacity: 0}, 500);
+            });
+
+</script>

@@ -1,0 +1,59 @@
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.carousel.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.theme.default.css">
+ <script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
+ <div class="slider">
+
+<div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
+                      </a>
+                      </div>
+                      <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                      </div>
+
+                      <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                  </div>
+                      <div class="item">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
+                      </a>
+                  </div>
+                   <div class="item black">
+                      <a href="#">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
+                      </a>
+                  </div>
+                </div>
+            </div>
+
+
+     <script type="text/javascript">
+     //슬라이더
+     $('.owl-carousel').owlCarousel({
+         loop: true,
+         margin: 500,
+         nav: true,
+         items: 1,
+         center: true,
+         navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>']
+     });
+
+
+     function slider(st){
+    	 $(".slider").css("top",150-st/2+"px");
+         $(".slider").css("opacity", 1 - (st-200) / 400);
+         if (st > 600) {
+             $(".slider").css("display", "none");
+         } else {
+             $(".slider").css("display", "block");
+         }
+     }
+</script>

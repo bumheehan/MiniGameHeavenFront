@@ -1,0 +1,30 @@
+
+    <div class="headerdummy"></div>
+    <header class="header">
+        <nav>
+
+            <div><img src="${pageContext.request.contextPath}/resources/res/ff.png" alt="" class="logotext"></div>
+            <ul class="menul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GAME</a></li>
+            </ul>
+            <ul class="menur">
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+
+    <script type="text/javascript">
+	function header(st,lastScrollTop){
+		if (st < lastScrollTop) {
+            //$(".header").stop().animate({top:"0px"},500);
+            $(".header").slideDown()
+        } else {
+            //$(".header").stop().animate({top:"-100px"},500);
+            $(".header").slideUp()
+        }
+	}
+	</script>
