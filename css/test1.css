@@ -9,7 +9,7 @@
   header {
       width: 100%;
       height: 100px;
-      background: #414141;
+      background: #00deff;
       position: absolute;
 
   }
@@ -28,13 +28,13 @@
       top: 868px;
       width: 100%;
       height: 100px;
-      background: #222;
+      background: #4d2121;
   }
 
   .aside-area {
       width: 15%;
       height: 100%;
-      background: #bbb;
+      background: #00deff;
       float: left
   }
 
@@ -50,18 +50,18 @@
       width: 15%;
       height: 100%;
       float: left;
-      background: #fff;
+      background: #00deff;
   }
 
   article:nth-child(1) {
-      background: #222;
+      background: #e72020;
       float: left;
       width: 60%;
       height: 400px;
   }
 
   article:nth-child(2) {
-      background: #939393;
+      background: #fbf230;
       float: left;
       width: 40%;
       height: 400px;
@@ -71,37 +71,45 @@
       float: left;
       width: 20%;
       height: 368px;
-      background: red;
+      background: #4de32a;
   }
 
   article:nth-child(4) {
       float: left;
       width: 20%;
       height: 368px;
-      background: purple;
+      background: #4de32a;
   }
 
   article:nth-child(5) {
       float: left;
       width: 20%;
       height: 368px;
-      background: yellow;
+      background: #4de32a;
   }
 
   article:nth-child(6) {
       float: left;
       width: 20%;
       height: 368px;
-      background: blue;
+      background: #4de32a;
   }
 
   article:nth-child(7) {
       float: left;
       width: 20%;
       height: 368px;
-      background: green;
+      background: #4de32a;
   }
+.more{
+    float: left;
+    width: 20%;
+    height: 368px;
+    background: #4de32a;
+    color: black;
+    font-size: 20px;
 
+}
   nav {
       display: flex;
       justify-content: center;
@@ -128,6 +136,7 @@
 article{
     position: relative;
     overflow: hidden;
+
 }
   article video {
       position: absolute;
@@ -160,7 +169,7 @@ article p{
 }
 article:hover h2{
     color: black;
-    border-left: 3px solid #ccc;
+
 }
 article:hoverdiv{
     top: 270px;
@@ -174,3 +183,4 @@ article:hoverdiv{
     color: aliceblue;
     margin: 25px 10px;
 }
+
