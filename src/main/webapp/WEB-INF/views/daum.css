@@ -1,0 +1,5685 @@
+@charset "utf-8";
+
+a:hover {
+    color: #4559e9;
+    text-decoration: underline
+}
+
+body {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/bg_gameback.jpg) repeat-x left 25px
+}
+
+body.sub {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/bg_gameback.jpg) repeat-x left 25px
+}
+
+#Flash_Menu,
+#FSub_contents {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 51px
+}
+
+#Flash_Menu {
+    height: 370px
+}
+
+#Promotion {
+    clear: both;
+    margin: 0 auto;
+    padding-top: 51px;
+    width: 978px;
+    height: 0;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ln_top.gif') 0 bottom no-repeat;
+    z-index: 1
+}
+
+#Promotion #daumActiveX0 {
+    z-index: 0
+}
+
+#FTop_contents {
+    margin: 0 auto;
+    width: 978px;
+    margin-top: 12px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/bg_flashgamebody_1.gif) repeat-y;
+    margin-bottom: 30px;
+    z-index: 1
+}
+
+#FTop_contents.ranking {
+    background: 0
+}
+
+#Fg_menulist {
+    float: left;
+    position: relative;
+    width: 709px
+}
+
+#Fg_menulist #flashgame_titles {
+    clear: both;
+    float: left;
+    width: 690px;
+    background: url(http://icon.daum-img.net/game/11game/flashgame/img_bg_flist_1row_last_1004.gif) 0 35px repeat-y
+}
+
+#Fg_menulist #flashgame_titles .List {
+    float: left;
+    width: 690px;
+    background: url(http://icon.daum-img.net/game/12game/img_flist4.gif) no-repeat
+}
+
+#Fg_menulist #flashgame_titles li.list_title {
+    float: left;
+    width: 114px;
+    margin-left: 1px
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 {
+    float: left;
+    width: 229px;
+    text-align: left
+}
+
+#Fg_menulist #flashgame_titles li.list_title img {
+    vertical-align: top
+}
+
+#Fg_menulist #flashgame_titles li.list_title ul {
+    float: left;
+    width: 114px
+}
+
+#Fg_menulist #flashgame_titles li.list_title li,
+#Fg_menulist #flashgame_titles li.list_title1 li {
+    height: 39px;
+    float: left
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 .list_1 {
+    float: left;
+    width: 114px
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 .list_1 img {
+    vertical-align: top;
+    float: right
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 .list_2 {
+    float: left;
+    width: 114px;
+    margin-left: 1px
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 .list_2 img {
+    vertical-align: top
+}
+
+#Fg_menulist #flashgame_titles h5 a {
+    display: block;
+    width: 114px;
+    height: 35px;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+#Fg_menulist #flashgame_titles li.list_title1 h5 a {
+    width: 229px
+}
+
+#Fg_menulist #List_line {
+    clear: both;
+    margin: 0 auto;
+    width: 663px;
+    height: 19px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/img_flashlist_bot.gif') no-repeat
+}
+
+#FTop_contents h4 {
+    height: 22px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/title_flashbody.gif) no-repeat;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+#FTop_contents .dailyGame_sub {
+    float: left;
+    margin-top: 30px;
+    width: 313px;
+    color: #666;
+    font-size: 11px;
+    font-family: "돋움", dotum, sans-serif;
+    text-align: left
+}
+
+#FTop_contents .dailyGame_sub h4 {
+    background-position: left 6px;
+    float: left;
+    width: 110px;
+    height: 28px
+}
+
+#Rcmd_Fgame {
+    float: left;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 313px;
+    color: #666;
+    font-size: 11px;
+    font-family: "돋움", dotum, sans-serif;
+    text-align: left;
+    z-index: 1
+}
+
+#Rcmd_Fgame h4 {
+    background-position: 5px -18px;
+    float: left;
+    width: 313px;
+    height: 27px;
+    border-bottom: solid 1px #e4e4e4
+}
+
+#Rcmd_Fgame a {
+    color: #444;
+    text-decoration: none
+}
+
+#Rcmd_Fgame dl {
+    width: 313px;
+    float: left;
+    margin-top: 14px;
+    position: relative
+}
+
+#Rcmd_Fgame dt {
+    float: left;
+    width: 146px
+}
+
+#Rcmd_Fgame dd {
+    float: left;
+    width: 155px;
+    margin-left: 9px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 5px
+}
+
+#Rcmd_Fgame .sub {
+    font-weight: bold;
+    margin-top: 5px
+}
+
+#Rcmd_Fgame .name {
+    font-size: 11px;
+    font-family: 돋움;
+    color: #999
+}
+
+#Rcmd_Fgame .name a {
+    font-size: 11px;
+    font-family: 돋움;
+    color: #999
+}
+
+#Rcmd_Fgame .text {
+    display: block;
+    margin-top: 5px
+}
+
+#Rcmd_Fgame .text a {
+    font-family: 돋움;
+    color: #666
+}
+
+#Challenge_rangking {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 25px;
+    float: left;
+    width: 690px
+}
+
+#Challenge_rangking h4 {
+    display: inline;
+    background-position: 5px -42px;
+    float: left;
+    width: 679px;
+    height: 29px;
+    margin-left: 11px;
+    border-bottom: solid 1px #e4e4e4
+}
+
+#Challenge_rangking .Rcmd_Fgame {
+    background-position: 5px -18px;
+    float: left;
+    border-bottom: solid 1px #e4e4e4
+}
+
+#Challenge_rangking #ranking_list {
+    display: inline;
+    width: 690px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 11px
+}
+
+#Challenge_rangking #ranking_list.list_2 {
+    margin: 14px 0 4px 11px
+}
+
+#Challenge_rangking #ranking_list h5 {
+    width: 214px;
+    height: 53px
+}
+
+#Challenge_rangking #ranking_list li {
+    text-align: left
+}
+
+#Challenge_rangking .list_ranking {
+    width: 201px;
+    padding-top: 10px;
+    border-top: 2px solid #707cf0
+}
+
+#Challenge_rangking .list_ranking li {
+    float: left;
+    width: 100%;
+    height: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/ico_numrank2.gif) no-repeat;
+    text-align: left
+}
+
+#Challenge_rangking .list_ranking .C_r_num1 {
+    background-position: 0 3px
+}
+
+#Challenge_rangking .list_ranking .C_r_num2 {
+    background-position: 0 -22px
+}
+
+#Challenge_rangking .list_ranking .C_r_num3 {
+    background-position: 0 -47px
+}
+
+#Challenge_rangking .list_ranking .C_r_num4 {
+    background-position: 0 -72px
+}
+
+#Challenge_rangking .list_ranking .C_r_num5 {
+    background-position: 0 -97px
+}
+
+#Challenge_rangking .list_ranking strong {
+    display: block;
+    float: left;
+    font-weight: normal;
+    padding: 2px 0 0 19px
+}
+
+#Challenge_rangking .list_ranking em {
+    display: block;
+    font-style: normal;
+    float: right;
+    padding: 2px 1px 0 0;
+    font-size: 11px;
+    color: #888
+}
+
+#Challenge_rangking .list_ranking .C_r_num1 strong {
+    font-weight: bold
+}
+
+#Challenge_rangking .C_r_0 {
+    float: left
+}
+
+#Challenge_rangking .C_r_1 {
+    float: left
+}
+
+#Challenge_rangking .C_r_2,
+#Challenge_rangking .C_r_3 {
+    float: left;
+    margin-left: 22px
+}
+
+#Rcmd_TocT {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 21px;
+    float: left;
+    width: 690px;
+    text-align: left
+}
+
+#Rcmd_TocT h4 {
+    background-position: 5px -68px;
+    float: left;
+    width: 673px;
+    height: 20px
+}
+
+#Rcmd_TocT ul {
+    float: left;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/newgrid/img_kidsgame_bg.gif) no-repeat;
+    width: 690px;
+    height: 97px;
+    margin-top: 9px
+}
+
+#Rcmd_TocT li {
+    float: left;
+    display: inline;
+    width: 200px;
+    margin: 14px 0 0 24px
+}
+
+#Rcmd_TocT li.fir {
+    margin-left: 14px
+}
+
+#Rcmd_TocT p.Toct_IMG {
+    float: left;
+    width: 110px;
+    height: 66px
+}
+
+#Rcmd_TocT p.Toct_SUBJ {
+    float: left;
+    padding-top: 7px
+}
+
+#Rcmd_TocT p.Toct_SUBJ img {
+    margin-bottom: 6px
+}
+
+#Rcmd_TocT {
+    display: none
+}
+
+#Fg_right {
+    float: left;
+    width: 269px;
+    position: relative
+}
+
+#game_250banner {
+    float: right;
+    width: 250px;
+    height: 250px
+}
+
+#Promotion_List {
+    float: right;
+    width: 250px
+}
+
+#Promotion_List li.fir {
+    margin: 0 0 5px 0
+}
+
+#Promotion_List li {
+    float: left;
+    margin-top: 10px
+}
+
+#Fg_right #rGame_Story {
+    float: right;
+    width: 250px;
+    margin-top: 30px;
+    border-bottom: #dcdcdc solid 1px;
+    padding-bottom: 15px
+}
+
+#Fg_right #rGame_Story h4 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/title_gamestory.gif) no-repeat;
+    overflow: hidden;
+    text-indent: -9999em;
+    float: left;
+    width: 250px;
+    height: 20px;
+    border-bottom: solid 1px #e4e4e4
+}
+
+#Fg_right #rGame_Story dl {
+    width: 250px
+}
+
+#Fg_right #rGame_Story dt {
+    clear: both;
+    float: left;
+    width: 100px;
+    margin-top: 14px;
+    text-align: left
+}
+
+#Fg_right #rGame_Story dd {
+    float: left;
+    width: 140px;
+    margin-top: 18px;
+    text-align: left;
+    line-height: 17px
+}
+
+#Fg_right #rGame_Story dd strong a {
+    color: #444
+}
+
+#Fg_right #rGame_Story dd a {
+    color: #666
+}
+
+#FSub_contents #ranking_box {
+    margin: 0 auto;
+    width: 978px;
+    height: 233px
+}
+
+#FSub_contents .top_bg {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/fbgbox_1.gif) no-repeat
+}
+
+#FSub_contents .sub_bg {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_bgbox_1.gif) no-repeat
+}
+
+#FSub_contents .top_bg_n {
+    background: url(http://icon.daum-img.net/game/12game/bgbox_weekranking1.gif) no-repeat
+}
+
+#RankingTop_Top1 {
+    width: 949px;
+    height: 160px;
+    display: inline;
+    margin-top: 63px;
+    float: left;
+    margin-left: 14px
+}
+
+#RankingTop_Top1 li {
+    float: left;
+    display: inline;
+    width: 173px;
+    height: 160px;
+    margin-left: 21px;
+    text-align: left
+}
+
+#RankingTop_Top1 li.fir {
+    margin-left: 0
+}
+
+#RankingTop_Top1 li p.image {
+    width: 171px;
+    height: 107px;
+    margin-bottom: 9px;
+    border: #d0d2d1 solid 1px
+}
+
+#RankingTop_Top1 li b {
+    height: 17px;
+    display: block
+}
+
+#RankingTop_Top1 li b a {
+    font: 14px 돋움;
+    color: #5966eb;
+    font-weight: bold
+}
+
+#RankingTop_Top1 li p.person {
+    height: 22px;
+    font: 12px 돋움;
+    color: #444;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/topno1/ico_rankmedal.gif) no-repeat;
+    padding-left: 23px;
+    padding-top: 4px
+}
+
+#FTop_contents.ranking #Fg_right {
+    margin-top: 8px
+}
+
+#FSub_contents #ranking_box #gamebox_L {
+    float: left;
+    width: 729px;
+    text-align: left
+}
+
+#FSub_contents #ranking_box #gamebox_L .ranking_title {
+    float: left;
+    width: 260px;
+    text-align: left
+}
+
+#FSub_contents #ranking_box #gamebox_L .ranking_title a {
+    display: block;
+    float: left
+}
+
+#FSub_contents #ranking_box #gamebox_L .ranking_title h3 {
+    float: left;
+    height: 32px;
+    display: inline;
+    color: #5966eb;
+    font-size: 16px;
+    font-family: "돋움";
+    margin: 24px 12px 0 29px
+}
+
+#FSub_contents #ranking_box #gamebox_L .ranking_title em {
+    float: left;
+    display: block;
+    font-style: normal;
+    color: #585f7b;
+    font-size: 12px;
+    font-family: "돋움";
+    margin-top: 28px
+}
+
+#FSub_contents #ranking_box #ranking_thmb {
+    float: left;
+    display: inline;
+    width: 181px;
+    height: 117px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/imgbox_1.gif) no-repeat;
+    margin-left: 28px
+}
+
+#FSub_contents #ranking_box #ranking_thmb img {
+    margin: 4px
+}
+
+#FSub_contents #ranking_box .btn_rank_img {
+    margin: 6px 0 0 70px;
+    overflow: hidden
+}
+
+#ranking_data_1 {
+    float: left;
+    margin-top: 43px;
+    margin-left: 2px;
+    width: 425px;
+    height: 34px;
+    z-index: 0
+}
+
+#ranking_data_1 p,
+#ranking_data_2 p {
+    float: left;
+    width: 25px;
+    height: 34px;
+    z-index: 2
+}
+
+#ranking_data_1 p.blank,
+#ranking_data_2 p.blank {
+    margin-left: 8px
+}
+
+#ranking_data_1 p.blank2,
+#ranking_data_2 p.blank2 {
+    margin-left: 39px
+}
+
+#ranking_data_1 .today_num0 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a1.gif) no-repeat
+}
+
+#ranking_data_1 .today_num1 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a2.gif) no-repeat
+}
+
+#ranking_data_1 .today_num2 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a3.gif) no-repeat
+}
+
+#ranking_data_1 .today_num3 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a4.gif) no-repeat
+}
+
+#ranking_data_1 .today_num4 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a5.gif) no-repeat
+}
+
+#ranking_data_1 .today_num5 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a6.gif) no-repeat
+}
+
+#ranking_data_1 .today_num6 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a7.gif) no-repeat
+}
+
+#ranking_data_1 .today_num7 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a8.gif) no-repeat
+}
+
+#ranking_data_1 .today_num8 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a9.gif) no-repeat
+}
+
+#ranking_data_1 .today_num9 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a10.gif) no-repeat
+}
+
+#ranking_data_1 .today_num {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a0.gif) no-repeat
+}
+
+#ranking_data_2 {
+    float: left;
+    margin-top: 48px;
+    margin-left: 2px;
+    width: 425px;
+    height: 34px;
+    z-index: 0
+}
+
+#ranking_data_2 .today_num0 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b1.gif) no-repeat
+}
+
+#ranking_data_2 .today_num1 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b2.gif) no-repeat
+}
+
+#ranking_data_2 .today_num2 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b3.gif) no-repeat
+}
+
+#ranking_data_2 .today_num3 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b4.gif) no-repeat
+}
+
+#ranking_data_2 .today_num4 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b5.gif) no-repeat
+}
+
+#ranking_data_2 .today_num5 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b6.gif) no-repeat
+}
+
+#ranking_data_2 .today_num6 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b7.gif) no-repeat
+}
+
+#ranking_data_2 .today_num7 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b8.gif) no-repeat
+}
+
+#ranking_data_2 .today_num8 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b9.gif) no-repeat
+}
+
+#ranking_data_2 .today_num9 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_b10.gif) no-repeat
+}
+
+#ranking_data_2 .today_num {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/img_num_a0.gif) no-repeat
+}
+
+#another_rank {
+    float: left;
+    margin-top: 20px;
+    margin-left: 290px;
+    width: 136px;
+    position: relative;
+    display: inline
+}
+
+#another_rank p {
+    width: 136px;
+    height: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/bt_selbox_grank.gif) no-repeat;
+    text-indent: -9999em;
+    cursor: pointer
+}
+
+#another_rank dl {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 114px;
+    height: 178px;
+    border: #c0c0c0 solid 1px;
+    background: #fff;
+    z-index: 999
+}
+
+#another_rank dl.hasScroll {
+    width: 114px;
+    height: 178px;
+    padding: 10px;
+    overflow-y: auto;
+    line-height: 18px;
+    color: #52586e;
+    scrollbar-base-color: #fff;
+    scrollbar-arrow-color: #e5e5e5;
+    scrollbar-3dlight-color: #fff;
+    scrollbar-darkshadow-color: #e5e5e5;
+    scrollbar-face-color: #fff;
+    scrollbar-highlight-color: #e5e5e5;
+    scrollbar-shadow-color: #fff;
+    scrollbar-track-color: #fff
+}
+
+#another_rank dd {
+    height: 22px
+}
+
+#another_rank dt {
+    margin-top: 7px;
+    font-weight: bold;
+    height: 22px
+}
+
+#another_rank dd a {
+    color: #333
+}
+
+#another_rank dd a:hover {
+    color: #4a77d5
+}
+
+#another_rank dd a.on {
+    color: #4a77d5
+}
+
+#FSub_contents #ranking_box #gamebox_R {
+    float: left;
+    width: 245px;
+    text-align: left
+}
+
+#ranking_box #gamebox_R #Netizen_Grade {
+    display: block;
+    float: left;
+    position: relative;
+    width: 225px;
+    height: 56px;
+    padding-left: 14px;
+    margin-top: 18px
+}
+
+#ranking_box #gamebox_R #Netizen_Grade h4 {
+    float: left;
+    width: 63px;
+    height: 14px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/tit_rank_1.gif) no-repeat;
+    text-indent: -9999em;
+    margin-top: 4px;
+    overflow: hidden
+}
+
+#ranking_box #gamebox_R #Netizen_Grade span.em {
+    float: left;
+    display: block;
+    font-style: normal;
+    color: #999;
+    font-size: 11px;
+    font-family: "돋움";
+    margin: 6px 0 0 0
+}
+
+#ranking_box #gamebox_R #Netizen_Grade .star_grade {
+    position: absolute;
+    left: 14px;
+    top: 23px;
+    width: 106px;
+    height: 27px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ico_star2.gif) no-repeat
+}
+
+#ranking_box #gamebox_R #Netizen_Grade .star_grade_sum {
+    position: absolute;
+    width: 0;
+    height: 27px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ico_star.gif) no-repeat
+}
+
+#ranking_box #gamebox_R #Netizen_Grade .star_grade_sum2 {
+    position: absolute;
+    left: 102px;
+    top: -11px;
+    width: 50px;
+    color: #e0416d;
+    font-size: 24px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-weight: bold
+}
+
+#ranking_box #gamebox_R #Netizen_Grade .grage_button {
+    position: absolute;
+    width: 55px;
+    height: 48px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/bt_grades.gif) no-repeat;
+    cursor: pointer;
+    text-indent: -9999em;
+    right: 3px;
+    top: 4px
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer {
+    position: absolute;
+    top: 50px;
+    left: 14px;
+    width: 219px;
+    height: 50px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/img_ratebox_1.png) no-repeat;
+    z-index: 90;
+    overflow: hidden
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer .star_grade {
+    position: absolute;
+    left: 51px;
+    top: 15px;
+    width: 106px;
+    height: 20px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ico_ratestar_1.gif) left -20px no-repeat
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer .star_grade_sum {
+    position: absolute;
+    width: 0;
+    height: 20px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ico_ratestar_1.gif) no-repeat
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer .click_layer {
+    position: absolute;
+    left: 51px;
+    top: 15px;
+    width: 110px;
+    height: 20px;
+    z-index: 100
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer .click_layer li {
+    width: 22px;
+    float: left;
+    cursor: pointer;
+    text-indent: -9999em
+}
+
+#ranking_box #gamebox_R #Netizen_Grade #Layer .bt_submit {
+    width: 44px;
+    height: 28px;
+    margin: 12px 0 0 167px
+}
+
+#ranking_box #gamebox_R h4.top3 {
+    float: left;
+    display: inline;
+    margin: 36px 0 4px 14px;
+    width: 65px;
+    height: 12px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tit_rank_1.gif) 0 -25px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+#ranking_box #Grade_Best5 {
+    clear: both;
+    float: left;
+    width: 226px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 0;
+    padding-left: 6px
+}
+
+#ranking_box #Grade_Best5 li {
+    margin-bottom: 7px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/ico_ranknum.gif) no-repeat
+}
+
+#ranking_box #Grade_Best5 .C_r_num1 {
+    background-position: 8px 0;
+    width: 226px;
+    height: 17px;
+    text-align: left
+}
+
+#ranking_box #Grade_Best5 .C_r_num2 {
+    background-position: 8px -25px;
+    width: 226px;
+    height: 17px;
+    text-align: left
+}
+
+#ranking_box #Grade_Best5 .C_r_num3 {
+    background-position: 8px -50px;
+    width: 226px;
+    height: 17px;
+    text-align: left
+}
+
+#ranking_box #Grade_Best5 .C_r_num4 {
+    background-position: 8px -75px;
+    width: 226px;
+    height: 17px;
+    text-align: left
+}
+
+#ranking_box #Grade_Best5 .C_r_num5 {
+    background-position: 8px -100px;
+    width: 226px;
+    height: 17px;
+    text-align: left
+}
+
+#ranking_box #Grade_Best5 .rankNum {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    color: #828282
+}
+
+#ranking_box #Grade_Best5 strong {
+    float: left;
+    font-weight: normal;
+    padding: 1px 0 0 29px;
+    color: #52586e
+}
+
+#ranking_box #Grade_Best5 .notiLogTxt {
+    float: left;
+    width: 137px;
+    height: 28px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/text_flog.gif) no-repeat;
+    text-indent: -1000em;
+    overflow: hidden
+}
+
+#ranking_box #Grade_Best5 .C_r_num1 strong {
+    font-weight: bold;
+    color: #4a77d5
+}
+
+#ranking_box #Grade_Best5 em {
+    display: block;
+    font-style: normal;
+    float: right;
+    padding: 2px 5px 0 0;
+    font-size: 11px;
+    color: #52586e
+}
+
+#ranking_box #Grade_Best5 .C_r_num1 em {
+    font-weight: bold;
+    color: #333;
+    color: #4a77d5
+}
+
+#ranking_box #Grade_Best5 .no_data {
+    background: 0;
+    color: #4a77d5;
+    margin-top: 30px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center
+}
+
+#Ranking_List {
+    float: left;
+    width: 682px;
+    text-align: left;
+    margin-left: 2px;
+    margin-top: 8px
+}
+
+#Ranking_List ul.menu {
+    float: left;
+    width: 682px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tab_menu_1.gif) 0 -30px no-repeat
+}
+
+#Ranking_List .menu li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    overflow: hidden
+}
+
+#Ranking_List .menu li {
+    float: left;
+    width: 61px;
+    height: 30px;
+    text-indent: -9999em;
+    cursor: pointer
+}
+
+#Ranking_List .menu li.tab1 {
+    width: 62px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tab_menu_1.gif) 0 0 no-repeat
+}
+
+#Ranking_List .menu li.tab2 {
+    width: 62px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tab_menu_1.gif) -61px 0 no-repeat
+}
+
+#Ranking_List .menu li.tab3 {
+    width: 62px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tab_menu_1.gif) -122px 0 no-repeat
+}
+
+#Ranking_List .menu li.tab4 {
+    width: 62px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/tab_menu_1.gif) -183px 0 no-repeat
+}
+
+#Ranking_List p {
+    float: left;
+    width: 440px;
+    height: 24px;
+    margin-top: 21px;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px
+}
+
+#Ranking_List p span {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    color: #4d5bde
+}
+
+#Ranking_List a.btn {
+    float: left;
+    display: block;
+    width: 101px;
+    height: 25px;
+    margin-top: 13px
+}
+
+#Ranking_List a.btn2 {
+    float: left;
+    display: block;
+    width: 101px;
+    height: 25px;
+    margin-top: 13px;
+    margin-left: 140px
+}
+
+#Ranking_List .ranking_table {
+    float: left
+}
+
+#Ranking_List .ranking_table tr th {
+    text-align: center
+}
+
+#Ranking_List .ranking_table .th1 {
+    width: 93px;
+    height: 32px;
+    border-top: #dadada solid 1px;
+    border-left: #dadada solid 1px;
+    border-bottom: #dadada solid 1px;
+    background: #f9f9f9 url(http://icon.daum-img.net/game/09game/flashgame/ranking/ico_linr.gif) right 7px no-repeat
+}
+
+#Ranking_List .ranking_table .th2 {
+    width: 399px;
+    height: 32px;
+    border-top: #dadada solid 1px;
+    border-bottom: #dadada solid 1px;
+    background: #f9f9f9 url(http://icon.daum-img.net/game/09game/flashgame/ranking/ico_linr.gif) right 7px no-repeat
+}
+
+#Ranking_List .ranking_table .th3 {
+    width: 199px;
+    height: 32px;
+    border-top: #dadada solid 1px;
+    border-bottom: #dadada solid 1px;
+    border-right: #dadada solid 1px;
+    background: #f9f9f9
+}
+
+#Ranking_List .ranking_table .best_num {
+    width: 93px;
+    height: 34px;
+    text-align: center;
+    border-top: #efefef solid 1px;
+    font-weight: bold
+}
+
+#Ranking_List .ranking_table .nick {
+    padding-left: 80px;
+    vertical-align: top;
+    padding-top: 12px;
+    border-top: #efefef solid 1px
+}
+
+#Ranking_List .ranking_table .total {
+    padding-right: 67px;
+    vertical-align: top;
+    padding-top: 12px;
+    text-align: right;
+    border-top: #efefef solid 1px
+}
+
+#Ranking_List .ranking_table .best_num .r_num_1 {
+    display: inline;
+    margin-left: 34px;
+    margin-top: 3px;
+    width: 26px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/ico_medal_1.gif) 0 0 no-repeat
+}
+
+#Ranking_List .ranking_table .best_num .r_num_2 {
+    display: inline;
+    margin-left: 34px;
+    margin-top: 3px;
+    width: 26px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/ico_medal_1.gif) 0 -50px no-repeat
+}
+
+#Ranking_List .ranking_table .best_num .r_num_3 {
+    display: inline;
+    margin-left: 34px;
+    margin-top: 3px;
+    width: 26px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/ico_medal_1.gif) 0 -100px no-repeat
+}
+
+#Ranking_List .ranking_table .last_line {
+    width: 682px;
+    height: 1px;
+    border-top: #dadada solid 1px
+}
+
+#Ranking_List .ranking_table .no_data {
+    height: 150px;
+    text-align: center
+}
+
+#Ranking_List .ranking_table .bb {
+    color: #506be0;
+    font-weight: bold
+}
+
+#another_day,
+#another_week,
+#another_month {
+    position: absolute;
+    top: 30px;
+    left: 550px
+}
+
+#another_day p {
+    width: 136px;
+    height: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/selbox_day.gif) no-repeat;
+    text-indent: -9999em;
+    cursor: pointer
+}
+
+#another_week p {
+    width: 136px;
+    height: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/selbox_week.gif) no-repeat;
+    text-indent: -9999em;
+    cursor: pointer
+}
+
+#another_week ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 114px;
+    height: 258px;
+    border: #c0c0c0 solid 1px;
+    background: #fff;
+    z-index: 999;
+    padding: 12px 10px
+}
+
+#another_month p {
+    width: 136px;
+    height: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/selbox_month.gif) no-repeat;
+    text-indent: -9999em;
+    cursor: pointer
+}
+
+#another_month ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 110px;
+    height: 100px;
+    border: #c0c0c0 solid 1px;
+    background: #fff;
+    z-index: 999;
+    padding: 12px
+}
+
+#another_month li,
+#another_week li {
+    height: 22px
+}
+
+#another_month li a,
+#another_week li a {
+    color: #333
+}
+
+#another_month li a:hover,
+#another_week li a:hover {
+    color: #4a77d5
+}
+
+#another_month li a.on,
+#another_week li a.on {
+    color: #4a77d5
+}
+
+#ranking_login {
+    float: left;
+    width: 435px;
+    height: 170px;
+    background: #fff
+}
+
+#ranking_login img {
+    float: left;
+    margin-top: 71px;
+    margin-right: 10px
+}
+
+#ranking_login .btn {
+    margin-top: 75px
+}
+
+#startCalArea {
+    display: none;
+    float: left;
+    width: 134px;
+    background: #fff;
+    border: #c0c0c0 solid 1px;
+    margin-top: -1px;
+    padding-bottom: 4px
+}
+
+.calTable {
+    float: left;
+    width: 126px;
+    text-align: center;
+    cursor: default;
+    margin-left: 1px
+}
+
+.calTable .month {
+    font-size: 11px;
+    color: #717171;
+    letter-spacing: 1px;
+    font-family: Tahoma;
+    height: 35px
+}
+
+.calTable thead tr {
+    height: 17px;
+    text-align: right
+}
+
+.calTable thead th {
+    color: #717171;
+    font-size: 9px;
+    font-family: Tahoma;
+    font-weight: bold
+}
+
+.calTable tbody td {
+    line-height: 16px;
+    width: 18px;
+    color: #999;
+    font-size: 9px;
+    font-family: Tahoma;
+    font-weight: normal;
+    font-weight: bold;
+    text-align: right
+}
+
+.calTable .prevBtn {
+    width: 5px;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -10000em;
+    cursor: pointer;
+    border: 0;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/bt_day_pre.gif) no-repeat
+}
+
+.calTable .nextBtn {
+    width: 5px;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -10000em;
+    cursor: pointer;
+    border: 0;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/bt_day_next.gif) no-repeat
+}
+
+.calTable .red {
+    color: #f00
+}
+
+.calTable .today {
+    color: #fff;
+    background-color: #6772f4
+}
+
+.calTable .selected {
+    color: #f45148;
+    font-weight: bold;
+    background-color: #feeae8;
+    height: 17px;
+    text-align: center
+}
+
+.calTable .dimd {
+    color: #d3d3d3
+}
+
+.calTable .pointer {
+    cursor: pointer
+}
+
+#ranking_box #gamebox_R #y_ranking {
+    float: left;
+    width: 214px;
+    height: 210px;
+    margin-top: 18px;
+    padding-left: 15px;
+    overflow: hidden
+}
+
+#ranking_box #gamebox_R #y_ranking #yester {
+    width: 214px;
+    height: 18px
+}
+
+#ranking_box #gamebox_R #y_ranking #yester h3 {
+    float: left;
+    width: 88px;
+    height: 12px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/ftit_1.gif) 5px 0 no-repeat;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+#ranking_box #gamebox_R #y_ranking #yester span {
+    float: left;
+    width: 82px;
+    color: #52586e;
+    letter-spacing: -1px;
+    font-family: 돋움;
+    font-size: 11px;
+    margin-top: 1px
+}
+
+#ranking_box #gamebox_R #y_ranking #yester p {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 42px;
+    height: 18px
+}
+
+#ranking_box #gamebox_R #y_ranking #yester p .right {
+    margin-left: 3px
+}
+
+#ranking_box #gamebox_R #y_ranking #yester img {
+    margin: 0
+}
+
+#ranking_box #gamebox_R #y_ranking img {
+    margin: 10px 0 13px 0
+}
+
+#btn_yester_prev,
+#btn_yester_next {
+    cursor: pointer
+}
+
+#ranking_box #y_ranking #Grade_Best5 {
+    clear: both;
+    float: left;
+    width: 214px;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    padding-left: 0
+}
+
+#ranking_box #y_ranking #Grade_Best5 li {
+    margin-bottom: 7px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/ico_ranknum.gif) no-repeat
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num1 {
+    background-position: 6px 0;
+    width: 214px;
+    height: 15px;
+    text-align: left
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num2 {
+    background-position: 6px -25px;
+    width: 214px;
+    height: 15px;
+    text-align: left
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num3 {
+    background-position: 6px -50px;
+    width: 214px;
+    height: 15px;
+    text-align: left
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num4 {
+    background-position: 6px -75px;
+    width: 214px;
+    height: 15px;
+    text-align: left
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num5 {
+    background-position: 6px -100px;
+    width: 214px;
+    height: 15px;
+    text-align: left
+}
+
+#ranking_box #y_ranking #Grade_Best5 .rankNum {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    color: #828282
+}
+
+#ranking_box #y_ranking #Grade_Best5 strong {
+    float: left;
+    font-weight: normal;
+    padding: 1px 0 0 29px;
+    color: #52586e
+}
+
+#ranking_box #y_ranking #Grade_Best5 .notiLogTxt {
+    float: left;
+    width: 137px;
+    height: 28px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/text_flog.gif) no-repeat;
+    text-indent: -1000em;
+    overflow: hidden
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num1 strong {
+    font-weight: bold;
+    color: #4a77d5
+}
+
+#ranking_box #y_ranking #Grade_Best5 em {
+    display: block;
+    font-style: normal;
+    float: right;
+    padding: 2px 5px 0 0;
+    font-size: 11px;
+    color: #52586e
+}
+
+#ranking_box #y_ranking #Grade_Best5 .C_r_num1 em {
+    font-weight: bold;
+    color: #333;
+    color: #4a77d5
+}
+
+#ranking_box #y_ranking #Grade_Best5 .no_data {
+    background: 0;
+    color: #4a77d5;
+    margin-top: 30px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center
+}
+
+#T_challenge {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 8px;
+    float: left;
+    width: 690px
+}
+
+#T_challenge h4 {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/ftitle_game.gif) 5px 0 no-repeat;
+    float: left;
+    width: 690px;
+    height: 25px
+}
+
+#T_challenge dl {
+    float: left;
+    position: relative;
+    width: 326px;
+    height: 119px
+}
+
+#T_challenge dl.right {
+    margin-left: 35px
+}
+
+#T_challenge dt {
+    float: left;
+    width: 181px;
+    height: 117px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/imgbox_1.gif) no-repeat
+}
+
+#T_challenge dt img {
+    margin: 4px
+}
+
+#T_challenge dt div {
+    position: absolute;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/bl_tag.gif) no-repeat;
+    width: 53px;
+    height: 34px;
+    z-index: 10;
+    top: -2px;
+    left: 125px
+}
+
+#T_challenge dd {
+    float: left;
+    margin-left: 15px;
+    width: 130px;
+    text-align: left
+}
+
+#T_challenge dd h5 {
+    font-size: 16px;
+    font-family: 돋움;
+    color: #5966eb
+}
+
+#T_challenge dd p {
+    height: 24px;
+    margin-top: 7px;
+    color: #585f7b;
+    font-size: 12px;
+    font-family: 돋움
+}
+
+#T_challenge dd img {
+    margin-top: 3px
+}
+
+#T_challenge .T_line {
+    float: left;
+    width: 687px;
+    height: 1px;
+    font-size: 0;
+    margin-top: 15px;
+    border-top: #e4e4e4 solid 1px
+}
+
+#T_challenge dl.bottom {
+    margin-top: 15px
+}
+
+#Challenge_rangking {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 25px;
+    float: left;
+    width: 690px
+}
+
+#Challenge_rangking.top {
+    position: relative
+}
+
+#Challenge_rangking #another_rank {
+    clear: both;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    margin-left: 554px;
+    text-align: left
+}
+
+#Ranking_List p.day_area {
+    width: 680px
+}
+
+#Ranking_List p.day_area img {
+    position: absolute;
+    display: block;
+    wdith: 130px;
+    height: 25px;
+    margin-left: 552px;
+    margin-top: -6px;
+    margin-bottom: 6px
+}
+
+#Ranking_List ul.menu_r2 {
+    float: left;
+    width: 687px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) 0 -30px no-repeat;
+    margin-top: 10px
+}
+
+#Ranking_List .menu_r2 li {
+    float: left;
+    width: 133px;
+    height: 21px;
+    font-size: 12px;
+    font-family: 돋움;
+    font-weight: bold;
+    color: #7c8091;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 9px;
+    cursor: pointer
+}
+
+#Ranking_List .menu_r2 #tab1.on {
+    width: 132px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) 0 0 no-repeat
+}
+
+#Ranking_List .menu_r2 #tab2.on {
+    width: 133px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) -131px 0 no-repeat;
+    color: #5e6378
+}
+
+#Ranking_List .menu_r2 #tab1,
+#Ranking_List .menu_r2 #tab2 {
+    color: #5e6378
+}
+
+#Ranking_List ul.menu_r4 {
+    float: left;
+    width: 687px;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg_2.gif) 0 -30px no-repeat;
+    margin-top: 10px
+}
+
+#Ranking_List .menu_r4 li {
+    float: left;
+    width: 133px;
+    height: 21px;
+    font-size: 12px;
+    font-family: 돋움;
+    font-weight: bold;
+    color: #7c8091;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 9px;
+    cursor: pointer
+}
+
+#Ranking_List .menu_r4 #tab1.on {
+    width: 132px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) 0 0 no-repeat
+}
+
+#Ranking_List .menu_r4 #tab2.on {
+    width: 132px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) -133px 0 no-repeat;
+    color: #5e6378
+}
+
+#Ranking_List .menu_r4 #tab3.on {
+    width: 132px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) -266px 0 no-repeat;
+    color: #5e6378
+}
+
+#Ranking_List .menu_r4 #tab4.on {
+    width: 132px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/tab_bg.gif) -399px 0 no-repeat;
+    color: #5e6378
+}
+
+#Ranking_List .menu_r4 #tab1,
+#Ranking_List .menu_r4 #tab2,
+#Ranking_List .menu_r4 #tab3,
+#Ranking_List .menu_r4 #tab4 {
+    color: #5e6378
+}
+
+#noti_layer {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 400px;
+    height: 203px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/pop_rankbg.png) no-repeat;
+    z-index: 99999
+}
+
+#noti_layer h5 {
+    width: 370px;
+    height: 68px;
+    margin-top: 18px;
+    margin-left: 25px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/pop_ico_arrow.gif) 0 2px no-repeat;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #333;
+    text-align: left
+}
+
+#noti_layer p.p1 {
+    width: 400px;
+    height: 76px;
+    text-align: center;
+    font-weight: bold
+}
+
+#noti_layer p.p1 strong {
+    color: #506be0
+}
+
+#noti_layer p.p2 {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer
+}
+
+#FSub_contents #game_box {
+    margin: 0 auto;
+    width: 978px;
+    height: 647px;
+    background: url(https://t1.kakaocdn.net/gamepub/flashgame/box_fgamebg.gif) no-repeat
+}
+
+#FSub_contents #game_box #gamebox_L {
+    float: left;
+    position: relative;
+    display: inline;
+    width: 640px;
+    margin: 17px 43px 0 23px;
+    text-align: left
+}
+
+#gamebox_L #Flash_Game_Head {
+    float: left
+}
+
+#gamebox_L #Flash_Game_Head h3 {
+    float: left;
+    color: #5966eb;
+    font-size: 16px;
+    font-family: "돋움";
+    margin-top: 7px
+}
+
+#gamebox_L #Flash_Game_Head em {
+    float: left;
+    display: block;
+    font-style: normal;
+    color: #585f7b;
+    font-size: 12px;
+    font-family: "돋움";
+    margin: 11px 9px
+}
+
+#gamebox_L #Flash_Game_Head p {
+    float: left;
+    text-indent: -9999em
+}
+
+#gamebox_L #Flash_Game_Head .game_title {
+    float: left;
+    display: inline;
+    width: 490px;
+    text-align: left;
+    height: 24px
+}
+
+#gamebox_L #Flash_Game_Head .game_control {
+    float: left;
+    display: inline;
+    width: 150px;
+    text-align: left
+}
+
+#gamebox_L #Flash_Game_Head .game_title2 {
+    float: left;
+    display: inline;
+    width: 472px;
+    text-align: left;
+    height: 24px
+}
+
+#gamebox_L #Flash_Game_Head .everyday_game {
+    float: left;
+    display: inline;
+    width: 165px;
+    height: 28px;
+    cursor: pointer
+}
+
+#gamebox_L #Flash_Game_Head .everyday_game p.everyday_nemologic {
+    width: 82px;
+    height: 28px;
+    background: url(http://cfile10.uf.daum.net/image/17638E4A4FBF3BF415DFD7) -0px 0 no-repeat
+}
+
+#gamebox_L #Flash_Game_Head .everyday_game p.everyday_4chun {
+    width: 82px;
+    height: 28px;
+    background: url(http://cfile10.uf.daum.net/image/17638E4A4FBF3BF415DFD7) -82px 0 no-repeat
+}
+
+#gamebox_L #Flash_Game_Head .everyday_game p.everyday_sudoku {
+    width: 82px;
+    height: 28px;
+    background: url(http://cfile10.uf.daum.net/image/17638E4A4FBF3BF415DFD7) -165px 0 no-repeat
+}
+
+#gamebox_L #Flash_Game_Head p.sound {
+    width: 72px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_soundoff.gif') 0 -11px no-repeat;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+#gamebox_L #Flash_Game_Head p.sound_on {
+    width: 72px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_soundoff.gif') no-repeat 0 4px;
+    cursor: pointer;
+    margin-top: 6px
+}
+
+#gamebox_L #Flash_Game_Head p.restart {
+    width: 66px;
+    height: 28px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_flashgame.gif') no-repeat;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-top: 3px
+}
+
+#gamebox_L #Flash_Game_Head p.copy {
+    width: 53px;
+    height: 28px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_flashgame.gif') -66px 0 no-repeat;
+    cursor: pointer;
+    right: 0
+}
+
+#gamebox_L #Flash_Game_Area {
+    margin: 0 auto;
+    clear: both;
+    padding-top: 33px;
+    width: 640px;
+    height: 480px
+}
+
+#FSub_contents #game_box #gamebox_R {
+    float: left;
+    position: relative;
+    width: 249px;
+    margin: 20px 0 20px 0;
+    text-align: left
+}
+
+#Game_Desc {
+    clear: both;
+    float: left;
+    position: relative;
+    width: 249px;
+    height: 290px
+}
+
+#Game_Desc ul.Game_Desc_tab_area {
+    position: relative;
+    margin-bottom: 16px;
+    width: 252px;
+    height: 26px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/new/tab_fgame_1.gif') left -26px no-repeat;
+    clear: both
+}
+
+#Game_Desc ul.Game_Desc_tab_area li {
+    float: left;
+    width: 62px;
+    height: 26px;
+    cursor: pointer;
+    text-indent: -9999em
+}
+
+#Game_Desc ul.Game_Desc_tab_area .on {
+    width: 63px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/new/tab_fgame_1.gif') left -26px no-repeat
+}
+
+#Game_Desc ul.Game_Desc_tab_area #gd_1.on {
+    background-position: -0 0
+}
+
+#Game_Desc ul.Game_Desc_tab_area #gd_2.on {
+    background-position: -62px 0
+}
+
+#Game_Desc ul.Game_Desc_tab_area #gd_3.on {
+    background-position: -124px 0
+}
+
+#Game_Desc ul.Game_Desc_tab_area #gd_4.on {
+    background-position: -186px 0
+}
+
+#Game_Desc h5 {
+    display: none
+}
+
+#Game_Desc h3.title1 {
+    margin: 8px 0 22px 0;
+    padding: 0;
+    font-size: 0;
+    width: 83px;
+    height: 13px;
+    background: url(http://icon.daum-img.net/game/09game/todaygame/img_tit01.gif) 0 0 no-repeat;
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0
+}
+
+#Game_Desc div.hasScroll {
+    display: none;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    width: 249px;
+    height: 220px;
+    overflow-y: auto;
+    line-height: 18px;
+    color: #52586e;
+    scrollbar-arrow-color: #bfc1cf;
+    scrollbar-3dlight-color: #fff;
+    scrollbar-darkshadow-color: #fff;
+    scrollbar-face-color: #fff;
+    scrollbar-highlight-color: #bfc1cf
+}
+
+#Game_Desc h4.title2 {
+    float: left;
+    margin: 14px 0 12px 0;
+    padding: 0;
+    font-size: 0;
+    width: 240px;
+    height: 13px;
+    background: url(http://icon.daum-img.net/game/09game/todaygame/img_tit01.gif) 0 -26px no-repeat;
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0
+}
+
+#Game_Desc .p_gamedesc {
+    width: 235px;
+    margin-left: 11px;
+    line-height: 20px;
+    color: #52586e;
+    font-family: "돋움";
+    height: 138px;
+    overflow-y: auto
+}
+
+#gamebox_R #adFgame250 {
+    clear: both;
+    width: 250px;
+    height: 250px
+}
+
+#gamebox_R #Netizen_Grade {
+    display: block;
+    float: left;
+    position: relative;
+    width: 235px;
+    height: 56px;
+    padding-left: 10px
+}
+
+#gamebox_R .borderclass {
+    border-bottom: #eaebee solid 1px
+}
+
+#gamebox_R #Netizen_Grade h4 {
+    float: left;
+    width: 63px;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/new/tit_fnetizen.gif') no-repeat;
+    text-indent: -9999em;
+    margin-top: 4px
+}
+
+#gamebox_R #Netizen_Grade em {
+    float: left;
+    display: block;
+    font-style: normal;
+    color: #999;
+    font-size: 11px;
+    font-family: "돋움";
+    margin: 6px 0 0 6px
+}
+
+#gamebox_R #Netizen_Grade .star_grade {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+    width: 106px;
+    height: 27px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star2.gif') no-repeat
+}
+
+#gamebox_R #Netizen_Grade .star_grade_sum {
+    position: absolute;
+    width: 0;
+    height: 27px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star.gif') no-repeat
+}
+
+#gamebox_R #Netizen_Grade .star_grade_sum2 {
+    position: absolute;
+    left: 102px;
+    top: -6px;
+    width: 50px;
+    color: #e0416d;
+    font-size: 24px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-weight: bold
+}
+
+#gamebox_R #Netizen_Grade .grage_button {
+    position: absolute;
+    width: 55px;
+    height: 48px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_grades.gif') no-repeat;
+    cursor: pointer;
+    text-indent: -9999em;
+    right: 0;
+    top: 0
+}
+
+#gamebox_R #Netizen_Grade #Layer {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 219px;
+    height: 50px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/img_ratebox_1.png) no-repeat;
+    z-index: 90;
+    overflow: hidden
+}
+
+#gamebox_R #Netizen_Grade #Layer .star_grade {
+    position: absolute;
+    left: 51px;
+    top: 15px;
+    width: 106px;
+    height: 20px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_ratestar_1.gif') left -20px no-repeat
+}
+
+#gamebox_R #Netizen_Grade #Layer .star_grade_sum {
+    position: absolute;
+    width: 0;
+    height: 20px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_ratestar_1.gif') no-repeat
+}
+
+#gamebox_R #Netizen_Grade #Layer .click_layer {
+    position: absolute;
+    left: 51px;
+    top: 15px;
+    width: 110px;
+    height: 20px;
+    z-index: 100
+}
+
+#gamebox_R #Netizen_Grade #Layer .click_layer li {
+    width: 22px;
+    float: left;
+    cursor: pointer;
+    text-indent: -9999em
+}
+
+#gamebox_R #Netizen_Grade #Layer .bt_submit {
+    width: 44px;
+    height: 28px;
+    margin: 12px 0 0 167px
+}
+
+#gamebox_R #Game_Desc_Area_1 h4.top3 {
+    float: left;
+    display: inline;
+    margin: 14px 0 2px 10px;
+    width: 65px;
+    height: 12px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/tit_rank_1.gif) 0 -25px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+#Grade_Best5 {
+    clear: both;
+    float: left;
+    width: 249px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: left
+}
+
+#Grade_Best5.fixheight {
+    height: 70px
+}
+
+#Grade_Best5 strong {
+    float: left;
+    font-weight: normal;
+    padding: 1px 0 0 29px;
+    color: #52586e
+}
+
+#Grade_Best5 li {
+    margin-bottom: 5px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/ico_num.gif) no-repeat
+}
+
+#Grade_Best5 .C_r_num1 {
+    background-position: 10px 0;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .C_r_num2 {
+    background-position: 10px -26px;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .C_r_num3 {
+    background-position: 10px -51px;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .C_r_num4 {
+    background-position: 10px -76px;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .C_r_num5 {
+    background-position: 10px -101px;
+    margin-bottom: 8px;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .C_r_Info {
+    background: 0;
+    margin: 0;
+    padding-top: 9px;
+    padding-left: 10px;
+    height: 28px;
+    border-top: #eaebee solid 1px
+}
+
+#Grade_Best5 .C_r_total_log {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/bgbox_1.gif) no-repeat;
+    padding-left: 11px;
+    position: relative;
+    width: 249px;
+    height: 48px;
+    padding-top: 5px;
+    color: #fff
+}
+
+#Grade_Best5 .C_r_total_log strong {
+    padding: 0;
+    font-weight: bold;
+    color: #fff000
+}
+
+#Grade_Best5 .C_r_total_log a.login {
+    width: 85px;
+    height: 28px;
+    position: absolute;
+    margin-top: 25px;
+    right: 66px
+}
+
+#Grade_Best5 .C_r_total_log a.rank {
+    width: 85px;
+    height: 28px;
+    position: absolute;
+    margin-top: 25px;
+    right: 9px
+}
+
+#Grade_Best5 .C_r_total_none {
+    background: 0;
+    text-align: center;
+    color: #4a77d5;
+    height: 50px;
+    padding-top: 25px
+}
+
+#Grade_Best5 .list_none {
+    background: 0;
+    width: 249px;
+    height: 17px;
+    text-align: left
+}
+
+#Grade_Best5 .rankNum {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    color: #828282
+}
+
+#Grade_Best5 .C_r_total {
+    background: url(http://icon.daum-img.net/game/09game/flashgame/ranking/rankingtop/bgbox_1.gif) no-repeat;
+    padding-left: 11px;
+    width: 242px;
+    height: 24px;
+    padding-top: 5px;
+    color: #fff
+}
+
+#Grade_Best5 .C_r_total a {
+    width: 85px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    right: 0
+}
+
+#Grade_Best5 .C_r_total2 {
+    background: 0;
+    padding-left: 11px;
+    width: 242px;
+    height: 24px;
+    padding-top: 5px;
+    color: #fff;
+    border-top: #eaebee solid 1px
+}
+
+#Grade_Best5 .C_r_total2 a {
+    width: 85px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    right: 0
+}
+
+#Grade_Best5 .C_r_total strong {
+    padding: 0
+}
+
+#Grade_Best5 .C_r_total em {
+    padding: 0 15px 0 0;
+    color: #fff
+}
+
+#Grade_Best5 .C_r_total b {
+    color: #fff000
+}
+
+#Grade_Best5 .notiLogTxt {
+    float: left;
+    width: 137px;
+    height: 28px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/text_flog.gif) no-repeat;
+    text-indent: -1000em;
+    overflow: hidden
+}
+
+#Grade_Best5 .C_r_num1 strong {
+    font-weight: bold;
+    color: #4a77d5
+}
+
+#Grade_Best5 em {
+    display: block;
+    font-style: normal;
+    float: right;
+    padding: 2px 5px 0 0;
+    font-size: 11px;
+    color: #52586e
+}
+
+#Game_Sliding {
+    clear: both;
+    position: relative;
+    width: 897px;
+    height: 175px;
+    margin: 0 auto;
+    padding-left: 34px;
+    overflow: hidden
+}
+
+#Game_Sliding .slide_area {
+    display: none;
+    float: left;
+    margin-top: 55px;
+    width: 866px;
+    height: 127px;
+    overflow: hidden
+}
+
+#Game_Sliding h4 a {
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    background: url(http://icon.daum-img.net/game/12game/tab_fgame01.gif) no-repeat left -36px;
+    text-indent: -2000em;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10
+}
+
+#Game_Sliding h4 a.on {
+    cursor: default
+}
+
+#Game_Sliding .slide_area li {
+    float: left;
+    display: inline;
+    text-align: center
+}
+
+#Game_Sliding .slide_prev {
+    position: absolute;
+    padding: 0;
+    width: 21px;
+    height: 30px;
+    border: 0;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_nextarrow_1.gif') no-repeat;
+    text-indent: -9999em;
+    top: 73px;
+    left: 0;
+    cursor: pointer
+}
+
+#Game_Sliding .slide_next {
+    position: absolute;
+    position: absolute;
+    padding: 0;
+    width: 21px;
+    height: 30px;
+    border: 0;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/img_gamebox_2.gif') no-repeat;
+    text-indent: -9999em;
+    top: 73px;
+    right: 0;
+    cursor: pointer
+}
+
+#Game_Sliding .gsList li {
+    width: 171px
+}
+
+#Game_Sliding .gsList li.fir {
+    margin-left: 19px
+}
+
+#Game_Sliding .gsList li img {
+    margin-bottom: 5px
+}
+
+#Game_Sliding .gsList li a {
+    color: #333;
+    font-weight: bold
+}
+
+#Game_Sliding #gs_tap1 {
+    width: 187px;
+    top: 0;
+    left: 0;
+    background-position: 0 -36px
+}
+
+#Game_Sliding #gs_tap2 {
+    top: 0;
+    left: 187px;
+    background-position: -187px -36px
+}
+
+#Game_Sliding #gs_tap3 {
+    top: 0;
+    left: 373px;
+    background-position: -373px -36px
+}
+
+#Game_Sliding #gs_tap4 {
+    top: 0;
+    left: 559px;
+    background-position: -559px -36px
+}
+
+#Game_Sliding #gs_tap5 {
+    top: 0;
+    left: 745px;
+    background-position: -745px -36px
+}
+
+#Game_Sliding #gs_tap1.on {
+    background-position: 0 0
+}
+
+#Game_Sliding #gs_tap2.on {
+    background-position: -187px 0
+}
+
+#Game_Sliding #gs_tap3.on {
+    background-position: -373px 0
+}
+
+#Game_Sliding #gs_tap4.on {
+    background-position: -559px 0
+}
+
+#Game_Sliding #gs_tap5.on {
+    background-position: -745px 0
+}
+
+#Game_Sliding #game_slide_1 {
+    display: block
+}
+
+#Game_Sliding .slide_area {
+    display: none
+}
+
+#Game_Sliding .slideTabArea {
+    margin-bottom: 12px;
+    width: 931px;
+    height: 36px;
+    background: url(http://icon.daum-img.net/game/12game/tab_fgame01.gif) no-repeat 0 -36px
+}
+
+#Game_Sliding .slideTabArea li {
+    float: left
+}
+
+.slideTabArea a {
+    float: left;
+    width: 186px;
+    height: 36px;
+    text-indent: -1000em;
+    overflow: hidden
+}
+
+.slideTabArea .on {
+    background: url(http://icon.daum-img.net/game/12game/tab_fgame01.gif) no-repeat 0 0
+}
+
+#slideTab_2.on,
+#slideTab_2.current {
+    background-position: -187px 0
+}
+
+#slideTab_3.on,
+#slideTab_3.current {
+    background-position: -372px 0
+}
+
+#slideTab_4.on,
+#slideTab_4.current {
+    background-position: -558px 0
+}
+
+#slideTab_5.on,
+#slideTab_5.current {
+    background-position: -744px 0
+}
+
+#slide_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100000px
+}
+
+#daumContent {
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto
+}
+
+#mArticle {
+    float: left;
+    width: 710px;
+    padding-top: 23px;
+    border-right: 1px solid #e4e4e4
+}
+
+#mAside {
+    float: right;
+    width: 250px;
+    margin-top: 20px;
+    padding-right: 1px;
+    border: 0 none
+}
+
+.bnr_maside,
+.bnr_maside .link_bnr {
+    display: block;
+    overflow: hidden;
+    width: 250px;
+    height: 134px
+}
+
+.section_recommend {
+    padding-top: 30px;
+    line-height: 14px
+}
+
+.section_recommend .tit_recommend {
+    overflow: hidden;
+    height: 21px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/tit_recommend.gif) no-repeat;
+    text-indent: -9999px
+}
+
+.section_recommend .wrap_list {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 248px;
+    border: 1px solid #ececec
+}
+
+.section_recommend .list_recommend {
+    overflow: hidden;
+    width: 242px;
+    padding: 0 0 25px 3px;
+    border: 1px solid #fff;
+    background: #fdfdfd
+}
+
+.section_recommend .list_recommend li {
+    overflow: hidden;
+    float: left;
+    width: 110px;
+    height: 91px;
+    padding: 8px 5px 1px
+}
+
+.section_recommend .list_recommend .link_thumb {
+    display: block;
+    overflow: hidden;
+    width: 110px;
+    height: 67px;
+    margin-bottom: 7px
+}
+
+.section_recommend .list_recommend .link_txt {
+    color: #010101
+}
+
+.section_recommend .btn_recommend {
+    position: absolute;
+    top: -22px;
+    overflow: hidden;
+    height: 13px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/btn_fgame_list.gif) no-repeat;
+    text-indent: -9999px
+}
+
+.section_recommend .btn_prev {
+    left: 224px;
+    width: 13px;
+    background-position: 0 0
+}
+
+.section_recommend .btn_next {
+    left: 236px;
+    width: 13px;
+    background-position: -12px 0
+}
+
+#commentFrame {
+    float: left;
+    margin-top: 6px
+}
+
+#CommentArea_100 {
+    width: 976px;
+    text-align: left;
+    margin-bottom: 40px
+}
+
+#CommentArea_100 h3 {
+    display: inline;
+    font-size: 11px;
+    margin-left: 4px;
+    width: 85px;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/title_100.gif') no-repeat;
+    text-indent: -9999em;
+    float: left
+}
+
+#CommentArea_100 p {
+    float: left;
+    padding-top: 1px
+}
+
+#CommentArea_100 p strong {
+    color: #5966eb
+}
+
+#CommentArea_100 #CommentArea_Box {
+    clear: both;
+    float: left;
+    width: 682px;
+    height: 56px;
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: #dadada solid 1px
+}
+
+#CommentArea_100 #CommentArea_Input {
+    position: relative;
+    margin: 10px 0 0 13px;
+    float: left;
+    display: inline;
+    width: 576px;
+    height: 34px;
+    border: #e1e1e1 solid 1px;
+    background: #fff
+}
+
+#CommentArea_100 #cmt_select {
+    float: left;
+    display: inline;
+    width: 98px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_gamarrow_1.gif') right top no-repeat;
+    margin: 9px;
+    cursor: pointer
+}
+
+#CommentArea_100 #cmt_select b {
+    display: block;
+    padding-left: 8px;
+    padding-top: 1px
+}
+
+#CommentArea_100 #comment {
+    float: left;
+    margin-top: 7px;
+    width: 455px;
+    height: 20px;
+    border: 0
+}
+
+#CommentArea_100 .loginin {
+    background: url('http://icon.daum-img.net/game/09game/flashgame/txt_login.gif') left 3px no-repeat
+}
+
+#CommentArea_100 .loginin2 {
+    background: url('http://icon.daum-img.net/game/09game/flashgame/txt_login2.gif') left 3px no-repeat
+}
+
+#CommentArea_100 #comment_submit {
+    float: left;
+    margin: 11px 0 0 7px;
+    width: 68px;
+    height: 34px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/bt_entry.gif') no-repeat;
+    text-indent: -9999em;
+    border: 0;
+    cursor: pointer
+}
+
+#CommentArea_100 #CommentArea_List {
+    clear: both;
+    float: left;
+    width: 684px;
+    margin-top: 9px
+}
+
+#CommentArea_List li {
+    border-top: #efefef solid 1px;
+    float: left;
+    width: 684px
+}
+
+#CommentArea_List li.fir {
+    border: 0
+}
+
+#CommentArea_List li.last {
+    border-top: #dadada solid 1px;
+    float: left;
+    width: 684px;
+    height: 1px
+}
+
+#CommentArea_List dl {
+    float: left;
+    padding: 11px 0 9px 0
+}
+
+#CommentArea_List dl dd.nick {
+    float: left;
+    display: inline;
+    width: 81px;
+    margin: 0 5px 0 17px;
+    color: #777;
+    font-family: "돋움"
+}
+
+#CommentArea_List dl dd.star {
+    float: left;
+    display: inline;
+    width: 130px
+}
+
+#CommentArea_List dl dd.star strong {
+    float: left;
+    display: block;
+    color: #e0416d;
+    font-size: 11px;
+    font-family: tahoma;
+    padding: 1px;
+    padding-left: 6px
+}
+
+#CommentArea_List dl dd.date {
+    float: left;
+    width: 56px;
+    color: #999;
+    font-size: 11px;
+    font-family: tahoma
+}
+
+#CommentArea_List dl dd.icon {
+    float: left;
+    width: 40px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/img_w_bar.gif') left 3px no-repeat
+}
+
+#CommentArea_List dl dd.icon img {
+    margin: 2px 0 0 12px;
+    cursor: pointer
+}
+
+#CommentArea_List dl dt {
+    float: left;
+    width: 351px;
+    font-weight: normal;
+    color: #333;
+    font-family: "돋움";
+    line-height: 18px;
+    word-break: break-all;
+    overflow: hidden
+}
+
+#CommentArea_List dl dt img {
+    vertical-align: middle
+}
+
+#textlimit {
+    width: 0;
+    text-indent: -9999em;
+    display: none
+}
+
+#CommentArea_List .no_comment {
+    padding: 80px 0;
+    text-align: center;
+    color: #666
+}
+
+.Star_bg {
+    display: block;
+    position: relative;
+    float: left;
+    width: 79px;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') left -14px no-repeat;
+    text-align: left
+}
+
+.star_push {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat
+}
+
+.star_push0 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 0
+}
+
+.star_push1 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 10%
+}
+
+.star_push2 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 20%
+}
+
+.star_push3 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 30%
+}
+
+.star_push4 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 40%
+}
+
+.star_push5 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 50%
+}
+
+.star_push6 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 60%
+}
+
+.star_push7 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 70%
+}
+
+.star_push8 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 80%
+}
+
+.star_push9 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 90%
+}
+
+.star_push10 {
+    position: absolute;
+    height: 14px;
+    background: url('http://icon.daum-img.net/game/09game/flashgame/ico_star_s.gif') no-repeat;
+    width: 100%
+}
+
+#pointLayer {
+    position: absolute;
+    left: -1px;
+    top: 34px;
+    width: 95px;
+    height: 180px;
+    border-right: #e1e1e1 solid 1px;
+    border-left: #e1e1e1 solid 1px;
+    border-bottom: #e1e1e1 solid 1px;
+    z-index: 999;
+    background: #fff
+}
+
+#pointLayer li {
+    float: left;
+    width: 85px;
+    height: 16px;
+    padding-left: 3px
+}
+
+#pointLayer li span {
+    cursor: pointer
+}
+
+#pointLayer li span.Star_bg:hover {
+    border: #eee solid 1px
+}
+
+p#TodayTop3_rank {
+    float: left;
+    width: 249px;
+    height: 50px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/bt_login2.gif) no-repeat
+}
+
+p#TodayTop3_rank a {
+    display: block;
+    float: right;
+    width: 59px;
+    height: 46px;
+    text-indent: -9999em;
+    margin-top: 2px;
+    overflow: hidden
+}
+
+div#TodayTop3_rank {
+    float: left;
+    width: 249px;
+    height: 50px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/new/img_maxrecord2.gif) no-repeat
+}
+
+div#TodayTop3_rank p {
+    width: 242px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    font: 12px 돋움;
+    color: #666;
+    text-align: right
+}
+
+div#TodayTop3_rank p.fir {
+    margin-top: 6px
+}
+
+div#TodayTop3_rank p strong {
+    color: #4a77d5
+}
+
+.bt_all_rank {
+    position: absolute;
+    top: 110px;
+    left: 175px;
+    *z-index: -1;
+    _z-index: -1
+}
+
+#flsCategoryBox {
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 978px;
+    height: 208px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/bg_top.gif) no-repeat;
+    text-align: left
+}
+
+#flsCategoryBox .title {
+    margin: 0 0 11px 14px;
+    width: 281px;
+    height: 16px;
+    background: url(http://icon.daum-img.net/game/12game/img_title_spr2.gif) no-repeat 0 0;
+    text-indent: -10000em;
+    overflow: hidden
+}
+
+#flsCategoryBox .rank {
+    padding-left: 13px
+}
+
+#flsCategoryBox .rank .rank_list {
+    float: left;
+    position: relative;
+    margin-right: 9px;
+    padding: 9px 12px 0 0;
+    width: 173px;
+    height: 154px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/ico_bar_1.gif) no-repeat top right
+}
+
+#flsCategoryBox .rank .rank_text {
+    position: absolute;
+    width: 51px;
+    height: 50px;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/ico_num1_spr.gif) no-repeat;
+    top: 7px;
+    left: 0;
+    text-indent: -10000em;
+    z-index: 10
+}
+
+#flsCategoryBox .rank dl {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+#flsCategoryBox .rank dd {
+    position: absolute
+}
+
+#flsCategoryBox .rank .rank_title {
+    position: absolute;
+    top: 122px;
+    left: 3px
+}
+
+#flsCategoryBox .rank .rank_title a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5966eb
+}
+
+#flsCategoryBox .rank .thum {
+    top: 0;
+    left: 0
+}
+
+#flsCategoryBox .rank .thum img {
+    border: 1px solid #d0d2d1
+}
+
+#flsCategoryBox .rank .point {
+    top: 119px;
+    right: 3px;
+    font-family: arial;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+    color: #e0416d
+}
+
+#flsCategoryBox #puzzl {
+    background-position: 0 0
+}
+
+#flsCategoryBox #shooting {
+    background-position: 0 -25px
+}
+
+#flsCategoryBox #sports {
+    background-position: 0 -50px
+}
+
+#flsCategoryBox #arcade {
+    background-position: 0 -75px
+}
+
+#flsCategoryBox #todaygame {
+    background-position: 0 -100px
+}
+
+#flsCategoryBox #rank5 {
+    margin-right: 0;
+    padding-right: 0;
+    background-image: none
+}
+
+#flsCategoryBox #rank1 .rank_text {
+    background-position: 0 0
+}
+
+#flsCategoryBox #rank2 .rank_text {
+    background-position: 0 -50px
+}
+
+#flsCategoryBox #rank3 .rank_text {
+    background-position: 0 -100px
+}
+
+#flsCategoryBox #rank4 .rank_text {
+    background-position: 0 -150px
+}
+
+#flsCategoryBox #rank5 .rank_text {
+    background-position: 0 -200px
+}
+
+.FCategory #Fg_left {
+    float: left;
+    position: relative;
+    padding-top: 30px;
+    width: 709px
+}
+
+.FCategory #Fg_left h3 {
+    position: absolute;
+    width: 82px;
+    height: 30px;
+    top: 1px;
+    left: 0;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/tab_1.gif) no-repeat;
+    text-indent: -10000em;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.FCategory h3#pointTab {
+    left: 82px;
+    background-position: -81px 0
+}
+
+.FCategory #playTab.off {
+    background-position: 0 -30px
+}
+
+.FCategory #pointTab.off {
+    background-position: -82px -30px
+}
+
+.FCategory #pointTab.on {
+    background-position: -81px 0
+}
+
+.FCategory #playTab.on {
+    background-position: 0 0
+}
+
+.sortList {
+    float: left;
+    padding-top: 22px;
+    width: 682px;
+    border-top: 1px solid #bfc1cf;
+    text-align: left
+}
+
+.sortList ul {
+    float: left
+}
+
+.sortList .fgcList {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 662px;
+    border-bottom: 1px solid #efefef;
+    float: left
+}
+
+.sortList .fgcList dl {
+    float: left;
+    position: relative;
+    padding: 0 0 20px 105px;
+    width: 207px
+}
+
+.sortList .fgcList dd {
+    line-height: 17px
+}
+
+.sortList .fgcList .game_title a {
+    float: left;
+    margin-bottom: 13px;
+    padding-top: 2px;
+    width: 110px;
+    font-weight: bold;
+    color: #5966eb
+}
+
+.sortList .fgcList .thum {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.sortList .fgcList .point {
+    float: left;
+    position: relative;
+    margin-bottom: 13px;
+    width: 92px;
+    text-align: right;
+    color: #e0416d;
+    font-weight: bold
+}
+
+.sortList .fgcList .pointbg {
+    position: absolute;
+    width: 71px;
+    height: 15px;
+    top: 1px;
+    left: 0;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/ico_star_spr.gif) no-repeat 0 -24px
+}
+
+.sortList .fgcList .pointLayer {
+    position: absolute;
+    display: block;
+    width: 71px;
+    height: 12px;
+    top: 1px;
+    left: 0;
+    background: url(http://icon.daum-img.net/game/09game/flashgame/category/ico_star_spr.gif) no-repeat;
+    overflow: hidden
+}
+
+.sortList .fgcList .playCount {
+    float: left;
+    width: 190px;
+    font-size: 11px
+}
+
+.sortList .fgcList .viewCount {
+    float: left;
+    width: 96px;
+    font-size: 11px
+}
+
+.sortList .fgcList .desc {
+    clear: both
+}
+
+.sortList .fgcList .desc a {
+    font-size: 11px;
+    color: #333
+}
+
+.sortList .fgcList .leftgame {
+    margin-right: 38px
+}
+
+#pointRankArea {
+    display: none
+}
+
+#GameNews {
+    margin: 0 auto;
+    width: 978px;
+    text-align: left
+}
+
+#GameNews #GameNews_menu {
+    float: left;
+    width: 120px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_rbg_1.gif') repeat-y
+}
+
+#GameNews #GameNews_menu h2 {
+    width: 120px;
+    height: 66px;
+    background: url('http://icon.daum-img.net/game/09game/newgnb/news_rtit.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNews #GameNews_menu h2 a {
+    display: block;
+    width: 120px;
+    height: 66px
+}
+
+#GameNews #GameNews_menu .menu1 {
+    width: 81px;
+    margin: 5px 0 0 16px;
+    text-align: left
+}
+
+#GameNews #GameNews_menu .menu1 li {
+    float: left;
+    width: 81px;
+    height: 12px;
+    margin-top: 12px;
+    background: url('http://icon.daum-img.net/game/09game/news/title_lemenuonoff.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNews #GameNews_menu .menu1 li a {
+    width: 81px;
+    height: 12px;
+    display: block;
+    overflow: hidden
+}
+
+#GameNews #GameNews_menu .menu1 li.m1 {
+    background-position: left top
+}
+
+#GameNews #GameNews_menu .menu1 li.m1on {
+    background-position: -81px top
+}
+
+#GameNews #GameNews_menu .menu1 li.m2 {
+    background-position: left -25px
+}
+
+#GameNews #GameNews_menu .menu1 li.m2on {
+    background-position: -81px -25px
+}
+
+#GameNews #GameNews_menu .menu1 li.m3 {
+    background-position: left -50px
+}
+
+#GameNews #GameNews_menu .menu1 li.m3on {
+    background-position: -81px -50px
+}
+
+#GameNews #GameNews_menu .menu1 li.m4 {
+    background-position: left -75px
+}
+
+#GameNews #GameNews_menu .menu1 li.m4on {
+    background-position: -81px -75px
+}
+
+#GameNews #GameNews_menu .menu1 li.m5 {
+    background-position: left -100px
+}
+
+#GameNews #GameNews_menu .menu1 li.m5on {
+    background-position: -81px -100px
+}
+
+#GameNews #GameNews_menu .menu1 li.m6 {
+    background-position: left -124px
+}
+
+#GameNews #GameNews_menu .menu1 li.m6on {
+    background-position: -81px -124px
+}
+
+#GameNews #GameNews_menu .menu1 li.m7 {
+    background-position: left -150px
+}
+
+#GameNews #GameNews_menu .menu1 li.m7on {
+    background-position: -81px -150px
+}
+
+#GameNews #GameNews_menu .line {
+    clear: both;
+    display: inline;
+    float: left;
+    width: 99px;
+    margin: 15px 0 0 10px;
+    font-size: 0;
+    height: 1px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_rdotline.gif') no-repeat
+}
+
+#GameNews #GameNews_menu .menu2 {
+    clear: both;
+    display: inline;
+    float: left;
+    width: 81px;
+    margin: 7px 0 0 16px;
+    font-size: 11px;
+    font-family: "돋움"
+}
+
+#GameNews #GameNews_menu .menu2 li {
+    float: left;
+    width: 90px;
+    height: 12px;
+    margin-top: 9px
+}
+
+#GameNews #GameNews_menu .menu2 li a {
+    color: #333
+}
+
+#GameNews #GameNews_menu .menu2 li h3 {
+    font-size: 11px;
+    font-family: "돋움";
+    color: #e3426e;
+    font-weight: bold
+}
+
+#GameNews #GameNews_menu .menu2 li img {
+    margin-left: 5px;
+    vertical-align: top
+}
+
+#GameNews #GameNews_menu .last_line {
+    clear: both;
+    width: 120px;
+    height: 12px;
+    margin-top: 5px;
+    background: url('http://icon.daum-img.net/game/09game/newgnb/rbg_bot.gif') no-repeat
+}
+
+#GameNews #GameNews_menu .game_Lbanner {
+    width: 120px;
+    background: #fff;
+    padding-top: 33px
+}
+
+#GameNews #GameNews_R {
+    float: left;
+    position: relative;
+    margin-left: 6px;
+    width: 852px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_box_mid.gif') repeat-y;
+    padding-bottom: 40px
+}
+
+#GameNews #GameNews_R .top_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 852px;
+    height: 61px;
+    background: url('http://icon.daum-img.net/game/09game/newgnb/bgbox_new_top.gif') no-repeat
+}
+
+#GameNewsTop_contents {
+    float: left;
+    position: relative;
+    width: 600px;
+    margin: 26px 0 0 24px;
+    display: inline;
+    border-right: #e1e1e1 solid 1px
+}
+
+#GameNewsTop_contents a {
+    color: #131c56
+}
+
+#GameNewsTop_contents #Headline {
+    width: 580px
+}
+
+#GameNewsTop_contents #Headline .big_image {
+    float: left;
+    width: 180px;
+    height: 147px
+}
+
+#GameNewsTop_contents #Headline .big_image img {
+    margin: 6px
+}
+
+#GameNewsTop_contents #Headline .big_img_layer {
+    position: absolute;
+    top: 0;
+    width: 166px;
+    height: 147px;
+    background: url('http://icon.daum-img.net/game/09game/news/img_issuethumb.gif') no-repeat
+}
+
+#GameNewsTop_contents #Headline .head {
+    padding: 10px 0 15px 0
+}
+
+#GameNewsTop_contents #Headline .head strong {
+    font-size: 24px;
+    font-family: '돋움';
+    letter-spacing: -1px
+}
+
+#GameNewsTop_contents #Headline .head p {
+    margin-top: 11px;
+    line-height: 20px
+}
+
+#GameNewsTop_contents #Headline .head p a {
+    color: #323232
+}
+
+#GameNewsTop_contents #Headline .re {
+    color: #141a57;
+    font-weight: bold;
+    letter-spacing: -1px;
+    height: 20px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ico_arrow1.gif') no-repeat;
+    padding-left: 15px
+}
+
+#GameNewsTop_contents #Headline_list {
+    clear: both;
+    width: 580px;
+    margin-top: 19px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_dotline_1.gif') no-repeat;
+    padding-top: 9px
+}
+
+#GameNewsTop_contents #Headline_list li {
+    float: left;
+    width: 560px;
+    margin-top: 12px;
+    padding-left: 15px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ico_arrow2.gif') 4px 2px no-repeat;
+    color: #141a57;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -1px;
+    overflow: hidden
+}
+
+#GameNewsTop_contents h3 {
+    background: url('http://icon.daum-img.net/game/09game/news/t_title_1.gif') no-repeat;
+    width: 95px
+}
+
+#GameNewsTop_contents #video_news {
+    clear: both;
+    position: relative;
+    float: left;
+    width: 580px;
+    margin-top: 45px
+}
+
+#GameNewsTop_contents #video_news h3 {
+    background-position: 0 -75px;
+    text-indent: -9999em;
+    height: 23px
+}
+
+#GameNewsTop_contents #video_news ul {
+    width: 575px;
+    height: 160px;
+    padding-left: 5px;
+    border-top: #bfc0de solid 1px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_bg1.gif') repeat-x
+}
+
+#GameNewsTop_contents #video_news li {
+    float: left;
+    display: inline;
+    margin: 14px 0 0 18px;
+    width: 120px;
+    text-align: center
+}
+
+#GameNewsTop_contents #video_news li img {
+    float: left;
+    margin-bottom: 11px
+}
+
+#GameNewsTop_contents #video_news li a {
+    color: #474747
+}
+
+#GameNewsTop_contents #video_news .btn {
+    position: absolute;
+    right: 0;
+    top: 3px
+}
+
+#GameNewsTop_contents #video_news .btn a {
+    display: block;
+    width: 31px;
+    height: 9px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_bt_more.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNewsTop_contents #video_news .btn .pre {
+    background-position: left top
+}
+
+#GameNewsTop_contents #video_news .btn .pre_on {
+    background-position: left -18px
+}
+
+#GameNewsTop_contents #video_news .btn .next {
+    background-position: -17px top
+}
+
+#GameNewsTop_contents #video_news .btn .next_on {
+    background-position: -17px -18px
+}
+
+#GameNewsTop_contents #GameLeague_news {
+    clear: both;
+    position: relative;
+    float: left;
+    width: 580px;
+    margin-top: 41px
+}
+
+#GameNewsTop_contents #GameLeague_news h3 {
+    background-position: 0 -24px;
+    text-indent: -9999em;
+    height: 23px
+}
+
+#GameNewsTop_contents #GameLeague_news dl {
+    width: 580px;
+    border-top: #bfc0de solid 1px;
+    padding-top: 18px;
+    height: 116px
+}
+
+#GameNewsTop_contents #GameLeague_news .img {
+    float: left;
+    width: 172px
+}
+
+#GameNewsTop_contents #GameLeague_news .img img {
+    margin-left: 3px
+}
+
+#GameNewsTop_contents #GameLeague_news .sub {
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: "돋움";
+    color: #242424;
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+#GameNewsTop_contents #GameLeague_news .cnt {
+    margin-top: 11px;
+    line-height: 18px
+}
+
+#GameNewsTop_contents #GameLeague_news .cnt a {
+    color: #323232
+}
+
+#GameNewsTop_contents #GameLeague_news .date {
+    margin-top: 6px;
+    font-family: "돋움";
+    font-size: 11px;
+    color: #999
+}
+
+#GameNewsTop_contents #GameLeague_news .new_c {
+    color: #8193d1;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: -1px
+}
+
+#GameNewsTop_contents #GameLeague_news ul {
+    clear: both;
+    width: 580px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_dotline_1.gif') no-repeat;
+    padding-top: 13px
+}
+
+#GameNewsTop_contents #GameLeague_news li {
+    float: left;
+    position: relative;
+    width: 580px;
+    height: 25px;
+    line-height: 25px
+}
+
+#GameNewsTop_contents #GameLeague_news li strong {
+    display: block;
+    float: left;
+    width: 110px
+}
+
+#GameNewsTop_contents #GameLeague_news li .b {
+    font-weight: bold
+}
+
+#GameNewsTop_contents #GameLeague_news li p {
+    position: absolute;
+    top: -7px;
+    right: 0
+}
+
+#GameNewsTop_contents #GameLeague_news .btn {
+    position: absolute;
+    right: 0;
+    top: 7px
+}
+
+#GameNewsTop_contents #GameLeague_news .btn a {
+    display: block;
+    width: 31px;
+    height: 9px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_bt_more.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNewsTop_contents #favor_video {
+    clear: both;
+    position: relative;
+    float: left;
+    width: 580px;
+    margin-top: 38px
+}
+
+#GameNewsTop_contents #favor_video h3 {
+    float: left;
+    background-position: 0 -48px;
+    text-indent: -9999em;
+    height: 25px
+}
+
+#GameNewsTop_contents #favor_video .f_v {
+    float: left;
+    margin: 4px 0 0 6px
+}
+
+#GameNewsTop_contents #favor_video #FV_Tab {
+    clear: both;
+    float: left;
+    width: 580px;
+    background: url(http://icon.daum-img.net/game/09game/news/t_tab_game_10.gif) left -26px no-repeat;
+    text-indent: -9999em
+}
+
+#GameNewsTop_contents #favor_video #FV_Tab li {
+    float: left;
+    cursor: pointer;
+    height: 26px
+}
+
+#GameNewsTop_contents #favor_video #FV_Tab li a {
+    height: 26px;
+    display: block
+}
+
+#GameNewsTop_contents #favor_video #tab0 {
+    width: 193px
+}
+
+#GameNewsTop_contents #favor_video #tab0.on {
+    width: 194px;
+    height: 26px;
+    background: url(http://icon.daum-img.net/game/09game/news/t_tab_game_10.gif) left top no-repeat
+}
+
+#GameNewsTop_contents #favor_video #tab1 {
+    width: 193px
+}
+
+#GameNewsTop_contents #favor_video #tab1.on {
+    width: 194px;
+    height: 26px;
+    background: url(http://icon.daum-img.net/game/09game/news/t_tab_game_10.gif) -193px top no-repeat
+}
+
+#GameNewsTop_contents #favor_video #tab2 {
+    width: 193px
+}
+
+#GameNewsTop_contents #favor_video #tab2.on {
+    width: 194px;
+    height: 26px;
+    background: url(http://icon.daum-img.net/game/09game/news/t_tab_game_10.gif) -386px top no-repeat
+}
+
+#GameNewsTop_contents #favor_video .F_Video_area {
+    clear: both;
+    float: left;
+    background: url('http://icon.daum-img.net/game/09game/news/t_bg_box.gif') no-repeat;
+    width: 580px;
+    height: 199px
+}
+
+.F_Video_area dl {
+    float: left;
+    display: inline;
+    width: 269px;
+    margin: 20px 5px 3px 16px
+}
+
+.F_Video_area .img {
+    width: 95px;
+    float: left
+}
+
+.F_Video_area .cnt {
+    padding-top: 9px;
+    line-height: 16px
+}
+
+.F_Video_area .cnt a {
+    color: #333
+}
+
+.F_Video_area .play_num {
+    padding-top: 7px
+}
+
+.F_Video_area .play_num strong {
+    background: url('http://icon.daum-img.net/game/09game/news/t_play_1.gif') left 2px no-repeat;
+    padding-left: 12px;
+    font-family: verdana;
+    font-size: 10px;
+    letter-spacing: -1px
+}
+
+#GameNewsRight {
+    float: left;
+    display: inline;
+    position: relative;
+    width: 181px;
+    margin-left: 20px
+}
+
+#GameNewsRight #Interr_News h4 {
+    margin-top: 22px;
+    width: 181px;
+    height: 50px;
+    background: url('http://icon.daum-img.net/game/09game/news/title_hitnews.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNewsRight #Interr_News ul,
+#GameNewsRight #Interr_News dl {
+    clear: both;
+    float: left;
+    display: inline;
+    width: 179px;
+    margin-left: 2px
+}
+
+#GameNewsRight #Interr_News li {
+    float: left;
+    width: 179px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_l_bl.gif') left 5px no-repeat;
+    height: 22px;
+    padding-left: 7px
+}
+
+#GameNewsRight #Interr_News li a {
+    color: #242424
+}
+
+#GameNewsRight #Interr_News li a.b {
+    color: #e0416d;
+    font-weight: bold
+}
+
+#GameNewsRight #Interr_News .line {
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    width: 179px;
+    height: 19px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ldotline.gif') no-repeat
+}
+
+#GameNewsRight #Interr_News dt {
+    float: left
+}
+
+#GameNewsRight #Interr_News dt {
+    width: 86px
+}
+
+#GameNewsRight #Interr_News dd {
+    padding-top: 2px
+}
+
+#GameNewsRight #Interr_News dd a {
+    color: #242424;
+    font-size: 11px;
+    font-family: "돋움";
+    line-height: 17px;
+    letter-spacing: -1px
+}
+
+#GameNewsRight #Interr_News dd img {
+    vertical-align: top;
+    margin: 0 2px 5px 0
+}
+
+#GameNewsRight #Blogger_News {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-left: 2px;
+    width: 179px;
+    margin-top: 44px
+}
+
+#Blogger_News h4 {
+    float: left;
+    height: 24px;
+    width: 60px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltitle_1.gif') left 3px no-repeat;
+    text-indent: -9999em
+}
+
+#Blogger_News h4 a {
+    display: block;
+    width: 45px;
+    height: 24px;
+    overflow: hidden
+}
+
+#Blogger_News .blank {
+    float: left;
+    margin-left: -10px;
+    margin-top: 5px
+}
+
+#Blogger_News ul {
+    clear: both;
+    float: left;
+    display: inline;
+    width: 179px;
+    border-top: #bfbfde solid 1px;
+    padding-top: 14px
+}
+
+#Blogger_News li.image {
+    background: 0;
+    margin-left: 0;
+    padding: 0;
+    height: 64px
+}
+
+#Blogger_News li.image img {
+    float: left;
+    margin-right: 11px
+}
+
+#Blogger_News li.image a {
+    margin-top: 1px;
+    line-height: 16px
+}
+
+#Blogger_News li {
+    float: left;
+    width: 179px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_l_bl.gif') left 5px no-repeat;
+    height: 22px;
+    padding-left: 7px;
+    font-family: "돋움"
+}
+
+#Blogger_News li a {
+    color: #242424
+}
+
+#Blogger_News .b {
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+#GameNewsRight #BetaBest_News {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-left: 2px;
+    width: 179px;
+    margin-top: 35px
+}
+
+#BetaBest_News h4 {
+    float: left;
+    height: 24px;
+    width: 79px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltitle_1.gif') left -22px no-repeat;
+    text-indent: -9999em
+}
+
+#BetaBest_News #BB_Tab {
+    clear: both;
+    float: left;
+    display: inline;
+    width: 179px;
+    height: 26px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltab_bata.gif') left -26px no-repeat;
+    text-indent: -9999em
+}
+
+#BetaBest_News #BB_Tab li {
+    float: left;
+    width: 89px;
+    height: 26px;
+    cursor: pointer
+}
+
+#BetaBest_News #BB_Tab #bbtab0.on {
+    display: block;
+    width: 90px;
+    height: 26px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltab_bata.gif') left 0 no-repeat
+}
+
+#BetaBest_News #BB_Tab #bbtab1.on {
+    display: block;
+    width: 90px;
+    height: 26px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltab_bata.gif') -89px 0 no-repeat
+}
+
+#BetaBest_News .BB_list {
+    clear: left;
+    float: left;
+    display: inline;
+    width: 179px;
+    margin-top: 15px
+}
+
+#BetaBest_News .BB_list li {
+    float: left;
+    width: 179px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_l_bl.gif') left 5px no-repeat;
+    height: 22px;
+    padding-left: 7px;
+    font-family: "돋움"
+}
+
+#BetaBest_News .BB_list li a {
+    color: #242424
+}
+
+#BetaBest_News .BB_list .b {
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+#BetaBest_News .line {
+    clear: both;
+    float: left;
+    margin-top: 3px;
+    width: 179px;
+    height: 20px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ldotline.gif') left 5px no-repeat;
+    text-align: right
+}
+
+#GameNewsRight #Secur_News {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-left: 2px;
+    width: 179px;
+    margin-top: 27px
+}
+
+#Secur_News h4 {
+    float: left;
+    height: 24px;
+    width: 79px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltitle_1.gif') left -47px no-repeat;
+    text-indent: -9999em
+}
+
+#Secur_News h4 a {
+    display: block;
+    width: 79px;
+    height: 24px;
+    overflow: hidden
+}
+
+#Secur_News ul {
+    clear: both;
+    float: left;
+    display: inline;
+    width: 179px;
+    border-top: #bfbfde solid 1px;
+    padding-top: 14px
+}
+
+#Secur_News li {
+    float: left;
+    width: 179px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_l_bl.gif') left 5px no-repeat;
+    margin-bottom: 8px;
+    padding-left: 7px;
+    font-family: "돋움"
+}
+
+#Secur_News li a {
+    color: #242424
+}
+
+#Secur_News .b {
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+#GameNewsRight #Hot_gameshopping {
+    clear: both;
+    position: relative;
+    float: left;
+    margin-left: 2px;
+    width: 179px;
+    margin-top: 36px
+}
+
+#Hot_gameshopping h4 {
+    float: left;
+    height: 24px;
+    width: 79px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_ltitle_1.gif') left -72px no-repeat;
+    text-indent: -9999em
+}
+
+#Hot_gameshopping .blank {
+    float: left;
+    margin-top: 4px
+}
+
+#Hot_gameshopping ul {
+    clear: both;
+    float: left;
+    display: inline;
+    width: 179px;
+    border-top: #bfbfde solid 1px
+}
+
+#Hot_gameshopping li {
+    float: left;
+    width: 89px;
+    margin-top: 14px;
+    text-align: center
+}
+
+#Hot_gameshopping li img {
+    margin-bottom: 7px
+}
+
+#Hot_gameshopping li a {
+    letter-spacing: -1px;
+    font-family: "돋움";
+    font-size: 11px;
+    color: #444
+}
+
+#Hot_gameshopping li strong {
+    color: #5968ca;
+    font-weight: normal;
+    line-height: 20px
+}
+
+#GameNewsRight .btn {
+    position: absolute;
+    right: 2px;
+    top: 5px
+}
+
+#GameNewsRight .btn a {
+    display: block;
+    width: 31px;
+    height: 9px;
+    background: url('http://icon.daum-img.net/game/09game/news/t_bt_more.gif') no-repeat;
+    text-indent: -9999em
+}
+
+#GameNews_contents {
+    float: left;
+    position: relative;
+    width: 600px;
+    margin: 34px 0 0 24px;
+    display: inline;
+    border-right: #e1e1e1 solid 1px
+}
+
+#GameNews_contents h3 {
+    width: 120px;
+    height: 22px
+}
+
+#GameNews_contents ul {
+    float: left;
+    display: inline;
+    width: 580px
+}
+
+#GameNews_contents .sublist_1 {
+    padding-top: 12px;
+    border-top: #bfc0de solid 1px
+}
+
+#GameNews_contents .sublist_2 {
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: #ececec solid 1px
+}
+
+#GameNews_contents li {
+    float: left;
+    width: 580px;
+    margin-top: 17px
+}
+
+#GameNews_contents .img {
+    clear: both;
+    float: left;
+    margin-right: 11px;
+    border: #c9c9c9 solid 1px
+}
+
+#GameNews_contents .sub {
+    width: 455px;
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: "돋움";
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+#GameNews_contents .sub a {
+    color: #131b56
+}
+
+#GameNews_contents .cnt {
+    float: left;
+    width: 455px;
+    margin-top: 8px;
+    line-height: 17px;
+    color: #999
+}
+
+#GameNews_contents .cnt a {
+    color: #666
+}
+
+#GameNews_contents .noimg {
+    width: 565px
+}
+
+#GameNews_contents .date {
+    margin-top: 6px;
+    font-family: "돋움";
+    font-size: 11px;
+    color: #999
+}
+
+#GameNews_contents .new_c {
+    color: #8193d1;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: -1px
+}
+
+#GameNews_contents h1 {
+    display: block;
+    width: 580px;
+    float: left;
+    color: #131b56;
+    font-size: 24px;
+    font-family: "돋움";
+    font-weight: bold;
+    border-top: #bfc0de solid 1px;
+    padding-top: 25px
+}
+
+#GameNews_contents .gisa_date {
+    float: left;
+    width: 570px;
+    font-size: 11px;
+    font-family: "돋움";
+    color: #999;
+    letter-spacing: -1px;
+    margin-top: 11px;
+    margin-left: 2px
+}
+
+#GameNews_contents .gisa_date .new_c {
+    color: #8393d1;
+    letter-spacing: -1px
+}
+
+#GameNews_contents .gisa_date em {
+    font-style: normal;
+    font-family: tahoma;
+    font-size: 9px;
+    color: #999;
+    letter-spacing: 0
+}
+
+#GameNews_contents #news_content {
+    float: left;
+    width: 570px;
+    margin-top: 22px;
+    color: #222;
+    font-size: 16px;
+    line-height: 18pt;
+    font-family: "굴림", gulim, sans-serif;
+    word-break: break-all
+}
+
+#GameNews_contents #news_content img {
+    margin: 18px 0 18px 0;
+    word-break: break-all
+}
+
+#GameNews_contents #news_content p {
+    margin-bottom: 25px
+}
+
+#news_content .GS_conZ {
+    width: 568px;
+    margin: 0 0 10px 1px;
+    overflow: hidden;
+    clear: both
+}
+
+#news_content .GS_conZ .ph {
+    position: relative;
+    width: 568px;
+    overflow: hidden
+}
+
+#news_content .GS_conZ .ph img {
+    width: 568px
+}
+
+#news_content .GS_conZ span {
+    position: absolute;
+    display: none;
+    width: 106px;
+    height: 75px;
+    filter: alpha(opacity:60);
+    Opacity: .6;
+    background: url("http://img-media.daum-img.net/media3/common/i_zoom.gif");
+    cursor: pointer
+}
+
+#news_content .GS_conZ .txt {
+    margin: 8px 4px;
+    font: normal 12px/18px 돋움, Dotum, AppleGothic, serif;
+    color: #616686
+}
+
+#media_Law {
+    width: 568px;
+    margin-top: 28px;
+    font-size: 12px;
+    font-family: 굴림;
+    color: #ad8c5a;
+    line-height: 20px
+}
+
+#slide {
+    float: left;
+    position: relative;
+    width: 580px;
+    height: 221px;
+    margin-top: 140px;
+    background: url("http://img-media.daum-img.net/media3/view/photo_bg.gif") no-repeat;
+    text-align: left
+}
+
+#slide h3 {
+    background: 0;
+    color: #333;
+    font-family: 굴림, gulim, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 11px 0 0 14px;
+    text-indent: 0;
+    width: 150px
+}
+
+#slide a {
+    color: #333
+}
+
+#slide .load {
+    background: #000;
+    color: #FFF;
+    width: 300px;
+    font: bold 14px;
+    padding: 20px 17px;
+    top: 40px;
+    left: 140px;
+    filter: alpha(opacity:40);
+    Opacity: .4;
+    text-align: center;
+    position: relative;
+    z-index: 100
+}
+
+#slide .bottom {
+    height: 2px;
+    overflow: hidden;
+    background: url("http://img-media.daum-img.net/media3/common/box_photo1_b.gif") no-repeat;
+    margin-bottom: 5px
+}
+
+#slide h5 {
+    font: bold 12px 굴림, gulim, sans-serif;
+    color: #333;
+    padding: 11px 0 0 14px;
+    background: 0
+}
+
+#slide .cnt {
+    position: absolute;
+    top: 11px;
+    right: 64px;
+    font: 10px tahoma;
+    color: #656565;
+    text-align: left
+}
+
+#slide .btn {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    height: 16px;
+    cursor: pointer
+}
+
+#slide .btn img {
+    margin: 0 1px
+}
+
+#slide .Lwrap {
+    position: relative;
+    height: 188px;
+    overflow: hidden
+}
+
+#slide .L {
+    position: absolute;
+    width: 2000px
+}
+
+#slide .L li {
+    position: relative;
+    float: left;
+    margin: 0;
+    width: 145px;
+    height: 154px;
+    text-align: center;
+    padding-top: 2px;
+    border-right: 0
+}
+
+#slide .L .ph {
+    width: 145px;
+    height: 135px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+#slide .L .ph img {
+    vertical-align: middle
+}
+
+#slide .L .ph img.trick {
+    width: 0;
+    height: 135px;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 0
+}
+
+#slide .L .txt {
+    width: 120px;
+    margin: 0 auto;
+    line-height: 16px;
+    overflow: hidden;
+    font-family: 굴림, gulim, sans-serif
+}
+
+#slide .L .on img {
+    border: 3px solid #8593f8
+}
+
+#slide .L .play {
+    position: absolute;
+    display: block;
+    left: 17px;
+    top: 90px;
+    cursor: pointer;
+    width: 14px;
+    height: 15px;
+    background: url("http://img-media.daum-img.net/media3/common/i_play.gif") no-repeat
+}
+
+#GS_extrebtn {
+    clear: both;
+    padding: 7px 11px 0 0;
+    _padding: 7px 11px 0 0;
+    text-align: right
+}
+
+#GS_extrebtn .before {
+    padding-left: 8px;
+    background: url(http://img-media.daum-img.net/media3/view/bullet_left.gif) 0 2px no-repeat
+}
+
+#GS_extrebtn .up {
+    padding-left: 8px;
+    background: url(http://img-media.daum-img.net/media3/view/btn_up.gif) 0 2px no-repeat;
+    margin-right: 8px
+}
+
+#GS_extrebtn a {
+    font: normal 11px 돋움, Dotum, AppleGothic, serif;
+    color: #666;
+    letter-spacing: -1px
+}
+
+#slide .GS_slide_Preview {
+    position: relative;
+    top: 9px;
+    _top: 7px;
+    width: 580px;
+    z-index: 20;
+    display: none
+}
+
+#slide .GS_slide_Preview .box {
+    width: 580px;
+    height: 412px;
+    position: absolute;
+    bottom: 0;
+    background-color: #f5f5f5;
+    border: 1px #c8cace solid
+}
+
+#slide .GS_slide_Preview .box img {
+    z-index: 20;
+    filter: alpha(opacity=0);
+    Opacity: 0
+}
+
+#slide .GS_slide_Preview .box td {
+    padding: 10px
+}
+
+#slide .GS_slide_Preview .box .line {
+    _height: 1%;
+    position: relative
+}
+
+#slide #GSP_bg {
+    width: 0;
+    height: 59px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    Opacity: .7
+}
+
+#slide #GSP_txt {
+    width: 0;
+    height: 59px;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+#slide #GSP_txt td {
+    font: bold 12px 굴림, gulim, sans-serif;
+    color: #fff;
+    line-height: 1.5em;
+    text-align: center
+}
+
+#GS_slide li .txt {
+    height: 30px;
+    overflow: hidden
+}
+
+#FSub_contents.event,
+#FSub_contents.cs {
+    padding-top: 20px
+}
+
+#FSub_contents #event_box {
+    margin: 0 auto;
+    width: 978px;
+    background: url('http://icon.daum-img.net/game/09game/client/g_imgbox_mid.gif') repeat-y;
+    text-align: left;
+    padding-bottom: 70px
+}
+
+#event_box #event_title {
+    float: left;
+    position: relative;
+    width: 978px;
+    background: url('http://icon.daum-img.net/game/09game/newgnb/imgbox_g_top.gif') no-repeat;
+    padding-top: 34px;
+    height: 25px
+}
+
+#event_box #event_title h4.e1 {
+    font-size: 8px;
+    float: left;
+    display: inline;
+    width: 126px;
+    margin-left: 27px;
+    margin-bottom: 7px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/event/title_gameevent.gif') left 0 no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #event_title p.e1 {
+    float: left;
+    width: 105px;
+    height: 15px;
+    margin-bottom: 7px;
+    background: url('http://icon.daum-img.net/game/09game/event/title_gameevent_1.gif') -124px 0 no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #event_title p.e1 a {
+    display: block;
+    width: 105px;
+    height: 15px;
+    overflow: hidden
+}
+
+#event_box #event_title h4.e2 {
+    font-size: 8px;
+    float: left;
+    width: 124px;
+    margin-bottom: 7px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/event/title_gameevent.gif') -124px -15px no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #event_title p.e2 {
+    float: left;
+    display: inline;
+    width: 124px;
+    height: 15px;
+    margin-left: 27px;
+    margin-bottom: 7px;
+    background: url('http://icon.daum-img.net/game/09game/event/title_gameevent_1.gif') 0 -15px no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #event_title p.e2 a {
+    display: block;
+    width: 105px;
+    height: 15px;
+    overflow: hidden
+}
+
+#event_box .event_line {
+    float: left;
+    width: 930px;
+    margin-left: 24px;
+    display: inline;
+    font-size: 0;
+    height: 1px;
+    margin-bottom: 14px;
+    border-top: #bfc0de solid 1px
+}
+
+#event_box .event_list1 {
+    clear: both;
+    float: left;
+    display: inline;
+    margin-left: 24px;
+    width: 930px;
+    border-top: #bfc0de solid 1px;
+    padding-bottom: 19px;
+    background: url('http://icon.daum-img.net/game/09game/event/img_g_eventtopln.gif') left bottom no-repeat
+}
+
+#event_box .event_list1 ul {
+    margin-top: 14px;
+    margin-left: 5px
+}
+
+#event_box .event_list1 li {
+    float: left;
+    width: 300px;
+    height: 181px;
+    position: relative;
+    margin-left: 10px
+}
+
+#event_box .event_list1 li.fir {
+    margin-left: 0
+}
+
+#event_box .event_list1 li .ev_more {
+    position: absolute;
+    top: 118px;
+    left: 211px;
+    background: url('http://icon.daum-img.net/game/09game/event/bt_g_event_detailv.gif') no-repeat;
+    width: 77px;
+    height: 19px;
+    cursor: pointer
+}
+
+#event_box .event_list1 li p {
+    position: absolute;
+    top: 159px;
+    background: url('http://icon.daum-img.net/game/09game/event/ico_g_event_r_arrow.gif') 9px 4px no-repeat;
+    padding-left: 17px;
+    color: #858ad2;
+    font-family: 돋움;
+    font-size: 11px
+}
+
+#event_box .event_list1 li strong {
+    font-family: tahoma
+}
+
+#event_box .event_list2 {
+    clear: both;
+    float: left;
+    display: inline;
+    margin-left: 24px;
+    width: 930px
+}
+
+#event_box .event_list2 ul {
+    float: left;
+    margin-left: 5px;
+    width: 920px
+}
+
+#event_box .event_list2 li {
+    float: left;
+    border-bottom: #f6f6fb solid 1px;
+    padding-top: 9px
+}
+
+#event_box .event_list2 li.fir {
+    border: 0
+}
+
+#event_box .event_list2 dl {
+    float: left;
+    width: 460px
+}
+
+#event_box .event_list2 dt {
+    float: left;
+    position: relative;
+    width: 163px;
+    height: 121px;
+    background: url('http://icon.daum-img.net/game/09game/event/bg_g_event_s.gif') no-repeat
+}
+
+#event_box .event_list2 dt img {
+    position: absolute;
+    top: 8px;
+    left: 9px
+}
+
+#event_box .event_list2 dd {
+    float: left;
+    width: 288px
+}
+
+#event_box .event_list2 dd .sub {
+    width: 280px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "돋움";
+    color: #131656;
+    font-weight: bold
+}
+
+#event_box .event_list2 dd .sub a {
+    color: #131656
+}
+
+#event_box .event_list2 dd .cnt {
+    width: 280px;
+    margin-top: 10px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #646464
+}
+
+#event_box .event_list2 dd .cnt a {
+    color: #646464
+}
+
+#event_box .event_list2 dd .date {
+    margin-top: 6px;
+    background: url('http://icon.daum-img.net/game/09game/event/ico_g_event_r_arrow.gif') 2px 2px no-repeat;
+    padding-left: 9px;
+    color: #858ad2;
+    font-family: 돋움;
+    font-size: 11px
+}
+
+#event_box #cs_title {
+    float: left;
+    position: relative;
+    width: 978px;
+    background: url('http://icon.daum-img.net/game/09game/newgnb/imgbox_g_top.gif') no-repeat;
+    padding-top: 34px;
+    height: 25px
+}
+
+#event_box #cs_title h4 {
+    font-size: 8px;
+    float: left;
+    display: inline;
+    width: 142px;
+    margin-left: 27px;
+    margin-bottom: 7px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/client/g_title_1.gif') left 0 no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #cs_title p {
+    font-size: 11px;
+    font-family: "돋움";
+    letter-spacing: -1px;
+    color: #848484;
+    padding-top: 4px
+}
+
+#event_box #cs_box {
+    float: left;
+    width: 930px;
+    margin-left: 24px;
+    display: inline;
+    background: url('http://icon.daum-img.net/game/09game/client/g_bgbox_1.gif') no-repeat;
+    height: 164px
+}
+
+#event_box #cs_box ul {
+    padding-left: 9px
+}
+
+#event_box #cs_box li {
+    width: 183px;
+    height: 164px;
+    float: left
+}
+
+#event_box #cs_box li a {
+    display: block;
+    width: 164px;
+    height: 140px;
+    text-indent: -9999em;
+    overflow: hidden;
+    margin-left: 12px
+}
+
+#event_box #cs_box li.cs1 {
+    background: url(https://t1.kakaocdn.net/gamepub/top/pc/cs01_140728.jpg) center 8px no-repeat
+}
+
+#event_box #cs_box li.cs2 {
+    background: url(http://icon.daum-img.net/game/09game/client/g_img_idpw.gif) center 8px no-repeat
+}
+
+#event_box #cs_box li.cs3 {
+    background: url(http://icon.daum-img.net/game/09game/client/g_img_name.gif) center 8px no-repeat
+}
+
+#event_box #cs_box li.cs4 {
+    background: url(http://icon.daum-img.net/game/09game/client/g_img_log.gif) center 8px no-repeat
+}
+
+#event_box #cs_box li.cs5 {
+    background: url(http://icon.daum-img.net/game/09game/client/g_img_cash.gif) center 8px no-repeat
+}
+
+#event_box #cs_link {
+    float: left;
+    position: relative;
+    width: 978px;
+    margin-top: 47px;
+    height: 25px
+}
+
+#event_box #cs_link h4 {
+    font-size: 8px;
+    float: left;
+    display: inline;
+    width: 176px;
+    margin-left: 27px;
+    margin-bottom: 7px;
+    height: 15px;
+    background: url('http://icon.daum-img.net/game/09game/client/g_title_2.gif') left 0 no-repeat;
+    text-indent: -9999em
+}
+
+#event_box #cs_link p {
+    font-size: 11px;
+    font-family: "돋움";
+    letter-spacing: -1px;
+    color: #848484;
+    padding-top: 4px
+}
+
+#event_box #cs_linklist {
+    width: 922px;
+    float: left;
+    margin-left: 28px;
+    display: inline;
+    margin-top: 7px
+}
+
+#event_box #cs_linklist li {
+    float: left;
+    width: 298px;
+    height: 91px;
+    background: url('http://icon.daum-img.net/game/09game/client/g_bgbox_sumnel.gif') no-repeat;
+    margin-bottom: 13px;
+    margin-right: 14px
+}
+
+#event_box #cs_linklist li.mg3 {
+    margin-right: 0
+}
+
+#event_box #cs_linklist dd,
+#event_box #cs_linklist dt {
+    float: left
+}
+
+#event_box #cs_linklist dl {
+    width: 277px;
+    margin-left: 15px;
+    margin-top: 13px
+}
+
+#event_box #cs_linklist dt {
+    width: 110px
+}
+
+#event_box #cs_linklist strong {
+    display: block;
+    font-family: "돋움";
+    margin-top: 2px;
+    letter-spacing: -1px
+}
+
+#event_box #cs_linklist p.call {
+    margin-top: 6px;
+    font-family: "돋움";
+    font-size: 11px;
+    color: #717171;
+    letter-spacing: -1px
+}
+
+#event_box #cs_linklist p.call b {
+    color: #858ad2;
+    font-family: tahoma;
+    font-size: 11px
+}
+
+#event_box #cs_linklist p.qna {
+    margin-top: 8px
+}
+
+#event_box #cs_linklist p.blank {
+    height: 15px
+}
+
+#Day_area {
+    float: left;
+    width: 643px;
+    height: 120px;
+    margin-top: 34px;
+    background: url(http://icon.daum-img.net/game/09game/todaygame/img_bgbox01.gif) no-repeat
+}
+
+#Day_area .day_left {
+    float: left;
+    position: relative;
+    width: 217px;
+    height: 115px;
+    background: red;
+    margin: 3px 0 0 3px;
+    display: inline;
+    background: url(http://icon.daum-img.net/game/09game/todaygame/img_bgbox02.gif) no-repeat
+}
+
+#Day_area .day_left p.g_year {
+    position: absolute;
+    margin: 23px 0 0 35px;
+    width: 48px;
+    height: 16px
+}
+
+#Day_area .day_left p.g_month {
+    position: absolute;
+    margin: 23px 0 0 103px;
+    width: 24px;
+    height: 16px
+}
+
+#Day_area .day_left p.g_day {
+    position: absolute;
+    margin: 23px 0 0 145px;
+    width: 24px;
+    height: 16px
+}
+
+#Day_area .day_left p.g_btnarea {
+    position: absolute;
+    margin: 84px 0 0 35px;
+    width: 157px;
+    height: 30px
+}
+
+#Day_area .day_left button {
+    float: left;
+    height: 30px;
+    background: url(http://icon.daum-img.net/game/09game/todaygame/bt_arrow02.gif) no-repeat;
+    border: 0;
+    text-indent: -9999em
+}
+
+#Day_area .day_left button#btn_prev {
+    width: 50px;
+    background-position: 0 0
+}
+
+#Day_area .day_left button#btn_today {
+    width: 57px;
+    background-position: -50px 0
+}
+
+#Day_area .day_left button#btn_next {
+    width: 50px;
+    background-position: -107px 0
+}
+
+#Day_area .day_right {
+    float: left;
+    width: 419px;
+    margin-top: 4px;
+    margin-left: 1px
+}
+
+#Day_area .day_right li {
+    float: left;
+    width: 38px;
+    height: 38px;
+    text-indent: -99999em
+}
+
+#Day_area .day_right li img {
+    margin-left: 1px
+}
+
+#Day_area .day_right li.ten {
+    width: 76px
+}
+
+#Day_area .day_right li.over,
+#Day_area .day_right li.on {
+    cursor: pointer
+}
+
+#Day_area .day_right #num_1 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num1_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_1.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num1_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_1.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num1_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_1.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num1_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_2 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num2_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_2.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num2_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_2.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num2_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_2.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num2_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_3 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num3_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_3.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num3_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_3.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num3_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_3.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num3_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_4 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num4_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_4.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num4_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_4.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num4_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_4.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num4_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_5 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num5_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_5.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num5_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_5.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num5_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_5.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num5_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_6 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num6_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_6.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num6_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_6.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num6_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_6.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num6_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_7 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num7_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_7.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num7_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_7.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num7_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_7.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num7_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_8 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num8_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_8.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num8_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_8.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num8_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_8.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num8_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_9 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num9_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_9.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num9_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_9.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num9_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_9.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num9_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_10 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num10_off.gif) no-repeat;
+    width: 76px
+}
+
+#Day_area .day_right #num_10.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num10_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_10.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num10_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_10.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num10_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_11 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num11_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_11.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num11_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_11.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num11_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_11.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num11_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_12 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num12_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_12.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num12_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_12.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num12_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_12.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num12_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_13 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num13_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_13.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num13_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_13.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num13_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_13.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num13_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_14 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num14_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_14.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num14_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_14.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num14_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_14.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num14_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_15 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num15_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_15.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num15_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_15.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num15_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_15.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num15_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_16 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num16_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_16.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num16_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_16.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num16_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_16.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num16_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_17 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num17_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_17.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num17_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_17.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num17_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_17.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num17_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_18 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num18_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_18.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num18_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_18.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num18_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_18.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num18_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_19 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num19_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_19.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num19_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_19.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num19_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_19.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num19_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_20 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num20_off.gif) no-repeat;
+    width: 76px
+}
+
+#Day_area .day_right #num_20.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num20_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_20.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num20_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_20.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num20_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_21 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num21_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_21.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num21_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_21.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num21_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_21.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num21_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_22 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num22_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_22.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num22_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_22.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num22_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_22.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num22_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_23 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num23_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_23.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num23_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_23.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num23_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_23.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num23_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_24 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num24_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_24.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num24_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_24.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num24_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_24.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num24_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_25 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num25_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_25.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num25_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_25.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num25_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_25.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num25_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_26 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num26_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_26.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num26_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_26.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num26_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_26.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num26_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_27 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num27_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_27.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num27_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_27.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num27_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_27.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num27_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_28 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num28_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_28.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num28_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_28.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num28_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_28.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num28_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_29 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num29_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_29.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num29_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_29.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num29_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_29.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num29_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_30 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num30_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_30.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num30_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_30.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num30_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_30.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num30_sel.gif) no-repeat
+}
+
+#Day_area .day_right #num_31 {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num31_off.gif) no-repeat
+}
+
+#Day_area .day_right #num_31.over {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num31_over.gif) no-repeat
+}
+
+#Day_area .day_right #num_31.on {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num31_on.gif) no-repeat
+}
+
+#Day_area .day_right #num_31.sel {
+    background: url(http://icon.daum-img.net/game/09game/todaygame/num31_sel.gif) no-repeat
+}
+
+.g_btnarea button {
+    cursor: pointer
+}
+
+.wrap_rate {
+    float: left;
+    margin-left: 23px
+}
+
+.wrap_rate .box_rate {
+    float: left;
+    width: 38px;
+    height: 46px;
+    background: url("https://t1.kakaocdn.net/gamepub/flashgame/rate_all.png")
+}
+
+.wrap_rate .tbl_rate {
+    float: left;
+    margin-left: 6px;
+    background: #039540
+}
+
+.wrap_rate th,
+.wrap_rate td {
+    font-size: 11px;
+    font-family: '맑은 고딕', 'malgun gothic', '돋움', 'dotum', 'sans-serif'
+}
+
+.wrap_rate th {
+    height: 25px;
+    color: #abd6bd;
+    font-weight: normal
+}
+
+.wrap_rate td {
+    height: 21px;
+    vertical-align: top;
+    color: #fff
+}

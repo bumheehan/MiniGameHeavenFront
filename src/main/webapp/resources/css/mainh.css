@@ -21,7 +21,7 @@ a{
 .lsection {
     width: 200px;
     height: 400px;
-    background: gray;
+    background: rgba( 218, 169, 169, 0.805 );
     display: none;
     position: absolute;
     top: 150px;
@@ -30,7 +30,7 @@ a{
 .rsection {
     width: 200px;
     height: 400px;
-    background: gray;
+    background: rgba( 218, 169, 169, 0.805 );
     display: none;
     position: absolute;
     top: 150px;

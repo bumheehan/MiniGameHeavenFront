@@ -14,7 +14,16 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/cont.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+	<style type="text/css">
+	iframe{
+		display:block;
+		padding:0px;
+		margin:0px;
+	}
+	.msection{
+		top:0px;
+	}
+	</style>
 </head>
 
 <body>
@@ -33,6 +42,7 @@
         <div class="msection">
 
   <iframe src="${pageContext.request.contextPath}/resources/gamelist/colorgame/color3.jsp" frameborder=0 scrolling="no" width="100%" height = "500px"></iframe>
+  <iframe src="${pageContext.request.contextPath}/comment" frameborder=0 scrolling="no" width="100%" height ="1000px" ></iframe>
 
         </div>
     </div>
