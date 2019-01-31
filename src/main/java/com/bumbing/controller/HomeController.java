@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -20,15 +21,13 @@ import com.bumbing.mapper.TimeMapper;
 @Controller
 public class HomeController {
 	
-	@Autowired
-	TimeMapper timeMapper;
-	
+	@RequestMapping(value = "/{menu}", method = RequestMethod.GET)
+	public String home(@PathVariable String menu) {
+		return menu;
+	}
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		
-		model.addAttribute("serverTime", timeMapper.getTime2() );
-		
-		return "home";
+	public String home() {
+		return "index";
 	}
 	
 }

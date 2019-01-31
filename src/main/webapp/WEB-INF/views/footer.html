@@ -1,0 +1,26 @@
+    <footer>
+        <ul>
+            <li class="footer-icon"><a href="#"><i class="fab fa-google-play"></i></a></li>
+            <li class="footer-icon"><a href="#"><i class="fab fa-app-store"></i></a></li>
+            <li class="footer-icon"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="footer-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="footer-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="footer-logo">ⓒ AppLab Corp.</li>
+        </ul>
+
+    </footer>
+
+
+    <script type="text/javascript">
+function footer(){
+
+    //footer
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    if ((scrollHeight - scrollPosition) / scrollHeight < 0.001) {
+        $("footer").slideDown();
+    } else {
+        $("footer").slideUp();
+    }
+}
+</script>

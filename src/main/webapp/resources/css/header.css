@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background: rgba(66,64,65,1);
+    top:0;
+}
+nav{
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    width: 800px;
+    height: 100px;
+    left: 0;
+    right: 0;
+     margin-left: auto;
+    margin-right: auto;
+}
+.menul{
+    position: absolute;
+    left:0;
+    top:0;
+    margin: 0 auto;
+    width: 37.5%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+}
+.menul li{
+
+}
+.menur{
+    position: absolute;
+    right:0;
+    top:0;
+    margin: 0 auto;
+    width: 37.5%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.menur li{
+
+}
+.menul li a,.menur li a{
+    font-size: 15px;
+    color: #f4fbfb;
+}
+.menul li a:hover,.menur li a:hover{
+    font-size: 20px;
+    color: #fc7f75;
+}
+.logotext{
+    position: absolute;
+    top:7px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition:  1s;
+    width: 200px;
+
+}
+
+.logotext:hover{
+    transform: scale(1.1);
+    background: #fc7f75;
+}
+.headerdummy {
+    height: 100px;
+    background: #fff;
+}
+
+
+@media screen and (min-width:720px) and (max-width:1000px){
+    nav{
+        width: 500px;
+    }
+    .menur{
+        width: 50%;
+    }
+    .menul{
+        width:50%;
+    }
+    .logotext{
+        display: none;
+    }
+
+}
