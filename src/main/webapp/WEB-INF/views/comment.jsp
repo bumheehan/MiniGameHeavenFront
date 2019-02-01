@@ -16,8 +16,8 @@
 <body>
         <div id="CommentArea_100">
             <h3>100자평쓰기</h3>
-            <p>총 <strong>7795</strong>개</p>
-            <input type="hidden" name="commentTotalCount" value="7795" />
+            <p>총 <strong>2</strong>개</p>
+            <input type="hidden" name="commentTotalCount" value="2" />
             <!-- 꼬리말 입력 매크로 -->
             <!--  꼬릿말 입력 Start -->
             <form name="writeCommentForm" action="commentWrite" method="post" onsubmit="return gaia.commentWrite.submitForm(this);">

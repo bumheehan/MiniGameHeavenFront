@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>v0.0.2</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -18,100 +19,54 @@
         body{
             background: linear-gradient(to bottom, #c8f3fc,#ddf8fa) fixed;
         }
-        header {
-            position: fixed;
-            background: #424041;
-            height: 100px;
-            width: 100%;
-            top: 0px;
-            left: 0px;
-            transition: all 0.5s;
+        span{
+            white-space: nowrap;
         }
-
-        .h{
-            font-family: 'Press Start 2P', cursive;
-            position: absolute;
-            font-size: 30px;
-            left: 100px;
-            color: #f4fbfb;
-            top: 30px;
-        }
-        .h2{
-            font-family: 'Press Start 2P', cursive;
-            font-size: 15px;
-            position: absolute;
-            right: 10px;
-            top: 45px;
-            color: #f4fbfb;
-            text-decoration: none;
-        }
-        form {
-
+        .login_box{
+            width: 400px;
+            height: 300px;
+            padding-top: 50px;
             margin-left: auto;
-            margin: auto;
-            margin-top: 200px;
-            text-align: center;
+            margin-right: auto;
         }
-
-       .list_join {
-            margin: 16px 20px 0;
+        .list_set{
+            display: flex;
+            height: 80px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-
-
-        .wrap_join {
-            margin-top: 5px;
-            padding-top: 10px;
-            border-top: 1px solid #000;
-        }
-
-
-        .wrap_join .list_set {
-            margin-top: 30px;
-
-        }
-
-        .wrap_join .list_set2 {
-            margin-top: 10px
-        }
-
-        .wrap_join .list_set:after {
-            display: block;
-            height: 0;
-            font-size: 0;
-            clear: both;
-            visibility: hidden;
-            content: '';
-        }
-
-
-        .list_set .txt_set {
-            float: left;
+        .info_item{
             width: 256px;
-        }
-
-
-        .list_set .txt_set .info_item {
-            position: relative;
-            left: 260%;
-            bottom: 20px;
-            width: 256px;
-            height: 36px;
             padding: 0 13px;
             border: 1px solid #cfcfcf;
             border-radius: 3px;
-                font-size: 18px;
+            font-size: 18px;
         }
-
-        .list_set .txt_set .info_item2 {
-            width: 115px
+        .list_set2{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
         }
+        .list_set3{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .emailchk{
+            border-top: #ff7373 1px solid;
+            color :#ff7373;
+        }
+        .pwdchk{
 
-        .info_item .tf_join {
-            position: absolute;
-            top: 0;
-            left: 13px;
-            right: 13px;
+        }
+        .tf_join {
             width: 256px;
             border: 0 none;
             height: 36px;
@@ -119,17 +74,6 @@
             line-height: 36px;
             z-index: 10
         }
-
-        .info_item2 .tf_join {
-            width: 116px
-        }
-
-        .list_set .txt_set .info_id,
-        .info_id .tf_join {
-            width: 155px
-        }
-
-
         .wrap_btn {
             text-align: center;
             height: auto;
@@ -148,70 +92,65 @@
             background-color: #fc7f75;
             color: #1e1e1e
         }
-        footer{
-            position: absolute;
-            bottom: 0;
-            height: 100px;
-            background: #424041;
-            width: 100%;
-            top: auto;
 
-        }
         .aa{
             text-decoration: none;
             color: #424041;
+        }
+
+        @media screen and (max-width:400px){
+            .login_box{
+                width: 100%;
+            }
+            .list_set{
+                width: 100%;
+            }
+            .info_item{
+                width:80%;
+            }
+             .wrap_btn .btn_next {
+                 margin-top: 20px;
+                 width: 80%;
+            }
         }
     </style>
 
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <h class="h">Sign In</h>
-            <a href="#" class="h2">Main</a>
-        </div>
-    </header>
-    <div class="wrap_join">
-        <form name="signin" action="#" method="post">
 
-            <dl class="list_set">
+    <div class="login_box">
+        <form name="loginform" action="#" method="post">
+            <div class="list_set">
+                <div class="info_item">
+                    <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" movefocus="true" name="email" placeholder="이메일" send="true" type="text" />
+                    <div class="emailchk">a</div>
+                </div>
 
-                <dd class="txt_set">
-                    <div class="info_item">
-                        <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" movefocus="true" name="email" placeholder="이메일" send="true" type="text">
-                    </div>
-                </dd>
-            </dl>
-            <dl class="list_set list_set2">
+                <div class="info_item">
+                    <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" name="password" placeholder="비밀번호" send="true" type="password" />
+                    <div class="pwdchk">a</div>
+                </div>
 
-                <dd class="txt_set">
-                    <div class="info_item">
-                        <input autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" moveFocus="true" name="password" placeholder="비밀번호" send="true" type="password" />
-                    </div>
-
-            </dl>
-            <dl class="list_set list_set2">
-
-            <div>
-                <input type="checkbox" id="login_chk" name="chk" onchange="#">
-                <label for="login_chk">로그인 상태 유지</label>
             </div>
-            </dl>
-            <dl class="list_set list_set2">
+
+            <div class="list_set2">
+                <input type="checkbox" id="login_chk" name="chk" onchange="#">
+                <span for="login_chk">로그인 상태 유지</span>
+            </div>
+            <div class="list_set3">
                 <span><a href="#" class="aa">회원가입</a></span>
                 <span>|</span>
                 <span><a href="#" class="aa">이메일찾기</a></span>
                 <span>|</span>
                 <span><a href="#" class="aa">비밀번호찾기</a></span>
-            </dl>
+            </div>
 
             <div class="wrap_btn">
                 <button type="#" class="disabled btn_next submit">로그인</button>
             </div>
         </form>
     </div>
-    <footer></footer>
 </body>
 
 </html>

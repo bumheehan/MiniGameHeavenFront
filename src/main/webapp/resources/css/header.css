@@ -95,3 +95,18 @@ nav{
     }
 
 }
+@media screen and (max-width:720px){
+    nav{
+        width: 500px;
+    }
+    .menur{
+        width: 50%;
+    }
+    .menul{
+        width:50%;
+    }
+    .logotext{
+        display: none;
+    }
+
+}

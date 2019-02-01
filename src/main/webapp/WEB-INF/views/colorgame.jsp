@@ -6,6 +6,8 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/mainh.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/slider.css">

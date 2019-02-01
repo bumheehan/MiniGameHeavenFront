@@ -8,13 +8,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Cute+Font');
+        @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
         *{
             font-family: 'Cute Font', cursive;
             font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to bottom, #c8f3fc,#ddf8fa) fixed;
         }
         header {
             position: fixed;
-            background: linear-gradient(to bottom, #475884, #b9afca) fixed;
+            background: #424041;
             height: 100px;
             width: 100%;
             top: 0px;
@@ -23,17 +29,27 @@
         }
 
         .h{
+            font-family: 'Press Start 2P', cursive;
             position: absolute;
-            font-size: 80px;
+            font-size: 30px;
             left: 100px;
             color: #f4fbfb;
+            top: 30px;
         }
-
+        .h2{
+            font-family: 'Press Start 2P', cursive;
+            font-size: 15px;
+            position: absolute;
+            right: 10px;
+            top: 45px;
+            color: #f4fbfb;
+            text-decoration: none;
+        }
         form {
             width: 840px;
             margin-left: auto;
             margin: auto;
-            margin-top: 120px;
+            margin-top: 160px;
         }
 
        .list_join {
@@ -74,7 +90,7 @@
             font-size: 15px;
             font-weight: bold;
             letter-spacing: -1px;
-            color: #475884;
+            color: #424041;
         }
 
         .list_set .txt_set {
@@ -86,7 +102,7 @@
             float: left;
             width: 100%;
             margin-top: 6px;
-            color: #475884;
+            color: #424041;
             letter-spacing: -1px
         }
 
@@ -188,10 +204,18 @@
             border-radius: 3px;
             font-size: 16px;
             line-height: 18px;
-            background-color: #b9afca;
+            background-color: #fc7f75;
             color: #1e1e1e
         }
+        footer{
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            background: #424041;
+            width: 100%;
+            top: auto;
 
+        }
     </style>
     <script type="text/javascript">
         function selEmail(email) {
@@ -228,6 +252,7 @@
     <header>
         <div class="head">
             <h class="h">Sign Up</h>
+            <a href="#" class="h2">Main</a>
         </div>
     </header>
     <div class="wrap_join">
@@ -318,6 +343,7 @@
             </div>
         </form>
     </div>
+    <footer></footer>
 </body>
 
 </html>
