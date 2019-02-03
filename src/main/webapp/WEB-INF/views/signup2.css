@@ -43,7 +43,7 @@ a{
     display: block;
     width: 200px;
     position: absolute;
-    top:430px;
+    top:400px;
     left:50%;
     transform: translateX(150px)
 }
@@ -52,7 +52,7 @@ a{
     font-size: 70px;
     white-space: nowrap;
     margin-bottom: 50px;
-    te
+
 }
         .login_box{
             position: relative;
@@ -78,35 +78,29 @@ a{
             margin-bottom: 15px;
 
         }
-        .list_set2{
-            margin-top: 20px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: nowrap;
 
+        .emailchk1{
+            font-family:   'Lucida Sans Unicode',Sans-Serif;
+            border-top: #ff7373 1px solid;
+            color :#ff7373;
+            display: block;
+            font-size: 0.8rem;
         }
-
-        .list_set3{
-            margin-left: 30px;
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: nowrap;
+.emailchk2{
+            font-family:   'Lucida Sans Unicode',Sans-Serif;
+            border-top: #ff7373 1px solid;
+            color :#ff7373;
+            display: block;
+            font-size: 0.8rem;
         }
-        .list_set4{
-            margin-top: 20px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: nowrap;
+.namechk1{
+            font-family:   'Lucida Sans Unicode',Sans-Serif;
+            border-top: #ff7373 1px solid;
+            color :#ff7373;
+            display: block;
+            font-size: 0.8rem;
         }
-        .emailchk{
+.namechk2{
             font-family:   'Lucida Sans Unicode',Sans-Serif;
             border-top: #ff7373 1px solid;
             color :#ff7373;
@@ -114,6 +108,13 @@ a{
             font-size: 0.8rem;
         }
         .pwdchk{
+            font-family:   'Lucida Sans Unicode',Sans-Serif;
+            border-top: #ff7373 1px solid;
+            color :#ff7373;
+            display: block;
+            font-size: 0.8rem;
+        }
+.pwdcchk{
             font-family:   'Lucida Sans Unicode',Sans-Serif;
             border-top: #ff7373 1px solid;
             color :#ff7373;
@@ -138,7 +139,7 @@ a{
             height: auto;
         }
         .wrap_btn .btn_next:hover {
-            background-color: #FF6656;
+            background-color: #48E68B;
         }
         .wrap_btn .btn_next:active {
           transform: translate(0px, 5px);
@@ -154,9 +155,10 @@ a{
             border-radius: 3px;
             font-size: 16px;
             line-height: 18px;
-            background-color: #e74c3c;
+            background-color: #2ecc71;
             color: #1e1e1e;
-            box-shadow: 0px 5px 0px 0px #CE3323;
+            box-shadow: 0px 5px 0px 0px #15B358;
+            text-align: center;
         }
 
         @media screen and (max-width:400px){
