@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="lodingback"><img src="../../resources/res/loading.gif" alt="" class="loading"></div>
+    <div class="user_box">
+        <div class="logintxt">PROFILE</div>
+        <div class="prof_box">
+            <div class="pic_box">
+                <div><br />
+                    <span class="sub">&nbsp;
+                    </span>
+
+                </div>
+            </div>
+            <div class="info_box">
+                <div>
+
+                    <div class="inputitem">
+                        <label for="">NAME:\></label>
+                        <input id="nameinput" autocapitalize="off" autocomplete="off" autocorrect="off" class="p_input" maxlength="32" movefocus="true" name="name" placeholder="NAME" send="true" />
+
+                    </div>
+                    <div class="inputitem">
+                        <label for="">PWD:\></label>
+                        <input id="pwdinput" autocapitalize="off" autocomplete="off" autocorrect="off" class="p_input" maxlength="32" movefocus="true" name="pwd" placeholder="PASSWORD" send="true" />
+
+                    </div>
+                    <div class="inputitem">
+                        <label for="">PWDCHK:\></label>
+                        <input id="pwdcinput" autocapitalize="off" autocomplete="off" autocorrect="off" class="p_input" maxlength="32" movefocus="true" name="pwd" placeholder="PASSWORD CHECK" send="true" />
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="info_box2">
+                <div>
+                    <div class="inputitem">
+                        <label for="">ABOUT_YOU:\></label>
+                        <textarea id="abtinput" class="t_input"
+                        name="abt" placeholder="Introduce Yourself"
+                        cols="50" rows="4">
+
+                       </textarea>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        let error = false;
+
+
+
+        let ta = document.querySelector("#abtinput");
+
+        ta.addEventListener("keyup",function(){
+            console.log("dd");
+             if(ta.value.length>300){
+            alert("300자로 제한");
+            ta.value=ta.value.substr(0,300);
+        }
+
+
+        })
+
+
+
+        if (!error) $(".lodingback").hide();
+    });
+</script>
+</html>

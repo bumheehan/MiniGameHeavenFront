@@ -43,25 +43,26 @@ a{
     display: block;
     width: 200px;
     position: absolute;
-    top:400px;
-    left:50%;
-    transform: translateX(150px)
+    top:200px;
+    right: 0px;
 }
 .logintxt{
     display: block;
     font-size: 70px;
     white-space: nowrap;
     margin-bottom: 50px;
+    text-align: center;
 
 }
         .login_box{
             position: relative;
             top: 250px;
-            width: 400px;
-            height: 300px;
+            width: 600px;
             padding-top: 50px;
             margin-left: auto;
             margin-right: auto;
+            border: 10px solid
+
         }
         .list_set{
             margin-left: 30px;
@@ -159,6 +160,7 @@ a{
             color: #1e1e1e;
             box-shadow: 0px 5px 0px 0px #15B358;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         @media screen and (max-width:400px){
