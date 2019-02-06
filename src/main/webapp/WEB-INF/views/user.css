@@ -85,6 +85,9 @@ body{
     height: 230px;
     margin: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .info_box2>div{
      background: rgba(66,66,66);
@@ -101,20 +104,41 @@ body{
 }
 .inputitem{
     position: relative;
-    margin: 20px;
+    margin: 10px;
 }
 .inputitem label{
     display: block;
+    font-size: 10px;
     margin-bottom: 10px;
     color: white;
 }
 
-
+.inputitem input{
+    margin-left: 80px;
+}
 .p_input {
        font-family: 'Lucida Sans Unicode', Sans-Serif;
        width: 256px;
-       border: white 2px solid;
+        border: none;
+       border-bottom: white 2px solid;
        height: 36px;
        background: transparent;
        z-index: 10
    }
+#abtinput{
+     font-family: 'Lucida Sans Unicode', Sans-Serif;
+
+       border: white 2px solid;
+       background: transparent;
+       z-index: 10;
+        color: aliceblue;
+
+}
+.pagec{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: aqua;
+}
+
+

@@ -43,12 +43,14 @@
             <div class="info_box2">
                 <div>
                     <div class="inputitem">
-                        <label for="">ABOUT_YOU:\></label>
+                       <br/>
+                        <label for="" class="abla">ABOUT_YOU:\></label>
+                        <label class="pagec">
+                            0/200
+                        </label>
                         <textarea id="abtinput" class="t_input"
                         name="abt" placeholder="Introduce Yourself"
-                        cols="50" rows="4">
-
-                       </textarea>
+                        cols="54" rows="7" style="resize: none;"></textarea>
 
                     </div>
 
@@ -71,12 +73,15 @@
         let ta = document.querySelector("#abtinput");
 
         ta.addEventListener("keyup",function(){
-            console.log("dd");
-             if(ta.value.length>300){
-            alert("300자로 제한");
-            ta.value=ta.value.substr(0,300);
+             if(ta.value.length>200){
+            alert("200자로 제한");
+            ta.value=ta.value.substr(0,200);
+            document.querySelector(".pagec").innerText =ta.value.length+"/200";
         }
+        })
 
+        ta.addEventListener("keydown",function(){
+            document.querySelector(".pagec").innerText =ta.value.length+"/200";
 
         })
 
