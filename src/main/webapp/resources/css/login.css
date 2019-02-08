@@ -1,0 +1,242 @@
+   @import url('https://fonts.googleapis.com/css?family=Cute+Font');
+   @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+   * {
+       font-family: 'Press Start 2P', cursive;
+       font-size: 1rem;
+       margin: 0;
+       padding: 0;
+       color: white;
+       box-sizing: border-box;
+   }
+
+   body {
+       background: black;
+       background-size: cover;
+
+   }
+
+   .lodingback {
+       background: black;
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       z-index: 9999;
+   }
+
+   .loading {
+       position: fixed;
+       left: 50%;
+       top: 40%;
+       transform: translateX(-165px);
+       z-index: 9999;
+
+   }
+
+
+   span {
+       white-space: nowrap;
+   }
+
+   a {
+       text-decoration: none;
+       color: red;
+   }
+
+
+   .logo {
+       display: block;
+       width: 200px;
+       position: absolute;
+       top: 150px;
+       right:0px;
+
+   }
+
+   .logintxt {
+       display: block;
+       font-size: 70px;
+       white-space: nowrap;
+       margin-bottom: 50px;
+       text-align: center;
+   }
+
+   .login_box {
+       position: relative;
+       top: 250px;
+       width: 600px;
+       padding-top: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       border: 10px solid;
+   }
+
+   .list_set {
+       margin-left: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .info_item {
+       width: 300px;
+       padding: 0 13px;
+       border: 1px solid #cfcfcf;
+       border-radius: 3px;
+       font-size: 18px;
+       margin-bottom: 15px;
+
+   }
+
+   .list_set2 {
+       margin-top: 20px;
+       margin-left: 30px;
+       margin-bottom: 30px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       flex-wrap: nowrap;
+
+   }
+
+   .list_set3 {
+       margin-left: 30px;
+       margin-bottom: 30px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       flex-wrap: nowrap;
+   }
+
+   .list_set4 {
+       margin-top: 20px;
+       margin-left: 30px;
+       margin-bottom: 30px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       flex-wrap: nowrap;
+   }
+
+   .emailchk {
+       font-family: 'Lucida Sans Unicode', Sans-Serif;
+       border-top: #ff7373 1px solid;
+       color: #ff7373;
+       display: block;
+       font-size: 0.8rem;
+   }
+
+   .pwdchk {
+       font-family: 'Lucida Sans Unicode', Sans-Serif;
+       border-top: #ff7373 1px solid;
+       color: #ff7373;
+       display: block;
+       font-size: 0.8rem;
+   }
+
+   .chknormal {
+       display: none;
+   }
+
+   .tf_join {
+       font-family: 'Lucida Sans Unicode', Sans-Serif;
+       width: 256px;
+       border: 0 none;
+       height: 36px;
+       background: transparent;
+       line-height: 36px;
+       z-index: 10
+   }
+
+   .wrap_btn {
+       margin-left: 30px;
+       height: auto;
+   }
+
+   .wrap_btn .btn_next:hover {
+       background-color: #FF6656;
+   }
+
+   .wrap_btn .btn_next:active {
+       transform: translate(0px, 5px);
+       -webkit-transform: translate(0px, 5px);
+       box-shadow: 0px 1px 0px 0px;
+   }
+
+   .wrap_btn .btn_next {
+       position: relative;
+       width: 300px;
+       height: 46px;
+       border: none;
+       border-radius: 3px;
+       font-size: 16px;
+       line-height: 18px;
+       background-color: #e74c3c;
+       color: #1e1e1e;
+       box-shadow: 0px 5px 0px 0px #CE3323;
+   }
+
+   @media screen and (max-width:400px) {
+       .login_box {
+           width: 100%;
+       }
+
+       .list_set {
+           width: 100%;
+       }
+
+       .info_item {
+           width: 80%;
+       }
+
+       .wrap_btn .btn_next {
+           margin-top: 20px;
+           width: 80%;
+       }
+   }
+
+   .swing {
+       animation: swing 0.3s linear 0s
+   }
+
+   @keyframes swing {
+       10% {
+           transform: translateX(-20px);
+       }
+
+       20% {
+           transform: translateX(20px);
+       }
+
+       30% {
+           transform: translateX(-18px)
+       }
+
+       40% {
+           transform: translateX(18px)
+       }
+
+       50% {
+           transform: translateX(-15px);
+       }
+
+       60% {
+           transform: translateX(15px);
+       }
+
+       70% {
+           transform: translateX(-10px)
+       }
+
+       80% {
+           transform: translateX(10px)
+       }
+
+       90% {
+           transform: translateX(-5px)
+       }
+
+       100% {
+           transform: translateX(5px)
+       }
+   }

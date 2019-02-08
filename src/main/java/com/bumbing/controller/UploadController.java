@@ -24,22 +24,22 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @Log4j
 public class UploadController {
-
-
+	
+	
 	@RequestMapping(value = "/upload", method = RequestMethod.GET)
 	public void upload() {
-
+		
 		log.info("upload");
 	}
 	@RequestMapping(value = "/uploadPost")
 	public void uploadPost(ArrayList<MultipartFile> files) {
-
+		
 		files.forEach(file->{
 			log.info("------------------------");
 			log.info("name: "+file.getOriginalFilename());
 		});
-
-
+		
+		
 	}
-
+	
 }
