@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bumbing.mapper.MemberMapper">
+
+
+  <resultMap type="com.bumbing.domain.MemberVO" id="memberMap">
+    <id property="email" column="email"/>
+    <result property="email" column="email"/>
+    <result property="pwd" column="pwd"/>
+    <result property="userName" column="username"/>
+    <result property="cDate" column="cdate"/>
+      <result property="dDate" column="ddate"/>
+        <result property="state" column="state"/>
+    <result property="profile" column="profile"/>
+    <result property="aboutme" column="aboutme"/> 
+    <collection property="authList" resultMap="authMap">
+    </collection> 
+  </resultMap>
+  
+  <resultMap type="com.bumbing.domain.AuthVO" id="authMap">
+    <result property="email" column="email"/>
+    <result property="auth" column="auth"/>
+  </resultMap>
+  
+  <select id="read" resultMap="memberMap">
+SELECT 
+  mem.email,  pwd, username, state, cdate,ddate,profile,aboutme, auth
+FROM 
+  tbl_member mem LEFT OUTER JOIN tbl_member_auth auth on mem.email= auth.email
+WHERE mem.email= #{email} 
+  </select>
+
+
+  <insert id="signUp" parameterType="com.bumbing.domain.MemberVO">
+  	insert into tbl_member(email,pwd,username) values(#{email},#{pwd},#{userName})
+  </insert>
+  
+  <insert id="addAuth" parameterType="com.bumbing.domain.AuthVO">
+  	insert into tbl_auth(email,auth) values(#{email},#{auth})
+  </insert>
+  
+  <update id="activeUser" parameterType="com.bumbing.domain.MemberVO">
+   update from tbl_member set state=1 where email=${email};
+  </update>
+ 
+
+</mapper>
