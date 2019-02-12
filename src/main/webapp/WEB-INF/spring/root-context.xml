@@ -23,17 +23,6 @@
 			<property name="username" value="Spring"></property> <!-- 대소문자 가림 -->
 			<property name="password" value="java"></property>
 		</bean>
-		
-		<!-- 
-		
-		<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-			<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
-			<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
-			<property name="username" value="SPRING"></property>
-			<property name="password" value="java"></property>
-		</bean>
-		
-		 -->
 
 		<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
 			<constructor-arg ref="hikariConfig"/>
@@ -43,11 +32,25 @@
 			<property name="dataSource" ref="dataSource"></property>
 		</bean>
 		
-	
-  
+		<bean id = "mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	  	<property name="host" value="smtp.daum.net" />
+    	<property name="port" value="465" />
+    	<property name="username" value="kjhhjk1121@hanmail.net" />
+    	<property name="password" value="dhfldksk!23" />
+	    <property name="javaMailProperties">
+		    <props>
+		      <prop key="mail.smtp.starttls.enable">true</prop>
+		      <prop key="mail.smtp.auth">true</prop>
+		      <prop key="mail.smtps.ssl.checkserveridentity">true</prop>
+		      <prop key="mail.smtps.ssl.trust">*</prop>
+		      <prop key="mail.debug">true</prop>
+		      <prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop>
+		      </props>
+	    </property>
+	  </bean>
+	  
 		<!-- Mybatis mapper -->
 		<mybatis-spring:scan base-package="com.bumbing.mapper"/>
-		
-		
+
 		
 </beans>
