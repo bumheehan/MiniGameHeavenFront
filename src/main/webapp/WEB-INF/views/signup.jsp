@@ -68,7 +68,7 @@
         </form>
          <img src="${pageContext.request.contextPath}/resources/res/mainlogo.png" alt="" class="logo">
     </div>
-
+    <%@ include file="header.html" %>
 </body>
 <script>
 

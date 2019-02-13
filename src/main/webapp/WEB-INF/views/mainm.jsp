@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.carousel.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.theme.default.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/slider.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/header.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/footer.css">
+  
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/cont.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     <script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
     <style type="text/css">
     .msection {

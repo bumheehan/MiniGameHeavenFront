@@ -12,5 +12,15 @@ public interface MemberMapper {
 	
 	public int activeUser(String email);
 	
-	public int addAuth(AuthVO au);
+	public void addAuth(AuthVO au);
+	
+	public void addCerti(MemberVO mem);
+	
+	public void delCerti(String email);
+	
+	public String selCerti(String key);
+
+	public void delAuth(String email,String auth);
+	
+	
 }

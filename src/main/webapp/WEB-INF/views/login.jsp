@@ -19,7 +19,7 @@
     <div class="login_box">
 
         <div class="logintxt">Log in!</div>
-        <form name="loginform" action="#a" method="get">
+        <form name="loginform" action="loginProcess" method="post" id="form">
             <div class="list_set">
                 <div class="info_item">
 
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="info_item">
-                    <input id="pwdinput"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" name="password" placeholder="PASSWORD" send="true" type="password" />
+                    <input id="pwdinput"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" name="pwd" placeholder="PASSWORD" send="true" type="password" />
                     <div class="pwdchk chknormal">
                     at least one number and one uppercase<br/>
                      and one lowercase letter<br/>
@@ -53,15 +53,19 @@
                 <span>Need an account? <a href="#" class="signup">Sign up now!</a></span>
 
             </div>
+            
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
         </form>
         <img src="${pageContext.request.contextPath}/resources/res/mainlogo.png" alt="" class="logo">
     </div>
-
+     <%@ include file="header.html" %>
 </body>
 <script>
 
     $(document).ready(function(){
+  
+
         let error =false;
 
         //이메일체크
@@ -76,35 +80,14 @@
         document.querySelector(".wrap_btn").children[0].addEventListener("click",function(){
             let ec = rexchk(emRegExp,eminput.value,emchk);
             let pc = rexchk(pwdRegExp,pwdinput.value,pwdchk);
-
             if(!pc) swing(pwdchk.parentElement);
             if(!ec) swing(emchk.parentElement);
 
             if(pc&&ec){
-
-                //ajax
-                 //ajax 1을 받으면 통과
-                    //-1 받으면 이메일X 비번X
-                /*
-                    var request = $.ajax({
-                      url: "script.php",
-                      method: "POST",
-                      data: {
-                        email: eminput.value
-                        pwd:pwdinput.value
-
-                      },
-                      dataType: "html"
-                    });
-
-                    request.done(function( msg ) {
-
-                    });
-
-                    request.fail(function( jqXHR, textStatus ) {
-                      alert( "Request failed: " + textStatus );
-                    });
-                    */
+				
+               	let formData = document.getElementById("form");
+               	formData.submit();       
+                    
             }else{
 
             }

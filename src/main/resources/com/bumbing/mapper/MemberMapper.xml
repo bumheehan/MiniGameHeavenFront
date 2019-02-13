@@ -26,10 +26,10 @@
   
   <select id="read" resultMap="memberMap">
 SELECT 
-  mem.email,  pwd, username, state, cdate,ddate,profile,aboutme, auth
+  mem.email, pwd, username, state, cdate,ddate,profile,aboutme, auth
 FROM 
-  tbl_member mem LEFT OUTER JOIN tbl_member_auth auth on mem.email= auth.email
-WHERE mem.email= #{email} 
+  tbl_member mem LEFT OUTER JOIN tbl_auth auth on mem.email= auth.email
+WHERE mem.email= #{value} 
   </select>
 
 
@@ -41,9 +41,24 @@ WHERE mem.email= #{email}
   	insert into tbl_auth(email,auth) values(#{email},#{auth})
   </insert>
   
-  <update id="activeUser" parameterType="com.bumbing.domain.MemberVO">
-   update from tbl_member set state=1 where email=${email};
+  <delete id="delAuth" parameterType="com.bumbing.domain.AuthVO">
+	delete from tbl_auth where email=#{email} and auth=#{auth} 
+  </delete>
+  
+  <update id="activeUser" parameterType="String" >
+   update tbl_member set state=1 where email='${value}'
   </update>
+  
+  <insert id="addCerti" parameterType="com.bumbing.domain.MemberVO">
+  	insert into tbl_certi values(#{email},#{key})
+  </insert>
+  
+  <delete id="delCerti">
+	delete from tbl_certi where email=#{email}  
+  </delete>
+  
+  <select id="selCerti" resultType="String">
+	select email from tbl_certi certi where certi.key= #{key} 
+  </select>
  
-
 </mapper>

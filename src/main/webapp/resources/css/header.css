@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-
+*{
+       text-decoration: none;
+}
 header {
     position: fixed;
     width: 100%;
@@ -7,6 +9,7 @@ header {
     z-index: 2;
     background: rgba(66,64,65,1);
     top:0;
+ 
 }
 nav{
     position: absolute;
@@ -54,25 +57,40 @@ nav{
     color: #f4fbfb;
 }
 .menul li a:hover,.menur li a:hover{
-    font-size: 20px;
-    color: #fc7f75;
+    color: rgb(244,66,54);
 }
 .logotext{
-    position: absolute;
-    top:7px;
-    left: 0;
-    right: 0;
+    
     margin-left: auto;
     margin-right: auto;
     display: block;
     transition:  1s;
-    width: 200px;
+    width: 100px;
 
+}
+.sign a:nth-child(1){
+    width: 120px;
+    height: 30px;
+    background: rgb(76,176,80);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign a:nth-child(2){
+     width: 120px;
+    height: 30px;
+    background: rgb(139,194,74);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logotext:hover{
-    transform: scale(1.1);
-    background: #fc7f75;
+    transform: scale(10) translateY(30px);
 }
 .headerdummy {
     height: 100px;

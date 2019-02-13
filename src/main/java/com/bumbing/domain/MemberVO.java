@@ -17,6 +17,7 @@ public class MemberVO {
 	private int state;
 	private String profile;
 	private String aboutMe;
+	private String key;
 	private List<AuthVO> authList;
 
 }

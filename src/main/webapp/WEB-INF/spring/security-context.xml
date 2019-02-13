@@ -34,17 +34,24 @@
 			access="permitAll" />
 
 		<security:intercept-url
-			pattern="/sample/member" access="hasRole('ROLE_MEMBER')" />
+			pattern="/sample/member" access="hasRole('MEMBER')" />
 
 		<security:intercept-url pattern="/sample/admin"
-			access="hasRole('ROLE_ADMIN')" />
+			access="hasRole('ADMIN')" />
 
 		<security:access-denied-handler
 			ref="customAccessDenied" />
 			
 		<!-- 로그인 url 정의 -->
+		<!--  밑에 login processing url 로 들어가면 시큐리티에서 자동으로 확인함 -->
+		<!-- username-parameter="email" : form input username 대신 쓸거 -->
+		<!-- password-parameter="pwd" form input password 대신 쓸거 -->
+		<!-- login-processing-url="/loginProcess" form action 에 쓸거 -->
 		<security:form-login login-page="/login"
-			authentication-success-handler-ref="customLoginSuccess" />
+			authentication-success-handler-ref="customLoginSuccess"
+			username-parameter="email"
+			password-parameter="pwd"
+			login-processing-url="/loginProcess"/>
                                                                                                                                                                 
 		<security:logout logout-url="/customLogout"
 			invalidate-session="true" />

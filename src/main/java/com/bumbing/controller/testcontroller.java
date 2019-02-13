@@ -24,12 +24,13 @@ public class testcontroller {
 	MemberService memberService;
 	
 	
+	@GetMapping("/")
+	public String main () {
+		return "mainm";
+	}
 	
 	@GetMapping("/{path}")
 	public String test (@PathVariable String path) {
-
-		log.info("custom logout");
-		
 		return path;
 	}
 	@PostMapping("/signup.do")
@@ -37,6 +38,20 @@ public class testcontroller {
 		log.info(mem);
 		memberService.signUp(mem);
 		return "login";
+	}
+	
+	@GetMapping("/register")
+	public String activeUser (MemberVO mem) {
+		int suc = memberService.activeUser(mem.getKey());
+		
+		if (suc ==1) {
+			return "login";
+		}
+			
+		else {
+			return "erroe";
+		}
+		
 	}
 
 }
