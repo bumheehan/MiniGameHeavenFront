@@ -40,7 +40,7 @@
                 &nbsp;<span for="login_chk">Remember me!</span>
             </div>
             <div class="list_set3">
-                <span><a href="#" >Forgot Password?</a></span>
+                <span><a href="javascript:find" >Forgot Password?</a></span>
 
             </div>
             <div class="wrap_btn">
@@ -53,10 +53,25 @@
 
         </form>
         <img src="../../resources/res/mainlogo.png" alt="" class="logo">
-    </div>
+        <div class="findpwd">
+            <div class="list_set">
+               <div class="t1">Reset Your Password</div>
+               
+                <div class="info_item">
+                    <input id="findem"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" movefocus="true" name="email" placeholder="EMAIL" send="true"  />
+                    <div class="femailchk chknormal">Email format is wrong.</div>
+                </div>
+                <button class="rbtn" >SEND RESET MAIL</button>
+                <span><a href="#a" >BACK</a></span>
 
+            </div>
+        </div>
+    </div>
+    
 </body>
 <script>
+    
+   
 
     $(document).ready(function(){
         let error =false;
@@ -105,6 +120,52 @@
             }else{
 
             }
+        });
+        
+         let feminput =document.querySelector("#findem");
+        let femchk = document.querySelector(".femailchk");
+        document.querySelector(".wrap_btn").children[0].addEventListener("click",function(){
+            let fc = rexchk(emRegExp,feminput.value,femchk);
+            if(!fc) swing(femchk.parentElement);
+
+            if(fc){
+
+                //ajax
+                 //ajax 1을 받으면 통과
+                    //-1 받으면 이메일X 비번X
+                /*
+                    var request = $.ajax({
+                      url: "script.php",
+                      method: "POST",
+                      data: {
+                        email: eminput.value
+                        pwd:pwdinput.value
+
+                      },
+                      dataType: "html"
+                    });
+
+                    request.done(function( msg ) {
+
+                    });
+
+                    request.fail(function( jqXHR, textStatus ) {
+                      alert( "Request failed: " + textStatus );
+                    });
+                    */
+            }else{
+
+            }
+        });
+        document.querySelector(".list_set3").addEventListener("click",function(){
+            $(".findpwd").stop().animate({
+                top: 0
+            }, 500);
+        });
+          $(".findpwd").find("span")[0].addEventListener("click",function(){
+            $(".findpwd").stop().animate({
+                top: "510px"
+            }, 500);
         });
 
         if(!error) $(".lodingback").hide();

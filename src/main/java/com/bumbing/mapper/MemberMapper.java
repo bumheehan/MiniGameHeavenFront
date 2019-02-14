@@ -22,5 +22,7 @@ public interface MemberMapper {
 
 	public void delAuth(String email,String auth);
 	
+	public void changePwd(MemberVO mem);
+	
 	
 }

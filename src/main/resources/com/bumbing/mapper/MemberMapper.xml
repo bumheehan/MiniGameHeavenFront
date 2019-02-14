@@ -7,7 +7,6 @@
 
   <resultMap type="com.bumbing.domain.MemberVO" id="memberMap">
     <id property="email" column="email"/>
-    <result property="email" column="email"/>
     <result property="pwd" column="pwd"/>
     <result property="userName" column="username"/>
     <result property="cDate" column="cdate"/>
@@ -61,4 +60,7 @@ WHERE mem.email= #{value}
 	select email from tbl_certi certi where certi.key= #{key} 
   </select>
  
+ <update id="changePwd" parameterType="com.bumbing.domain.MemberVO" >
+   update tbl_member set pwd='${pwd}' where email='${email}'
+  </update>
 </mapper>

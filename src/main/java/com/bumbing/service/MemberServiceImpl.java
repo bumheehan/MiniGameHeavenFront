@@ -36,11 +36,11 @@ public class MemberServiceImpl implements MemberService {
 	@Autowired
 	private MailHandler mail;
 	
-	private String subject = "Confirm Your MiniGameHeaven Account";
-	private String templete = "<img src=\"http://www.applabo.xyz/resources/res/mainlogo.png\" style=\"width: 100px;height: 100px\" alt=\"\" id=\"logo\"><div style=\"border-top: 1px solid;border-bottom: 1px solid\"><h2>Confirm Your Account</h2></div><div style=\"margin-top: 20px; margin-bottom:20px\"><p>Welcome to MiniGameHeaven, @name@ !<br/>Please verify your email address to confirm your account. It’s easy - just click below.</p></div><a href=\" @url@ \" style=\"text-decoration:\"none\"><div style=\"width: 80px; height: 40px;background: black;color: aliceblue;border-radius: 5px;font-size: 14px;text-align: center\">Confirm Now</div></a>";
 	
 	
 	public int signUp(MemberVO mem) {
+		String subject = "Confirm Your MiniGameHeaven Account";
+		String templete = "<img src=\"http://www.applabo.xyz/resources/res/mainlogo.png\" style=\"width: 100px;height: 100px\" alt=\"\" id=\"logo\"><div style=\"border-top: 1px solid;border-bottom: 1px solid\"><h2>Confirm Your Account</h2></div><div style=\"margin-top: 20px; margin-bottom:20px\"><p>Welcome to MiniGameHeaven, @name@ !<br/>Please verify your email address to confirm your account. It’s easy - just click below.</p></div><a href=\" @url@ \" style=\"text-decoration:\"none\"><div style=\"width: 80px; height: 40px;background: black;color: aliceblue;border-radius: 5px;font-size: 14px;text-align: center\">Confirm Now</div></a>";
 		mem.setPwd(bcryptPasswordEncoder.encode(mem.getPwd()));
 		mem.setKey(new TempKey().getKey(30,true));
 		int state = memberMapper.signUp(mem);
@@ -57,12 +57,42 @@ public class MemberServiceImpl implements MemberService {
 		if(email!=null) {
 			memberMapper.activeUser(email);
 			memberMapper.delCerti(email);
+			
+			
 			memberMapper.addAuth(new AuthVO(email,"MEMBER"));
 			return 1;
 		}else {
 			System.out.println("잘못된 키입력");
 			return -1;
 		}
+	}
+	
+	public int findpwd(MemberVO mem) {
+		
+		memberMapper.delCerti(mem.getEmail());
+		mem.setKey(new TempKey().getKey(10,true));
+		memberMapper.addCerti(mem);
+		String subject = "Reset your CodePen password";
+		String templete = "<img src=\"http://www.applabo.xyz/resources/res/mainlogo.png\" style=\"width: 100px;height: 100px\" alt=\"\" id=\"logo\"><div style=\"border-top: 1px solid;border-bottom: 1px solid\"><h2>Forgot your password? No problem!</h2></div><div style=\"margin-top: 20px; margin-bottom:20px\"><p>You can set a new one now! Click the link below.</p></div><a href=\" @url@ \" style=\"text-decoration:\"none\"><div style=\"width: 80px; height: 40px;background: black;color: aliceblue;border-radius: 5px;font-size: 14px;text-align: center\">Reset Password</div></a>";
+		templete = templete.replace("@url@", "http://www.applabo.xyz/findpwdchk.do?key="+mem.getKey());
+		mail.sendMail(mem.getEmail(), subject, templete);
+		
+		return 1;
+	}
+	public int changePwd(MemberVO mem) {
+		String email =memberMapper.selCerti(mem.getKey());
+		mem.setEmail(email);
+		
+		if(email!=null) {
+			mem.setPwd(bcryptPasswordEncoder.encode(mem.getPwd()));
+			memberMapper.changePwd(mem);
+			memberMapper.delCerti(email);
+			return 1;
+		}else {
+			System.out.println("잘못된 키입력");
+			return -1;
+		}
+		
 	}
 	
 	

@@ -1,3 +1,4 @@
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/header.css">
@@ -13,7 +14,10 @@
         <ul class="menur">
             <li><a href="#">BOARD</a></li>
             <li>
-                <div class="sign">
+            
+            <sec:authorize access="isAnonymous()">
+
+				 <div class="sign">
                     <a href="http://www.applabo.xyz/signup">
 
                         <div>
@@ -30,6 +34,34 @@
 
 
                 </div>
+			
+			</sec:authorize>
+			
+			<sec:authorize access="isAuthenticated()">
+			
+				  <div class="sign login">
+                   <div class="p1"><img src="${pageContext.request.contextPath}/resources/res/user.png" alt="" class="user">
+                    <div class="usert"><strong><sec:authentication property="principal.username"/></strong></div></div>
+                    
+                    <div class="p2" style="display: none"><a href="http://www.applabo.xyz/profile">
+                        <div>
+                            PROFILE
+                        </div>
+                    </a>
+                    
+                    <form action="/logout" method="post">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                        <button type="submit">LOGOUT</button>
+                    </form>
+                   </div>
+                     
+                    
+        	</div>
+			
+			</sec:authorize>
+
+
+               
             </li>
         </ul>
 
@@ -47,5 +79,15 @@
             $(".header").slideUp()
         }
     }
+    
+    document.getElementsByClassName("login")[0].addEventListener("mouseover",function(){
+        document.querySelector(".p1").style.display="none";
+        document.querySelector(".p2").style.display="block";
+    })
+    document.getElementsByClassName("login")[0].addEventListener("mouseout",function(){
+        document.querySelector(".p2").style.display="none";
+        document.querySelector(".p1").style.display="block";
+    })
+    
 
 </script>

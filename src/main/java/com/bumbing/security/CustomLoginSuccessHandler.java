@@ -40,7 +40,7 @@ public class CustomLoginSuccessHandler implements AuthenticationSuccessHandler {
 
 		if (roleNames.contains("MEMBER")) {
 
-			response.sendRedirect("/login");
+			response.sendRedirect("/");
 			return;
 		}
 

@@ -69,6 +69,7 @@
        margin-left: auto;
        margin-right: auto;
        border: 10px solid;
+       overflow: hidden;
    }
 
    .list_set {
@@ -175,7 +176,44 @@
        color: #1e1e1e;
        box-shadow: 0px 5px 0px 0px #CE3323;
    }
+.findpwd{
+    position: absolute;
+    width: 580px;
+    height: 500px;
+    top:510px;
+    background: black;
+    
+}
+.t1{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border-bottom: 10px solid;
+    
+}
+.rbtn{
+    width: 300px;
+       height: 46px;
+       border: none;
+       border-radius: 3px;
+       font-size: 16px;
+       line-height: 18px;
+       background-color:  #55acee;
+       color: #1e1e1e;
+       box-shadow: 0px 5px 0px 0px #3C93D5;
+    margin-bottom: 20px;
+    
+}
+.rbtn:active {
+       transform: translate(0px, 5px);
+       -webkit-transform: translate(0px, 5px);
+       box-shadow: 0px 1px 0px 0px;
+   }
 
+.rbtn:hover {
+       background-color: #6FC6FF;
+   }
    @media screen and (max-width:400px) {
        .login_box {
            width: 100%;
@@ -194,7 +232,7 @@
            width: 80%;
        }
    }
-
+   
    .swing {
        animation: swing 0.3s linear 0s
    }

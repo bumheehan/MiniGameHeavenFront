@@ -68,6 +68,14 @@ nav{
     width: 100px;
 
 }
+.sign{
+    height:100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .sign a:nth-child(1){
     width: 120px;
     height: 30px;
@@ -87,6 +95,41 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sign button{
+    width: 120px;
+    height: 30px;
+    background: rgb(139,194,74);
+    border: 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: aliceblue;
+    font-size: 15px;
+}
+.sign button:hover{
+    color: rgb(244,66,54);
+}
+.user{
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    background: rgb(139,194,74);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+.usert strong{
+    font-family:sans-serif;
+    width: 100%;
+    font-size: 20px;
+    text-align:center;
+    color: aliceblue;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
 }
 
 .logotext:hover{

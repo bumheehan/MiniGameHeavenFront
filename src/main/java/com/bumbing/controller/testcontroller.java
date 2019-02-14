@@ -9,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.bumbing.domain.MemberVO;
 import com.bumbing.service.MemberService;
@@ -29,14 +31,42 @@ public class testcontroller {
 		return "mainm";
 	}
 	
-	@GetMapping("/{path}")
-	public String test (@PathVariable String path) {
-		return path;
+	@RequestMapping("/login")
+	public void login () {
 	}
+	@RequestMapping("/signup")
+	public void signup () {
+	}
+	
+	
 	@PostMapping("/signup.do")
 	public String test (MemberVO mem) {
 		log.info(mem);
 		memberService.signUp(mem);
+		return "login";
+	}
+	
+	@PostMapping("/findpwd.do")
+	public String find (MemberVO mem) {
+		log.info(mem);
+		memberService.findpwd(mem);
+		return "login";
+	}
+	
+	@GetMapping("/changePwd")
+	public void changePwd () {
+	}
+	
+	@GetMapping("/findpwdchk.do")
+	public String findck (MemberVO mem,RedirectAttributes rttr) {
+		log.info(mem);
+		
+		return "redirect:/changePwd?key="+mem.getKey();
+	}
+	@PostMapping("/changePwd.do")
+	public String changePwd (MemberVO mem) {
+		log.info(mem);
+		memberService.changePwd(mem);
 		return "login";
 	}
 	
@@ -45,11 +75,11 @@ public class testcontroller {
 		int suc = memberService.activeUser(mem.getKey());
 		
 		if (suc ==1) {
-			return "login";
+			return "redirect:/login";
 		}
 			
 		else {
-			return "erroe";
+			return "error";
 		}
 		
 	}

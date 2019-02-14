@@ -43,14 +43,14 @@
                 &nbsp;<span for="login_chk">Remember me!</span>
             </div>
             <div class="list_set3">
-                <span><a href="#" >Forgot Password?</a></span>
+                <span><a href="#a" >Forgot Password?</a></span>
 
             </div>
             <div class="wrap_btn">
                 <button type="button" class="disabled btn_next submit">PRESS START</button>
             </div>
              <div class="list_set4">
-                <span>Need an account? <a href="#" class="signup">Sign up now!</a></span>
+                <span>Need an account? <a href="/signup" class="signup">Sign up now!</a></span>
 
             </div>
             
@@ -58,11 +58,25 @@
 
         </form>
         <img src="${pageContext.request.contextPath}/resources/res/mainlogo.png" alt="" class="logo">
+          <div class="findpwd">
+            <div class="list_set">
+               <div class="t1">Reset Your Password</div>
+               
+                <div class="info_item">
+                    <input id="findem"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="32" movefocus="true" name="email" placeholder="EMAIL" send="true"  />
+                    <div class="femailchk chknormal">Email format is wrong.</div>
+                </div>
+                <button class="rbtn" >SEND RESET MAIL</button>
+                <span><a href="#a" >BACK</a></span>
+
+            </div>
+        </div>
     </div>
      <%@ include file="header.html" %>
 </body>
 <script>
-
+var csrf_name = "${_csrf.headerName}";
+var csrf_token = "${_csrf.token}";
     $(document).ready(function(){
   
 
@@ -91,6 +105,50 @@
             }else{
 
             }
+        });
+        
+        let feminput =document.querySelector("#findem");
+        let femchk = document.querySelector(".femailchk");
+        document.querySelector(".rbtn").addEventListener("click",function(){
+            let fc = rexchk(emRegExp,feminput.value,femchk);
+            if(!fc) swing(femchk.parentElement);
+
+            if(fc){
+
+            	let formData =new FormData();
+            	formData.append("email", document.querySelector("#findem").value)
+            	
+            	  var request = $.ajax({
+                      url: "/findpwd.do",
+                      processData:false,
+                      contentType:false,
+                      beforeSend: function(xhr){
+                    	xhr.setRequestHeader(csrf_name,csrf_token);  
+                      },
+                      method: "POST",
+                      data: formData,
+                      dataType: "html"
+                    });
+
+                    request.done(function( msg ) {
+    					alert("Confirm your Email")
+                    });
+
+                    request.fail(function( jqXHR, textStatus ) {
+                      alert("Fail Sending Email");
+                    });
+                    
+            }
+        });
+        document.querySelector(".list_set3").addEventListener("click",function(){
+            $(".findpwd").stop().animate({
+                top: 0
+            }, 500);
+        });
+          $(".findpwd").find("span")[0].addEventListener("click",function(){
+            $(".findpwd").stop().animate({
+                top: "510px"
+            }, 500);
         });
 
         if(!error) $(".lodingback").hide();

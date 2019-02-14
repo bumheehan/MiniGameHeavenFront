@@ -51,6 +51,13 @@ CREATE TABLE `minigame`.`tbl_certi` (
   `auth` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`email`, `auth`));
   
+ ALTER TABLE `minigame`.`tbl_auth` 
+ADD CONSTRAINT `fk_email`
+  FOREIGN KEY (`email`)
+  REFERENCES `minigame`.`tbl_member` (`email`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
   
   
   
@@ -74,4 +81,16 @@ select * from tbl_auth;
 SELECT mem.email, pwd, username, state, cdate,ddate,profile,aboutme, auth
 FROM  tbl_member mem LEFT OUTER JOIN tbl_auth auth on mem.email= auth.email
 WHERE mem.email= 'kjhhjk1234@naver.com';
+
+
+
+로그아웃할때필요
+CREATE TABLE persistent_logins (
+  username VARCHAR(64) NOT NULL,
+  series VARCHAR(64) PRIMARY KEY,
+  token VARCHAR(64) NOT NULL,
+  last_used TIMESTAMP NOT NULL);
+
+
+
 
