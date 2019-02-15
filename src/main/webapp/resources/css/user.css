@@ -1,0 +1,261 @@
+   @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Press Start 2P', cursive;
+       font-size: 1rem;
+   }
+
+   body {
+       background: black;
+   }
+
+   .lodingback {
+
+       background: black;
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       z-index: 9999;
+   }
+
+   .loading {
+       position: fixed;
+       left: 50%;
+       top: 40%;
+       transform: translateX(-165px);
+       z-index: 9999;
+
+   }
+
+   .user_box {
+       margin-top: 150px;
+       margin-left: auto;
+       margin-right: auto;
+       width: 800px;
+       height: 800px;
+       background: black;
+       border: white 10px solid;
+   }
+
+   .logintxt {
+       display: block;
+       font-size: 70px;
+       white-space: nowrap;
+       margin-top: 50px;
+       margin-bottom: 50px;
+       text-align: center;
+       color: white;
+
+   }
+
+   .prof_box {
+       width: 600px;
+       border: white 1px solid;
+       margin-left: auto;
+       margin-right: auto;
+       box-sizing: content-box;
+
+   }
+
+   .pic_box {
+       width: 200px;
+       height: 250px;
+       float: left;
+
+   }
+
+   .info_box {
+       width: 400px;
+       height: 250px;
+       float: left;
+
+
+   }
+
+   .info_box2 {
+       width: 600px;
+       height: 300px;
+       float: left;
+
+   }
+
+   .pic_box > div {
+       background: rgba(66, 66, 66);
+       width: 180px;
+       height: 230px;
+       margin: 10px;
+       border-radius: 10px;
+
+   }
+
+   .info_box > div {
+       background: rgba(66, 66, 66);
+       width: 380px;
+       height: 230px;
+       margin: 10px;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .info_box2 > div {
+       background: rgba(66, 66, 66);
+       width: 580px;
+       height: 280px;
+       margin: 10px;
+       border-radius: 10px;
+   }
+
+   .sub {
+       color: white;
+       font-size: 1.3rem;
+       text-align: center;
+   }
+
+   .inputitem {
+       position: relative;
+       margin: 10px;
+   }
+
+   .inputitem label {
+       display: block;
+       font-size: 10px;
+       margin-bottom: 10px;
+       color: white;
+   }
+
+   .inputitem input {
+       margin-left: 80px;
+   }
+
+   .p_input {
+       font-family: 'Lucida Sans Unicode', Sans-Serif;
+       width: 256px;
+       border: none;
+       border-bottom: white 2px solid;
+       height: 36px;
+       background: transparent;
+       z-index: 10
+   }
+
+   #abtinput {
+       font-family: 'Lucida Sans Unicode', Sans-Serif;
+
+       border: white 2px solid;
+       background: transparent;
+       z-index: 10;
+       color: aliceblue;
+
+   }
+
+   .pagec {
+       position: absolute;
+       top: 20px;
+       right: 0;
+       color: aqua;
+   }
+
+   .rbtn {
+       margin-left: 140px;
+       width: 300px;
+       height: 46px;
+       border: none;
+       border-radius: 3px;
+       font-size: 16px;
+       line-height: 18px;
+       background-color: #aaf2e2;
+       color: #1e1e1e;
+       box-shadow: 0px 5px 0px 0px #29795d;
+       margin-bottom: 20px;
+
+   }
+
+   .rbtn:active {
+       transform: translate(0px, 5px);
+       -webkit-transform: translate(0px, 5px);
+       box-shadow: 0px 1px 0px 0px;
+   }
+
+   .rbtn:hover {
+       background-color: #d7e8e2;
+   }
+
+
+   .box {
+       width: 200px;
+       height: 250px;
+       background: rgb(44, 44, 44);
+       position: relative;
+   }
+
+   .probox {
+       width: 180px;
+       height: 200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .pro {
+       width: 170px;
+       height: 170px;
+       z-index: 1;
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       border-radius: 20px
+   }
+
+   .dropZone {
+       width: 180px;
+       height: 200px;
+       position: absolute;
+       top: 0px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 2;
+   }
+
+   .dropZone .bor {
+
+       border: white 10px;
+       border-style: dashed;
+       width: 120px;
+       height: 120px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: aliceblue;
+       font-size: 20px;
+       font-family: fantasy;
+   }
+
+   .filebox {
+       width: 180px;
+       height: 50px;
+       position: absolute;
+       bottom: 0px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+   }
+
+   .file {
+       opacity: 0;
+       z-index: 1;
+   }
+
+   .filetxt {
+       font-family: fantasy;
+       position: absolute;
+       color: aliceblue;
+
+
+
+   }

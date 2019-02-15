@@ -49,11 +49,11 @@
             
         }
         .pwd{
-   
+     background: black;
+            border: none;
             width: 100%;
             height: 30px;
             color: aliceblue;
-            color: black;
         }
         .btn {
             margin-top: 20px;
@@ -179,9 +179,9 @@
             let pc = rexchk(pwdRegExp, pwdinput.value, pwdchk);
  
             if (pc) {
-            	console.log("?");
                 let formData = document.querySelector("#form");
                 formData.submit();
+                location.href="http://www.applabo.xyz";
 
             } else {
             	swing(pwdchk.parentElement);

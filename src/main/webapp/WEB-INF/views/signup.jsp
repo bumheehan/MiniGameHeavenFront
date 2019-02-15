@@ -75,7 +75,9 @@
     $(document).ready(function(){
         let error =false;
 
-			
+		let ajax_em =false;
+		let ajax_nm =false;
+		
 		var csrf_name = "${_csrf.headerName}";
 		var csrf_token = "${_csrf.token}";
 
@@ -105,16 +107,18 @@
 
             if(ec){
                 //ajax
+                let fd = new FormData();
+                fd.append("email",eminput.value);
                    
                    var request = $.ajax({
-                      url: "/",
+                      url: "/emailchk.do",
                       method: "POST",
-                      data: {
-                        email: eminput.value,
-                      	pwd : pwdinput.value,
-                        userName: nameinput.value
-
+                      processData:false,
+                      contentType:false,
+                      beforeSend: function(xhr){
+                    	xhr.setRequestHeader(csrf_name,csrf_token);  
                       },
+                      data:fd ,
                       dataType: "html"
                     });
 
@@ -122,14 +126,17 @@
                         //msg 1 정상 ,-1 있음
                         if(msg==1){
                             emchk2.classList.add("chknormal");
+                            ajax_em=true;
                         }else if(msg==-1){
                             emchk2.classList.remove("chknormal");
                             swing(emchk2.parentElement);
+                            ajax_em=false;
+                            
                         }
                     });
 
                     request.fail(function( jqXHR, textStatus ) {
-                      alert( "Request failed: " + textStatus );
+                    	ajax_em=false;
                     });
             }
             else{
@@ -160,14 +167,19 @@
 
             if(nc){
                 //ajax
+                  let fd = new FormData();
+
+                fd.append("userName",nameinput.value);
+                   
                    var request = $.ajax({
-                      url: "script.php",
+                      url: "/emailchk.do",
                       method: "POST",
-                      data: {
-
-                        name: nameinput.value
-
+                      processData:false,
+                      contentType:false,
+                      beforeSend: function(xhr){
+                    	xhr.setRequestHeader(csrf_name,csrf_token);  
                       },
+                      data:fd ,
                       dataType: "html"
                     });
 
@@ -175,29 +187,34 @@
                         //msg 1 정상 ,-1 있음
                         if(msg==1){
                             namechk2.classList.add("chknormal");
+                            ajax_nm=true;
                         }else if(msg==-1){
                             namechk2.classList.remove("chknormal");
                             swing(namechk2.parentElement);
+                            ajax_nm=false;
                         }
                     });
 
                     request.fail(function( jqXHR, textStatus ) {
-                      alert( "Request failed: " + textStatus );
+                    	ajax_nm=false;
                     });
             }
             else{
                 swing(namechk1.parentElement);
             }
         });
-		var csrfHeaderName =""
 	
         document.querySelector(".wrap_btn").children[0].addEventListener("click",function(){
-        	
-        	let formData =new FormData();
+        	if(ajax_nm&&ajax_nm){	
+        		console.log("dd");
+        		/*
+        		
+        		
+        		let formData =new FormData();
         	formData.append("email", document.querySelector("#eminput").value)
         	formData.append("pwd", document.querySelector("#pwdinput").value)
         	formData.append("userName", document.querySelector("#nameinput").value)
-        	
+        	$(".lodingback").show();
         	  var request = $.ajax({
                   url: "/signup.do",
                   processData:false,
@@ -211,13 +228,16 @@
                 });
 
                 request.done(function( msg ) {
-					console.log(msg);
+					alert("Confirm Your Email");
+					 location.href="http://www.applabo.xyz";
                 });
 
                 request.fail(function( jqXHR, textStatus ) {
                   alert( "Request failed: " + textStatus );
                 });
-
+        		*/
+			}
+        
 
 
         });

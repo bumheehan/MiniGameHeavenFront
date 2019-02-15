@@ -53,9 +53,21 @@ public class testcontroller {
 		return "login";
 	}
 	
+	@PostMapping("/emailchk.do")
+	public String emchk (MemberVO mem) {
+		log.info(mem);
+		memberService.findpwd(mem);
+		return "login";
+	}
+	
 	@GetMapping("/changePwd")
 	public void changePwd () {
 	}
+	
+	@GetMapping("/user")
+	public void user() {
+	}
+	
 	
 	@GetMapping("/findpwdchk.do")
 	public String findck (MemberVO mem,RedirectAttributes rttr) {
