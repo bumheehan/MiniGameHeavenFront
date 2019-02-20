@@ -39,8 +39,13 @@ public class CustomLoginSuccessHandler implements AuthenticationSuccessHandler {
 		}
 
 		if (roleNames.contains("MEMBER")) {
-
-			response.sendRedirect("/");
+			String url = (String)request.getParameter("targetURL");
+			System.out.println(url);
+			if(url!=null) {
+				response.sendRedirect(url);
+			}else {
+				response.sendRedirect("/");
+			}
 			return;
 		}
 

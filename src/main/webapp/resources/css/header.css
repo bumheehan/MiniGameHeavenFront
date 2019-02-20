@@ -141,33 +141,3 @@ nav{
 }
 
 
-@media screen and (min-width:720px) and (max-width:1000px){
-    nav{
-        width: 500px;
-    }
-    .menur{
-        width: 50%;
-    }
-    .menul{
-        width:50%;
-    }
-    .logotext{
-        display: none;
-    }
-
-}
-@media screen and (max-width:720px){
-    nav{
-        width: 500px;
-    }
-    .menur{
-        width: 50%;
-    }
-    .menul{
-        width:50%;
-    }
-    .logotext{
-        display: none;
-    }
-
-}

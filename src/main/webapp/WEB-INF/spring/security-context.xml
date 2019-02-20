@@ -23,6 +23,9 @@
       
 
 	<security:http>
+	<security:headers>
+		<security:frame-options disabled="true"/>
+	</security:headers>
 		<!-- url 마다 권한주기 -->
 		
 		<security:intercept-url pattern="/signup"

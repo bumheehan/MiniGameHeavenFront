@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.bumbing.domain.MemberVO;
@@ -29,6 +30,10 @@ public class testcontroller {
 	@GetMapping("/")
 	public String main () {
 		return "mainm";
+	}
+	@GetMapping("/auth")
+	public String auth () {
+		return "auth";
 	}
 	
 	@RequestMapping("/login")
@@ -54,12 +59,18 @@ public class testcontroller {
 	}
 	
 	@PostMapping("/emailchk.do")
+	@ResponseBody
 	public String emchk (MemberVO mem) {
 		log.info(mem);
-		memberService.findpwd(mem);
-		return "login";
+		return mem.getEmail();//memberService.emchk(mem);
+	}
+	/*
+	@PostMapping("/namechk.do")
+	public @ResponseBody int namechk (MemberVO mem) {
+		return 1; //memberService.namechk(mem);
 	}
 	
+	*/
 	@GetMapping("/changePwd")
 	public void changePwd () {
 	}

@@ -92,5 +92,35 @@ CREATE TABLE persistent_logins (
   last_used TIMESTAMP NOT NULL);
 
 
+CREATE TABLE `minigame`.`tbl_comment` (
+  `no` INT NOT NULL AUTO_INCREMENT,
+  `game` INT NOT NULL,
+  `score` INT NOT NULL,
+  `email` VARCHAR(30) NOT NULL,
+  `comment` VARCHAR(400) NOT NULL,
+  `rdate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`no`));
 
+ALTER TABLE `minigame`.`tbl_comment` 
+ADD CONSTRAINT `fk_comment_email`
+  FOREIGN KEY (`email`)
+  REFERENCES `minigame`.`tbl_member` (`email`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+  ALTER TABLE `minigame`.`tbl_comment` 
+ADD CONSTRAINT `fk_comment_game`
+  FOREIGN KEY (`game`)
+  REFERENCES `minigame`.`tbl_game` (`game`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+  
+CREATE TABLE `tbl_game` (
+  `game` int(11) NOT NULL AUTO_INCREMENT,
+  `gamename` varchar(45) NOT NULL,
+  `width` int(11) NOT NULL DEFAULT '800',
+  `height` int(11) NOT NULL DEFAULT '800',
+  PRIMARY KEY (`game`)
+) 
+  
 

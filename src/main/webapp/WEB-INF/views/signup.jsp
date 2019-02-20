@@ -123,11 +123,11 @@
                     });
 
                     request.done(function( msg ) {
-                        //msg 1 정상 ,-1 있음
-                        if(msg==1){
+                        //msg0 정상 ,1 있음
+                        if(msg==0){
                             emchk2.classList.add("chknormal");
                             ajax_em=true;
-                        }else if(msg==-1){
+                        }else if(msg>0){
                             emchk2.classList.remove("chknormal");
                             swing(emchk2.parentElement);
                             ajax_em=false;
@@ -184,11 +184,11 @@
                     });
 
                     request.done(function( msg ) {
-                        //msg 1 정상 ,-1 있음
-                        if(msg==1){
+                     
+                        if(msg==0){
                             namechk2.classList.add("chknormal");
                             ajax_nm=true;
-                        }else if(msg==-1){
+                        }else if(msg>0){
                             namechk2.classList.remove("chknormal");
                             swing(namechk2.parentElement);
                             ajax_nm=false;
@@ -205,27 +205,25 @@
         });
 	
         document.querySelector(".wrap_btn").children[0].addEventListener("click",function(){
-        	if(ajax_nm&&ajax_nm){	
-        		console.log("dd");
-        		/*
-        		
+        	//if(ajax_nm&&ajax_nm){	
+        	//이메일 닉네임체크
         		
         		let formData =new FormData();
-        	formData.append("email", document.querySelector("#eminput").value)
-        	formData.append("pwd", document.querySelector("#pwdinput").value)
-        	formData.append("userName", document.querySelector("#nameinput").value)
-        	$(".lodingback").show();
-        	  var request = $.ajax({
-                  url: "/signup.do",
-                  processData:false,
-                  contentType:false,
-                  beforeSend: function(xhr){
-                	xhr.setRequestHeader(csrf_name,csrf_token);  
-                  },
-                  method: "POST",
-                  data: formData,
-                  dataType: "html"
-                });
+	        	formData.append("email", document.querySelector("#eminput").value)
+	        	formData.append("pwd", document.querySelector("#pwdinput").value)
+	        	formData.append("userName", document.querySelector("#nameinput").value)
+	        	$(".lodingback").show();
+	        	  var request = $.ajax({
+	                  url: "/signup.do",
+	                  processData:false,
+	                  contentType:false,
+	                  beforeSend: function(xhr){
+	                	xhr.setRequestHeader(csrf_name,csrf_token);  
+	                  },
+	                  method: "POST",
+	                  data: formData,
+	                  dataType: "html"
+	                });
 
                 request.done(function( msg ) {
 					alert("Confirm Your Email");
@@ -235,8 +233,8 @@
                 request.fail(function( jqXHR, textStatus ) {
                   alert( "Request failed: " + textStatus );
                 });
-        		*/
-			}
+        		
+			//}
         
 
 

@@ -9,12 +9,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/mainh.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/slider.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/header.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/footer.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/cont.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+ 
+  	<style type="text/css">
+  	.msection{
+  		display:flex;
+  		flex-direction: column;
+  		position: relative;
+  		top:150px;
+  		height: auto;
+  	}
+  	</style>
 </head>
 
 <body>
@@ -31,7 +37,22 @@
         </div>
 
         <div class="msection">
-            <%@ include file="cont.html" %>
+        
+		<sec:authorize access="isAnonymous()">
+		  <input type="hidden" id="email" value="x"/>
+          <input type="hidden" id="userName" value="x"/>		
+					
+		</sec:authorize>
+		
+		<sec:authorize access="isAuthenticated()">
+		  <input type="hidden" id="email" value="<sec:authentication property="principal.member.email"/>"/>
+          <input type="hidden" id="userName" value="<sec:authentication property="principal.member.userName"/>"/>
+		</sec:authorize>
+          
+          
+		  <iframe src="${pageContext.request.contextPath}/resources/gamelist/${GameVO.gameName}/${GameVO.gameName}.jsp" frameborder=0 scrolling="no" width="${GameVO.width}" height = "${GameVO.height}"></iframe>
+		  <iframe src="${pageContext.request.contextPath}/gamecomment?game=${GameVO.game}" frameborder=0 scrolling="no" width="100%" height ="1000px" ></iframe>
+
 
         </div>
     </div>

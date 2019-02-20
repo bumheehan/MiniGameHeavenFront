@@ -95,6 +95,14 @@ public class MemberServiceImpl implements MemberService {
 		
 	}
 	
+	public int emchk(MemberVO mem) {
+		return memberMapper.emchk(mem);
+		
+	}
+	public int namechk(MemberVO mem) {
+		return memberMapper.namechk(mem);
+	}
+	
 	
 	
 	

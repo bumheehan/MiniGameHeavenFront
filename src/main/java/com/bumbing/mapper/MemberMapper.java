@@ -24,5 +24,10 @@ public interface MemberMapper {
 	
 	public void changePwd(MemberVO mem);
 	
+	public int emchk(MemberVO mem);
+	
+	public int namechk(MemberVO mem);
+	
+	
 	
 }

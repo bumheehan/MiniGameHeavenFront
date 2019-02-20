@@ -80,14 +80,18 @@
         }
     }
     
-    document.getElementsByClassName("login")[0].addEventListener("mouseover",function(){
-        document.querySelector(".p1").style.display="none";
-        document.querySelector(".p2").style.display="block";
-    })
-    document.getElementsByClassName("login")[0].addEventListener("mouseout",function(){
-        document.querySelector(".p2").style.display="none";
-        document.querySelector(".p1").style.display="block";
-    })
+    
+    if(document.getElementsByClassName("login")[0]!=null){
+    	 document.getElementsByClassName("login")[0].addEventListener("mouseover",function(){
+    	        document.querySelector(".p1").style.display="none";
+    	        document.querySelector(".p2").style.display="block";
+    	    })
+    	    document.getElementsByClassName("login")[0].addEventListener("mouseout",function(){
+    	        document.querySelector(".p2").style.display="none";
+    	        document.querySelector(".p1").style.display="block";
+    	    })
+    }
+   
     
 
 </script>

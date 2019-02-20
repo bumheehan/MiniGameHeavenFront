@@ -63,4 +63,12 @@ WHERE mem.email= #{value}
  <update id="changePwd" parameterType="com.bumbing.domain.MemberVO" >
    update tbl_member set pwd='${pwd}' where email='${email}'
   </update>
+  
+  <select id="emchk" parameterType="com.bumbing.domain.MemberVO" resultType="integer">
+  	select count(*) from tbl_member where email = #{email}
+  </select>
+  
+  <select id="namechk" parameterType="com.bumbing.domain.MemberVO" resultType="integer">
+  	select count(*) from tbl_member where username = #{userName}
+  </select>
 </mapper>

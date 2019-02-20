@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>v0.0.2</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/login.css">
 
 </head>
@@ -20,6 +19,7 @@
 
         <div class="logintxt">Log in!</div>
         <form name="loginform" action="loginProcess" method="post" id="form">
+        	<input type="hidden" name="targetURL" value="${param.target}"/>
             <div class="list_set">
                 <div class="info_item">
 
@@ -39,7 +39,7 @@
             </div>
 
             <div class="list_set2">
-                <input type="checkbox" id="login_chk" name="chk" onchange="#"/>
+                <input type="checkbox" id="login_chk" name="remember-me" />
                 &nbsp;<span for="login_chk">Remember me!</span>
             </div>
             <div class="list_set3">

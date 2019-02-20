@@ -35,8 +35,17 @@ public class MapperTest {
 	@Test
 	public void testExist() {
 		
-		log.info(memberMapper.read("kjhhjk1234@naver.com"));
 		MemberVO mem =memberMapper.read("kjhhjk1234@naver.com");
+		
+		log.info(memberMapper.emchk(mem));
+		log.info(memberMapper.namechk(mem));
+		
+		MemberVO memm = new MemberVO();
+		memm.setEmail("kjhhj1k1234@naver.com");
+		memm.setUserName("한범1희");
+		int i = memberMapper.emchk(memm);
+		System.out.println(i);
+		log.info(memberMapper.namechk(memm));
 	}
 
 
