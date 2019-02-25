@@ -127,9 +127,16 @@
        margin-bottom: 10px;
        color: white;
    }
+   .error{
+   		font-size:10px;
+   		color:#ff7373;
+   		
+   }
+   
 
    .inputitem input {
        margin-left: 80px;
+       color:white;
    }
 
    .p_input {
@@ -198,6 +205,8 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       position: absolute;
+       top:0;
    }
 
    .pro {
@@ -212,9 +221,7 @@
 
    .dropZone {
        width: 180px;
-       height: 200px;
-       position: absolute;
-       top: 0px;
+       height: 180px;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -232,18 +239,17 @@
        align-items: center;
        color: aliceblue;
        font-size: 20px;
-       font-family: fantasy;
    }
 
    .filebox {
        width: 180px;
        height: 50px;
-       position: absolute;
-       bottom: 0px;
        display: flex;
        justify-content: center;
        align-items: center;
        overflow: hidden;
+       position: absolute;
+       bottom: 0;
    }
 
    .file {
@@ -252,10 +258,92 @@
    }
 
    .filetxt {
-       font-family: fantasy;
+   
        position: absolute;
        color: aliceblue;
+       font-size:10px;
 
 
 
    }
+   
+   .imginit{
+       width: 180px;
+       height: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: aliceblue;
+       font-size:10px;
+       position: absolute;
+       bottom: 0;
+   }
+ 
+   .imginit:hover {
+   		background: rgba(0,0,0,0.8);
+	}
+	.filebox:hover {
+	
+   		background: rgba(0,0,0,0.8);
+	}
+    .confirm{
+    	position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        top:0;
+        
+    }
+	.confirmbox{
+        width: 300px;
+        height: auto;
+        border: white 5px solid;
+        opacity: 0;
+        
+	}
+	.confirmmsgbox{
+        width: 100%;
+        height: 200px;
+        background: black;
+        display :flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+	}
+	.confirmbuttonbox{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+	}
+	.yes{
+		flex-grow:1;
+        background: rgb(44,44,44);
+        display :flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+	}
+	.no{
+	flex-grow:1;
+        background: rgb(44,44,44);
+        display :flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+	}
+	.yes:hover{
+		  background:rgb(88,88,88);
+	}
+	.no:hover{
+		  background:rgb(88,88,88);
+	}
+	  .ndisp{
+   		display: none;
+   }
+
+   

@@ -2,14 +2,20 @@ package com.bumbing.service;
 
 import java.lang.reflect.Member;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import com.bumbing.domain.MemberVO;
 
 public interface MemberService {
 	
-	public int signUp(MemberVO mem);
+	public boolean signUp(MemberVO mem);
 	public int activeUser(String key);
 	public int findpwd(MemberVO mem);
 	public int changePwd(MemberVO mem);
-	public int emchk(MemberVO mem);
-	public int namechk(MemberVO mem);
+	public String emchk(MemberVO mem);
+	public String namechk(MemberVO mem);
+	
+	public String delnotconuser();
+	public long updateProfile1(MemberVO mem);
+	public long updateProfile2(MultipartFile mfile,MemberVO mem);
 }

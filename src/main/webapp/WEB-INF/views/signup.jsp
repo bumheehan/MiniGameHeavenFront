@@ -107,6 +107,7 @@
 
             if(ec){
                 //ajax
+                console.log(csrf_name+" : " +csrf_token);
                 let fd = new FormData();
                 fd.append("email",eminput.value);
                    
@@ -123,6 +124,7 @@
                     });
 
                     request.done(function( msg ) {
+                    	console.log(msg);
                         //msg0 정상 ,1 있음
                         if(msg==0){
                             emchk2.classList.add("chknormal");
@@ -172,7 +174,7 @@
                 fd.append("userName",nameinput.value);
                    
                    var request = $.ajax({
-                      url: "/emailchk.do",
+                      url: "/namechk.do",
                       method: "POST",
                       processData:false,
                       contentType:false,
@@ -205,7 +207,7 @@
         });
 	
         document.querySelector(".wrap_btn").children[0].addEventListener("click",function(){
-        	//if(ajax_nm&&ajax_nm){	
+        	if(ajax_nm&&ajax_nm){	
         	//이메일 닉네임체크
         		
         		let formData =new FormData();
@@ -226,15 +228,20 @@
 	                });
 
                 request.done(function( msg ) {
-					alert("Confirm Your Email");
-					 location.href="http://www.applabo.xyz";
+                	if(msg==1){
+                		alert("Confirm Your Email");
+   					 	location.href="http://www.applabo.xyz";
+                	}else if(msg==0){
+                		alert("Sorry, Try Again");
+                	}
+					
                 });
 
                 request.fail(function( jqXHR, textStatus ) {
                   alert( "Request failed: " + textStatus );
                 });
         		
-			//}
+			}
         
 
 

@@ -1,5 +1,6 @@
 package com.bumbing.controller;
 
+import java.io.File;
 import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @Log4j
-public class testcontroller {
+public class LoginController {
 	
 	@Autowired
 	MemberService memberService;
@@ -44,13 +45,7 @@ public class testcontroller {
 	}
 	
 	
-	@PostMapping("/signup.do")
-	public String test (MemberVO mem) {
-		log.info(mem);
-		memberService.signUp(mem);
-		return "login";
-	}
-	
+
 	@PostMapping("/findpwd.do")
 	public String find (MemberVO mem) {
 		log.info(mem);
@@ -58,25 +53,19 @@ public class testcontroller {
 		return "login";
 	}
 	
-	@PostMapping("/emailchk.do")
-	@ResponseBody
-	public String emchk (MemberVO mem) {
-		log.info(mem);
-		return mem.getEmail();//memberService.emchk(mem);
-	}
-	/*
-	@PostMapping("/namechk.do")
-	public @ResponseBody int namechk (MemberVO mem) {
-		return 1; //memberService.namechk(mem);
-	}
-	
-	*/
 	@GetMapping("/changePwd")
 	public void changePwd () {
 	}
 	
 	@GetMapping("/user")
-	public void user() {
+	public void user(MemberVO mem,Model model) {
+		
+		File f = new File("C:\\SOO\\Store\\minigame\\profile\\"+mem.getEmail());
+		if (f.isFile()) {
+			model.addAttribute("profile", "1");
+		}else {
+			model.addAttribute("profile", "0");
+		}
 	}
 	
 	
@@ -106,5 +95,5 @@ public class testcontroller {
 		}
 		
 	}
-
+	
 }

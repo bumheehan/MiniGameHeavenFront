@@ -8,6 +8,8 @@ public interface MemberMapper {
 
 	public MemberVO read(String email);
 	
+	public MemberVO readname(String username);
+	
 	public int signUp(MemberVO mem);
 	
 	public int activeUser(String email);
@@ -24,9 +26,15 @@ public interface MemberMapper {
 	
 	public void changePwd(MemberVO mem);
 	
-	public int emchk(MemberVO mem);
+	public String emchk(MemberVO mem);
 	
-	public int namechk(MemberVO mem);
+	public String namechk(MemberVO mem);
+	
+	public long delnotconuser();
+	
+	public long upUser1(MemberVO mem);
+	
+	public long upUser2(MemberVO mem);
 	
 	
 	

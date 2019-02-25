@@ -1,0 +1,21 @@
+<style>
+.lodingback{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    display:none;
+}
+.loading{
+    position: fixed;
+    left: 50%;
+    top:40%;
+    transform: translateX(-165px);
+    opacity:0.5;
+    z-index: 9999;
+    display:none;
+}
+</style>
+<div class="lodingback"><img src="${pageContext.request.contextPath}/resources/res/loading.gif" alt="" class="loading"></div>
+    

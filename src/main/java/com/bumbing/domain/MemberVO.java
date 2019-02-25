@@ -15,7 +15,7 @@ public class MemberVO {
 	private Date cDate;
 	private Date dDate;
 	private int state;
-	private String profile;
+	private long profile;
 	private String aboutMe;
 	private String key;
 	private List<AuthVO> authList;

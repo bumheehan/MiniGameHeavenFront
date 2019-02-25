@@ -27,17 +27,9 @@
 		<security:frame-options disabled="true"/>
 	</security:headers>
 		<!-- url 마다 권한주기 -->
-		
-		<security:intercept-url pattern="/signup"
-			access="permitAll" />
-		<security:intercept-url pattern="/signup.do"
-			access="permitAll" />
-			
-		<security:intercept-url pattern="/sample/all"
-			access="permitAll" />
 			
 		<security:intercept-url pattern="/user"
-			access="permitAll" />
+			access="hasRole('MEMBER')" />
 	
 		<security:intercept-url
 			pattern="/sample/member" access="hasRole('MEMBER')" />

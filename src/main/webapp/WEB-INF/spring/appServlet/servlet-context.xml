@@ -26,6 +26,7 @@
 	<context:component-scan base-package="com.bumbing.controller" />
 	<context:component-scan base-package="com.bumbing.exception" />
 	
+
 	<!-- 업로드 경로 -->
 	<beans:bean id="uploadTempDir" class="org.springframework.core.io.FileSystemResource">
         <beans:constructor-arg value="c:/soo/store"></beans:constructor-arg>

@@ -45,6 +45,13 @@ CREATE TABLE `minigame`.`tbl_certi` (
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
   PRIMARY KEY (`email`));
   
+ ALTER TABLE `minigame`.`tbl_certi` 
+ADD CONSTRAINT `fk_certi_email`
+  FOREIGN KEY (`email`)
+  REFERENCES `minigame`.`tbl_member` (`email`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+ 
   
   CREATE TABLE `minigame`.`tbl_auth` (
   `email` VARCHAR(30) NOT NULL,

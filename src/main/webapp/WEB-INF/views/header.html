@@ -43,7 +43,7 @@
                    <div class="p1"><img src="${pageContext.request.contextPath}/resources/res/user.png" alt="" class="user">
                     <div class="usert"><strong><sec:authentication property="principal.username"/></strong></div></div>
                     
-                    <div class="p2" style="display: none"><a href="http://www.applabo.xyz/user">
+                    <div class="p2" style="display: none"><a href="http://www.applabo.xyz/user?email=<sec:authentication property="principal.member.email"/>">
                         <div>
                             PROFILE
                         </div>

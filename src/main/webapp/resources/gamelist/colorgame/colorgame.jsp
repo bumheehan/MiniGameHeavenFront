@@ -7,13 +7,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/gl/colorgame/css/card.css">
+    <link rel="stylesheet" href="css/card.css">
 
     <!-- 모바일웹앱 필수-->
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <script src="${pageContext.request.contextPath}/gl/colorgame/js/jquery-3.3.1.min.js"></script>
-    <script src="${pageContext.request.contextPath}/gl/colorgame/js/pixi.js"></script>
-    <script src="${pageContext.request.contextPath}/gl/colorgame/js/pixi-filter.js"></script>
+    <script src="js/pixi.js"></script>
+    <script src="js/pixi-filter.js"></script>
 </head>
 
 <body>
@@ -206,14 +205,12 @@
     const RANKING = 5;
     const GAMESETTING = 6;
 
-    let settingVib = true;
-    let settingSnd = true;
+    let settingSnd = false;
     let settingEff = true;
 
-    let backSound = new Audio("${pageContext.request.contextPath}/gl/colorgame/sound/back.mp3");
-    backSound.play();
-    let s = new Audio("${pageContext.request.contextPath}/gl/colorgame/sound/s.wav");
-    let f = new Audio("${pageContext.request.contextPath}/gl/colorgame/sound/f.wav");
+    let backSound = new Audio("sound/back.mp3");
+    let s = new Audio("sound/s.wav");
+    let f = new Audio("sound/f.wav");
 
     function soundon(){
         backSound.play();
@@ -239,7 +236,7 @@
 
 
     PIXI.loader
-        .add("${pageContext.request.contextPath}/gl/colorgame/images/rcs.svg")
+        .add("images/rcs.svg")
         .on('error', () => {})
         .load(() => {
             console.log("pixi load complete")
@@ -598,22 +595,18 @@
 
 
         let sound = new Text("SOUND \t: OFF", style);
-        let vib = new Text("VIBRATION \t: OFF", style);
         let effect = new Text("EFFECT \t: OFF", style);
         let back = new Text("BACK", style);
 
         if (settingSnd) sound.text = "SOUND \t: ON"
-        if (settingVib) vib.text = "VIBRATION \t: ON"
         if (settingEff) effect.text = "EFFECT \t: ON"
 
         sound.anchor.set(0.5, 0.5);
-        vib.anchor.set(0.5, 0.5);
         effect.anchor.set(0.5, 0.5);
         back.anchor.set(0.5, 0.5);
 
         sound.position.set(550 / 2, height / 4 );
-        vib.position.set(550 / 2, height / 4+100);
-        effect.position.set(550 / 2, height / 4 + 200);
+        effect.position.set(550 / 2, height / 4 + 100);
         back.position.set(550 / 2, height / 4 + 300);
 
         sound.interactive = true;
@@ -630,13 +623,7 @@
             }
         });
 
-        vib.interactive = true;
-        vib.buttonMode = true;
-        vib.on('pointerdown', () => {
-            settingVib = !settingVib;
-            if (settingVib) vib.text = "VIBRATION \t: ON"
-            else vib.text = "VIBRATION \t: OFF"
-        });
+       
 
         effect.interactive = true;
         effect.buttonMode = true;
@@ -654,7 +641,6 @@
         });
 
         setCont.addChild(sound);
-        setCont.addChild(vib);
         setCont.addChild(effect);
         setCont.addChild(back);
         setCont.addChild(t);
@@ -759,7 +745,11 @@ const tst = new PIXI.TextStyle({
         rank.interactive = true;
         rank.buttonMode = true;
         rank.on('pointerdown', () => {
-            sendRecord();
+        	
+        	
+            //sendRecord();
+            
+            
         });
 
         endCont.addChild(record);
@@ -797,7 +787,7 @@ const tst = new PIXI.TextStyle({
                 rrect.buttonMode = true;
                 rrect.on('pointerdown', onClick);
                 rrect.addChild(text);
-                let sp = PIXI.Sprite.from("${pageContext.request.contextPath}/gl/colorgame/images/rcs.svg");
+                let sp = PIXI.Sprite.from("images/rcs.svg");
                 sp.position.set(0, 0);
                 sp.scale.set(buttonSize / 512, buttonSize / 512);
                 rrect.addChild(sp);
@@ -838,7 +828,6 @@ const tst = new PIXI.TextStyle({
     ///////////////////////////////
     function onClick() {
 
-        //if(settingVib) Android.vib();
 
         if (this.children[0].text == num) {
             this.alpha = 0;
@@ -880,9 +869,8 @@ const tst = new PIXI.TextStyle({
     ////////////////////////////////
     ///기록
     ////////////////////////////////
-    function sendRecord() {
+    function sendRecord(name) {
         if(sendchk){
-             let name = prompt("name");
             if(name!=null){
                  //application/x-www-form-urlencoded
                 endCont.children[2].text="UPLOADING..."
