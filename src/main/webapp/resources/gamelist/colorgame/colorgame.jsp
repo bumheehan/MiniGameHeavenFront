@@ -1,6 +1,7 @@
  <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +14,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <script src="js/pixi.js"></script>
     <script src="js/pixi-filter.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-
 
 
 
@@ -73,7 +74,8 @@
 
 
 <script>
-
+var csrf_name = "${_csrf.headerName}";
+var csrf_token = "${_csrf.token}";
         let selectionlist1 = document.getElementById("color1");
         let selectedbox1 = document.getElementById("selc1");
         let opcolor1 = document.getElementsByClassName("opcolor1");
@@ -149,21 +151,28 @@
             let c1 = colorClassList.indexOf(selectedbox1.classList[0]);
             let c2 = colorClassList.indexOf(selectedbox2.classList[0]);
             let co = selectedblockbox.innerText.charAt(0);
-
+			console.log(c1);
+			console.log(c2);
+			console.log(co);
             if(c1!=null&&c2!=null){
                 if(c1!=c2){
                     document.getElementById("tab").innerHTML = "Loading";
-                      $.ajax({
-                        url: "http://35.233.242.166:8080/card/rank",
-                        type:"POST",
-                        data:{
-                            c1:c1,
-                            c2:c2,
-                            co:co
-                        },
-                        success: function(result) {
-                            document.getElementById("tab").innerHTML=result;
-                        }
+ 				     var request = $.ajax({
+                            url: "http://www.applabo.xyz/colorgame/rank",
+                            beforeSend: function(xhr){
+                          	xhr.setRequestHeader(csrf_name,csrf_token);  
+                            },
+                            method: "POST",
+                            data:{
+                                c1:c1,
+                                c2:c2,
+                                co:co
+                            },
+                            dataType: "html",
+                          	success: function(result) {
+                                  document.getElementById("tab").innerHTML=result;
+                              }
+
                     });
                 }else{
                     document.getElementById("tab").innerHTML="Again Select Color";
@@ -360,19 +369,16 @@
 
 
         let start = new Text("START", style);
-        let end = new Text("CLOSE", style);
         let setting = new Text("SETTING", style);
         let ranking = new Text("RANKING", style);
 
         start.anchor.set(0.5, 0.5);
-        end.anchor.set(0.5, 0.5);
         ranking.anchor.set(0.5, 0.5);
         setting.anchor.set(0.5, 0.5);
 
         start.position.set(width / 2, height / 4 );
         ranking.position.set(width / 2, height / 4+100);
         setting.position.set(width / 2, height / 4 + 200);
-        end.position.set(width / 2, height / 4 + 300);
 
         start.interactive = true;
         start.buttonMode = true;
@@ -387,11 +393,6 @@
             gamestate(RANKING)
         });
 
-        end.interactive = true;
-        end.buttonMode = true;
-        end.on('pointerdown', () => {
-            gamestate(CLOSE);
-        });
 
         setting.interactive = true;
         setting.buttonMode = true;
@@ -401,7 +402,6 @@
 
         startCont.addChild(start);
         startCont.addChild(ranking);
-        startCont.addChild(end);
         startCont.addChild(setting);
 
         startCont.addChild(t);
@@ -745,9 +745,18 @@ const tst = new PIXI.TextStyle({
         rank.interactive = true;
         rank.buttonMode = true;
         rank.on('pointerdown', () => {
-        	
-        	
-            //sendRecord();
+
+        	<sec:authorize access="isAuthenticated()">
+
+        		let name = '<sec:authentication property="principal.member.email"/>'
+        		let ele = document.createElement("div");
+        		ele.innerHTML=name;
+        		sendRecord(ele.innerText);
+        	</sec:authorize>
+
+	        <sec:authorize access="isAnonymous()">
+	        alert("Please login to regiser your record")
+	        </sec:authorize>
             
             
         });
@@ -874,29 +883,34 @@ const tst = new PIXI.TextStyle({
             if(name!=null){
                  //application/x-www-form-urlencoded
                 endCont.children[2].text="UPLOADING..."
-                $.ajax({
-                    url: "http://35.233.242.166:8080/card/send",
+                	 var request = $.ajax({
+                         url: "http://www.applabo.xyz/colorgame/send",
+                         beforeSend: function(xhr){
+                       	xhr.setRequestHeader(csrf_name,csrf_token);  
+                         },
+                         method: "POST",
+                         data: {
+                             email: name,
+                             mm: mm,
+                             ss: ss,
+                             ms: ms,
+                             c1:colorListC.indexOf(color1),
+                             c2:colorListC.indexOf(color2),
+                             co: count
+                         },
+                         dataType: "html",
+                         success: function(result) {
+                             //alert("업로드 성공!!");
+                             sendchk=false;
+                             endCont.children[2].text = "RANK : " + result;
+                         },
+                         error: function(jqXHR,textStatus,errorThrown){
+                             alert("Error Uploading");
+                             sendchk=true;
+                         }
 
-                    data: {
-                        name: name,
-                        mm: mm,
-                        ss: ss,
-                        ms: ms,
-                        c1:colorListC.indexOf(color1),
-                        c2:colorListC.indexOf(color2),
-                        co: count
-                    },
-                    type: 'POST',
-                    success: function(result) {
-                        //alert("업로드 성공!!");
-                        sendchk=false;
-                        endCont.children[2].text = "RANK : " + result;
-                    },
-                    error: function(jqXHR,textStatus,errorThrown){
-                        alert("Error Uploading");
-                        sendchk=true;
-                }
-                });
+                 });
+             
                 //file ~~color2에서 서버 http:205~~~로 ajax로보내면
             }
 

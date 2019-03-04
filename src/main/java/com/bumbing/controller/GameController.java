@@ -21,6 +21,7 @@ import com.bumbing.service.GameCommentService;
 import com.bumbing.service.GameCommentServiceImpl;
 import com.bumbing.service.GameService;
 import com.bumbing.service.MemberService;
+import com.bumbing.service.RankingService;
 
 import lombok.extern.log4j.Log4j;
 
@@ -33,6 +34,9 @@ public class GameController {
 	
 	@Autowired
 	GameService gameService;
+	
+	@Autowired
+	RankingService service;
 	
 	@GetMapping(value="/game")
 	public String game (Model model,GameVO game ) {
@@ -75,6 +79,12 @@ public class GameController {
 		log.info("delcomment"+com);
 		comment.del(com);
 		return "mainm";
+	}
+	@GetMapping("/ranking")
+	public String rank(Model model) {
+
+		model.addAttribute("list", service.showRanking());
+		return "ranking";
 	}
 	
 }

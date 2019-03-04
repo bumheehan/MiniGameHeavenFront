@@ -10,8 +10,10 @@ public class GameVO {
 
 	private int game;
 	private String gameName;
+	private String genre;
 	private int width;
 	private int height;
+	private Date rDate;
 	
 	public GameVO(){
 		this(800,800);

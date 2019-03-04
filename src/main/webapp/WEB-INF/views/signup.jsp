@@ -8,7 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>v0.0.2</title>
+    <title>SIGN UP</title>
+      	<link rel="shortcut icon" href="/resources/res/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/signup2.css">
@@ -19,7 +20,7 @@
     <div class="lodingback"><img src="${pageContext.request.contextPath}/resources/res/loading.gif" alt="" class="loading"></div>
     <div class="login_box">
 
-        <div class="logintxt">Sign Up!</div>
+        <div class="logintxt"><span class="signupneon">Sign Up!</span></div>
         <form name="loginform" action="#a" method="post">
  
             <div class="list_set">
@@ -46,7 +47,7 @@
                 </div>
 
             <div class="info_item">
-                    <input id="nameinput"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="10" name="userName" placeholder="NICK NAME" send="true"/>
+                    <input id="nameinput"  autocapitalize="off" autocomplete="off" autocorrect="off" class="tf_join" maxlength="10" name="name" placeholder="NICK NAME" send="true"/>
                     <div class="namechk1 chknormal">
                     Nick Name format is wrong.
                     </div>
@@ -171,7 +172,7 @@
                 //ajax
                   let fd = new FormData();
 
-                fd.append("userName",nameinput.value);
+                fd.append("name",nameinput.value);
                    
                    var request = $.ajax({
                       url: "/namechk.do",
@@ -213,7 +214,7 @@
         		let formData =new FormData();
 	        	formData.append("email", document.querySelector("#eminput").value)
 	        	formData.append("pwd", document.querySelector("#pwdinput").value)
-	        	formData.append("userName", document.querySelector("#nameinput").value)
+	        	formData.append("name", document.querySelector("#nameinput").value)
 	        	$(".lodingback").show();
 	        	  var request = $.ajax({
 	                  url: "/signup.do",

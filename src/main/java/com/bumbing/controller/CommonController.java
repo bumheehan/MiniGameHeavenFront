@@ -28,5 +28,14 @@ public class CommonController {
 
 		log.info("post custom logout");
 	}
+	@GetMapping("/background")
+	public void back() {
+
+	}
+	@GetMapping("/favicon.ico")
+	public String favicon() {
+		return "forward:/resources/res/favicon.ico";
+
+	}
 
 }

@@ -11,6 +11,7 @@ public class MemberVO {
 	private String email;
 	private String pwd;
 	private String userName;
+	private String name;
 	private boolean enabled;
 	private Date cDate;
 	private Date dDate;

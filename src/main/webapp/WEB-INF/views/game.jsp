@@ -6,7 +6,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>MiniGameHeaven</title>
+      	<link rel="shortcut icon" href="/resources/res/favicon.ico">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/mainh.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/slider.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/cont.css">
@@ -19,6 +20,8 @@
   		position: relative;
   		top:150px;
   		height: auto;
+  		width:auto;
+  		align-items: center;
   	}
   	</style>
 </head>
@@ -28,14 +31,6 @@
     </div>
     <%@ include file="header.html" %>
     <div class="cont">
-    <div class="rsection"></div>
-        <div class="lsection">
-        <div class="upcover">
-        </div>
-        <div class="downcover">
-        </div>
-        </div>
-
         <div class="msection">
         
 		<sec:authorize access="isAnonymous()">

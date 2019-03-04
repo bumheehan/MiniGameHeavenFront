@@ -1,14 +1,15 @@
 
 package com.bumbing.mapper;
 
+import java.util.List;
+
 import com.bumbing.domain.AuthVO;
 import com.bumbing.domain.MemberVO;
 
 public interface MemberMapper {
 
 	public MemberVO read(String email);
-	
-	public MemberVO readname(String username);
+	public List<MemberVO> memList();
 	
 	public int signUp(MemberVO mem);
 	

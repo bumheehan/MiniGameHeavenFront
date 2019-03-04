@@ -46,7 +46,7 @@ public class MemberServiceImpl implements MemberService {
 		String templete = "<img src=\"http://www.applabo.xyz/resources/res/mainlogo.png\" style=\"width: 100px;height: 100px\" alt=\"\" id=\"logo\"><div style=\"border-top: 1px solid;border-bottom: 1px solid\"><h2>Confirm Your Account</h2></div><div style=\"margin-top: 20px; margin-bottom:20px\"><p>Welcome to MiniGameHeaven, @name@ !<br/>Please verify your email address to confirm your account. It’s easy - just click below.</p></div><a href=\" @url@ \" style=\"text-decoration:none\"><div style=\"width: 80px; height: 40px;background: black;color: aliceblue;border-radius: 5px;font-size: 14px;text-align: center\">Confirm Now</div></a>";
 		mem.setPwd(bcryptPasswordEncoder.encode(mem.getPwd()));
 		mem.setKey(new TempKey().getKey(30,true));
-		templete = templete.replace("@name@", mem.getUserName());
+		templete = templete.replace("@name@", mem.getName());
 		templete = templete.replace("@url@", "http://www.applabo.xyz/register?key="+mem.getKey());
 		if(mail.sendMail(mem.getEmail(), subject, templete)) {
 			memberMapper.signUp(mem);
@@ -117,7 +117,6 @@ public class MemberServiceImpl implements MemberService {
 	
 	public long updateProfile1(MemberVO mem) {
 		log.info("MemberService  - updateProfile1");
-		log.info(mem.getProfile()==0);
 		if(mem.getProfile()==0) {
 			File profile = new File("C:\\SOO\\Store\\minigame\\profile\\"+mem.getEmail());
 			if(profile.exists()) profile.delete();
@@ -130,11 +129,15 @@ public class MemberServiceImpl implements MemberService {
 			return memberMapper.upUser1(mem);
 		}
 		
+		
 	}
 	public long updateProfile2(MultipartFile mfile,MemberVO mem) {
 		
-		
 		File profile = new File("C:\\SOO\\Store\\minigame\\profile\\"+mem.getEmail());
+		if(profile.exists()) {
+			profile.delete();
+			System.out.println(profile.exists());
+		}
 		try {
 			mfile.transferTo(profile);
 			if(mem.getPwd().equals("")) {

@@ -2,9 +2,10 @@ footer {
     width: 100%;
     height: 100px;
     position: fixed;
-    background: #424041;
+    background:  rgba(66,64,65,0.3);
     bottom: 0;
     z-index: 2;
+    opacity: 0;
 }
 footer ul{
     width: 800px;

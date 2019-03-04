@@ -8,7 +8,7 @@
         <li class="footer-icon"><a href="#"><i class="fab fa-facebook"></i></a></li>
         <li class="footer-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li class="footer-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="footer-logo">ⓒ AppLab Corp.</li>
+        <li class="footer-logo">AppLab Corp.</li>
     </ul>
 
 </footer>
@@ -21,9 +21,11 @@
         var scrollHeight = $(document).height();
         var scrollPosition = $(window).height() + $(window).scrollTop();
         if ((scrollHeight - scrollPosition) / scrollHeight < 0.001) {
-            $("footer").slideDown();
+        
+        	$("footer").css("opacity","1");
+            $("footer").stop().slideDown();
         } else {
-            $("footer").slideUp();
+            $("footer").stop().slideUp();
         }
     }
 

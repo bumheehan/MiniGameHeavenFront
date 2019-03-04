@@ -5,7 +5,6 @@
 }
 
 #CommentArea_100 {
-    width: 750px;
     text-align: left;
     margin-bottom: 40px;
     margin-left: auto;
@@ -142,7 +141,9 @@
     overflow: hidden;
     width:450px;
 }
-
+#ct_164671{
+	background: #f9f9f9;
+}
 .star2 {
     background: url('../res/comstar.png') no-repeat -52px 0;
     background-size: auto 100%;

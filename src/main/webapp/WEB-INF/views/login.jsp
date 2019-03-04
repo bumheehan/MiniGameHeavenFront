@@ -7,7 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>v0.0.2</title>
+    <title>LOGIN</title>
+      	<link rel="shortcut icon" href="/resources/res/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/login.css">
 
@@ -17,7 +18,7 @@
     <div class="lodingback"><img src="${pageContext.request.contextPath}/resources/res/loading.gif" alt="" class="loading"></div>
     <div class="login_box">
 
-        <div class="logintxt">Log in!</div>
+        <div class="logintxt"><span class="loginneon">Log in!</span></div>
         <form name="loginform" action="loginProcess" method="post" id="form">
         	<input type="hidden" name="targetURL" value="${param.target}"/>
             <div class="list_set">
@@ -114,7 +115,7 @@ var csrf_token = "${_csrf.token}";
             if(!fc) swing(femchk.parentElement);
 
             if(fc){
-
+            	$(".lodingback").show();
             	let formData =new FormData();
             	formData.append("email", document.querySelector("#findem").value)
             	
@@ -131,10 +132,12 @@ var csrf_token = "${_csrf.token}";
                     });
 
                     request.done(function( msg ) {
+                    	$(".lodingback").hide();
     					alert("Confirm your Email")
                     });
 
                     request.fail(function( jqXHR, textStatus ) {
+                    	$(".lodingback").hide();
                       alert("Fail Sending Email");
                     });
                     

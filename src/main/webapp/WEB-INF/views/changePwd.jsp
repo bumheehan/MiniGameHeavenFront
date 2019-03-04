@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Change Password</title>
+      	<link rel="shortcut icon" href="/resources/res/favicon.ico">
     <style>
 
         @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
@@ -148,6 +149,8 @@
 </head>
 
 <body>
+
+    <%@ include file="loading.html" %>
     <div class="box">
         <form action="/changePwd.do" method="post" id="form">
             <div class="sub">RESET PASSWORD</div>

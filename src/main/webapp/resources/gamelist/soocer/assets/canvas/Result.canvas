@@ -1,0 +1,120 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "Result",
+    "sceneWidth": 960,
+    "sceneHeight": 540,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      169,
+      169,
+      169
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "_menuButton.onInputUp.add(showMenu, this);\n_retry.onInputUp.add(restart, this);"
+  },
+  "stateSettings": {
+    "scaleMode": "SHOW_ALL",
+    "pageAlignHorizontally": true,
+    "pageAlignVertically": true,
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "0a6c6fc2-1025-4535-b25b-89442f88a380",
+    "info": {
+      "editorName": "Result",
+      "setAll": [],
+      "children": [
+        {
+          "type": "image",
+          "id": "357e4a3d-212a-4d1e-9b64-91d6604c645a",
+          "asset": "0",
+          "info": {
+            "editorName": "trophies",
+            "x": 386,
+            "y": 118,
+            "scale.x": 0.5,
+            "scale.y": 0.5
+          }
+        },
+        {
+          "type": "button",
+          "id": "a1655d63-1d2a-432b-b852-18821420e746",
+          "asset": "1",
+          "info": {
+            "editorName": "retry",
+            "x": 581,
+            "y": 414,
+            "scale.x": 0.4,
+            "scale.y": 0.4
+          }
+        },
+        {
+          "type": "image",
+          "id": "5a1d3158-35b8-4f8c-8f46-b01a3552915c",
+          "asset": "2",
+          "info": {
+            "editorName": "neonLogo",
+            "x": 532,
+            "y": 414,
+            "scale.x": 0.1,
+            "scale.y": 0.1
+          }
+        },
+        {
+          "type": "button",
+          "id": "73f3f360-9e8e-401c-bffc-0480ca97b24d",
+          "asset": "3",
+          "info": {
+            "editorName": "menuButton",
+            "x": 300,
+            "y": 419,
+            "scale.x": 0.3,
+            "scale.y": 0.3
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "trophies"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "retry"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "neonLogo"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "menuButton"
+    }
+  },
+  "prefab-table": {}
+}

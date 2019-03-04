@@ -17,7 +17,7 @@ public class GameServiceImpl implements GameService {
 	GameMapper gameMapper;
 	
 	public GameVO game(GameVO gam) {
-		
+		gameMapper.read(gam);
 		return gameMapper.game(gam);
 	}
 	

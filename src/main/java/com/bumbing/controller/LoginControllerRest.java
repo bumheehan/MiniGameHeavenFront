@@ -59,11 +59,11 @@ public class LoginControllerRest {
 	}
 	
 	@PostMapping("/profile.do")
-	public void profile (MultipartFile mfile,MemberVO mem) {
+	public long profile (MultipartFile mfile,MemberVO mem) {
 		if(mfile==null) {
-			memberService.updateProfile1(mem);
+			return memberService.updateProfile1(mem);
 		}else {
-			memberService.updateProfile2(mfile,mem);
+			return memberService.updateProfile2(mfile,mem);
 		}
 
 		

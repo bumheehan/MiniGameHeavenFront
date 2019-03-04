@@ -30,7 +30,9 @@
 			
 		<security:intercept-url pattern="/user"
 			access="hasRole('MEMBER')" />
-	
+		<security:intercept-url pattern="/board/register"
+			access="hasRole('MEMBER')" />
+			
 		<security:intercept-url
 			pattern="/sample/member" access="hasRole('MEMBER')" />
 

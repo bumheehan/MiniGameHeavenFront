@@ -10,6 +10,8 @@ import com.bumbing.domain.PagingVO;
 
 public interface GameMapper {
 	public GameVO game(GameVO gam);
+	public void read(GameVO gam);
 	public void add(GameVO gam);
 	public void del(GameVO gam);
+	public List<GameVO>gameList();
 }

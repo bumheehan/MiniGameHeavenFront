@@ -34,25 +34,10 @@
   .owl-next {
     right: 10px;
   }
+
+
 .owl-dots{
-    position: relative;
-    top: -100px;
+   display: none;
 }
-
-
-@media screen and (min-width:720px) and (max-width:1000px){
-
-    .owl-carousel .item{
-        width: 500px;
-    }
-    .owl-carousel{
-        width: 500px;
-    }
-    .owl-dots{
-        top:-50px;
-    }
-     .owl-prev,.owl-next{
-    top: 25%;
-  }
 
 }

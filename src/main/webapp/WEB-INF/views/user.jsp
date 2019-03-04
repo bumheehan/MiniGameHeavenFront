@@ -7,7 +7,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>PROFILE</title>
+      	<link rel="shortcut icon" href="/resources/res/favicon.ico">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/user.css">
 </head>
 
@@ -15,11 +16,10 @@
 
     <%@ include file="header.html" %>
     <input type="hidden" id="email" value="<sec:authentication property="principal.member.email"/>">
-    <input type="hidden" id="userName" value="<sec:authentication property="principal.member.userName"/>">
+    <input type="hidden" id="userName" value="<sec:authentication property="principal.member.name"/>">
     <input type="hidden" id="profile" value="<sec:authentication property="principal.member.profile"/>">
 
-    
-    <div class="lodingback"><img src="${pageContext.request.contextPath}/resources/res/loading.gif" alt="" class="loading"></div>
+    <%@ include file="loading.html" %>
 	<div class="confirm ndisp">
  		<div class="confirmbox">
 	 		<div class="confirmmsgbox">PROFILE CHANGE</div>
@@ -32,7 +32,7 @@
             <div class="pic_box">
 
                 <div class="box">
-                    <div class="probox">
+                    <div class="probox z">
                         <div class="pro"></div>
                     </div>
                     <div class="dropZone" id="dropZone">
@@ -54,7 +54,7 @@
 
                     <div class="inputitem">
                         <label for="">NAME:\><span class="error"></span></label>
-                        <input id="nameinput" autocapitalize="off" autocomplete="off" autocorrect="off" class="p_input" maxlength="32" movefocus="true" name="name" placeholder="NAME" send="true" value="<sec:authentication property="principal.member.userName"/>" />
+                        <input id="nameinput" autocapitalize="off" autocomplete="off" autocorrect="off" class="p_input" maxlength="32" movefocus="true" name="name" placeholder="NAME" send="true" value="<sec:authentication property="principal.member.name"/>" />
 
                     </div>
                     <div class="inputitem">
@@ -81,7 +81,7 @@
                         <textarea id="abtinput" class="t_input" name="abt" placeholder="Introduce Yourself" cols="54" rows="7" style="resize: none;" ></textarea>
 
                     </div>
-                    <button class="rbtn" ">CHANGE</button>
+                    <button class="rbtn">CHANGE</button>
                 </div>
             </div>
         </div>
@@ -118,6 +118,7 @@
          		$(".bor").css('opacity', '1');
          		document.querySelector(".imginit").classList.add("ndisp");
     			document.querySelector(".filebox").classList.remove("ndisp");
+    			document.querySelector(".probox").classList.add("z");
         }
         
   
@@ -153,17 +154,16 @@
 			$(".bor").css('opacity', '0');
 			document.querySelector(".imginit").classList.remove("ndisp");
 			document.querySelector(".filebox").classList.add("ndisp");
+			document.querySelector(".probox").classList.remove("z");
         }
         
-        
-        let am = "<sec:authentication property="principal.member.aboutMe"/>";
-        if(am!=""){
-
+        let am ="<sec:authentication property="principal.member.aboutMe"/>";
+        if(am!="" || am=="null"){
         	 var ab = document.querySelector("#abtinput");
+        	 
         	 ab.innerHTML=am;
         }
-        
-        
+                
         
         let nameRegExp = /^[\w\Wㄱ-ㅎㅏ-ㅣ가-힣]{2,10}$/;
         let nameinput = document.querySelector("#nameinput");
@@ -172,7 +172,7 @@
         	if(document.querySelector("#userName").value!=nameinput.value){
         		if(nameRegExp.test(nameinput.value)){
             		let fd = new FormData();
-                    fd.append("userName",nameinput.value);
+                    fd.append("name",nameinput.value);
                        
                        var request = $.ajax({
                           url: "/namechk.do",
@@ -369,7 +369,7 @@
                 document.querySelector(".imginit").classList.remove("ndisp");
     			document.querySelector(".filebox").classList.add("ndisp");
     	        $(".bor").css('opacity', '0');
-
+    	        document.querySelector(".probox").classList.remove("z");
             } else if (fileSize > uploadSize) {
                 // 파일 사이즈 체크
                 alert("용량 초과\n업로드 가능 용량 : " + uploadSize + " MB");
@@ -400,11 +400,11 @@
         	   }
            }
            formData.append("email",document.querySelector("#email").value);
-           formData.append("userName",document.querySelector("#nameinput").value);
+           formData.append("name",document.querySelector("#nameinput").value);
            formData.append("aboutMe",document.querySelector("textarea").value);
            
            formData.append("pwd",document.querySelector("#pwdinput").value);
-
+           $(".lodingback").show();
        	  var request = $.ajax({
                  url: "/profile.do",
                  processData:false,
@@ -418,6 +418,26 @@
                });
 
                request.done(function( msg ) {
+            	   $(".lodingback").hide();
+            	   if(msg ==-1){
+            		   alert("Error")
+            	   }else{
+            		   alert("Please Try Again The Login for Changing Your Details")
+            		   
+            		   var request2 = $.ajax({
+                           url: "/logout",
+                           beforeSend: function(xhr){
+                         	xhr.setRequestHeader(csrf_name,csrf_token);  
+                           },
+                           method: "POST",
+                         });
+            		   request2.done(function( msg ) {
+            			   location.href="http://www.applabo.xyz";
+            			   
+            			   
+            		   });
+            	   }
+            	   
                });
 
                request.fail(function( jqXHR, textStatus ) {

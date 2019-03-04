@@ -7,8 +7,9 @@
 
   <resultMap type="com.bumbing.domain.MemberVO" id="memberMap">
     <id property="email" column="email"/>
+    <result property="userName" column="email"/>
     <result property="pwd" column="pwd"/>
-    <result property="userName" column="username"/>
+    <result property="name" column="username"/>
     <result property="cDate" column="cdate"/>
       <result property="dDate" column="ddate"/>
         <result property="state" column="state"/>
@@ -30,10 +31,14 @@ FROM
   tbl_member mem LEFT OUTER JOIN tbl_auth auth on mem.email= auth.email
 WHERE mem.email= #{value} 
   </select>
+<select id="memList" resultMap="memberMap">
 
+select * from tbl_member
+
+</select>
 
   <insert id="signUp" parameterType="com.bumbing.domain.MemberVO">
-  	insert into tbl_member(email,pwd,username) values(#{email},#{pwd},#{userName})
+  	insert into tbl_member(email,pwd,username) values(#{email},#{pwd},#{name})
   </insert>
   
   <insert id="addAuth" parameterType="com.bumbing.domain.AuthVO">
@@ -69,7 +74,7 @@ WHERE mem.email= #{value}
   </select>
   
   <select id="namechk" parameterType="com.bumbing.domain.MemberVO" resultType="String">
-  	select count(*) from tbl_member where username = #{userName}
+  	select count(*) from tbl_member where username = #{name}
   </select>
   
   
@@ -78,9 +83,9 @@ WHERE mem.email= #{value}
   </delete>
 
    <update id="upUser1" parameterType="com.bumbing.domain.MemberVO" >
-   update tbl_member set username='${userName}',pwd='${pwd}',profile='${profile}',aboutme='${aboutMe}' where email='${email}'
+   update tbl_member set username='${name}',pwd='${pwd}',profile='${profile}',aboutme='${aboutMe}' where email='${email}'
   </update>
    <update id="upUser2" parameterType="com.bumbing.domain.MemberVO" >
-    update tbl_member set username='${userName}',profile='${profile}',aboutme='${aboutMe}' where email='${email}'
+    update tbl_member set username='${name}',profile='${profile}',aboutme='${aboutMe}' where email='${email}'
   </update>
 </mapper>

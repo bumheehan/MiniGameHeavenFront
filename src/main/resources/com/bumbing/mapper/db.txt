@@ -1,7 +1,7 @@
 CREATE TABLE `minigame`.`tbl_member` (
-  `email` VARCHAR(30) NOT NULL,
-  `pwd` VARCHAR(50) NOT NULL,
   `username` VARCHAR(30) NOT NULL,
+  `pwd` VARCHAR(50) NOT NULL,
+  `name` VARCHAR(30) NOT NULL,
   `cdate` DATE NOT NULL,
   `ddate` DATE NULL,
   `state` INT NOT NULL DEFAULT 0,
@@ -14,9 +14,9 @@ CREATE TABLE `minigame`.`tbl_member` (
 drop table tbl_member;
 
 Create Table tbl_member(
-	email varchar2(30) not null,
+	username varchar2(30) not null,
 	pwd VARCHAR(50) NOT NULL,
-	username VARCHAR(30) NOT NULL,
+	name VARCHAR(30) NOT NULL,
 	cdate DATE NOT NULL,
 	ddate DATE NULL,
 	state number(1) DEFAULT 0 NOT NULL ,
@@ -107,6 +107,10 @@ CREATE TABLE `minigame`.`tbl_comment` (
   `comment` VARCHAR(400) NOT NULL,
   `rdate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`no`));
+  
+  
+ALTER TABLE `minigame`.`tbl_comment` 
+ADD COLUMN `report` INT NULL AFTER `rdate`;
 
 ALTER TABLE `minigame`.`tbl_comment` 
 ADD CONSTRAINT `fk_comment_email`
@@ -127,7 +131,48 @@ CREATE TABLE `tbl_game` (
   `gamename` varchar(45) NOT NULL,
   `width` int(11) NOT NULL DEFAULT '800',
   `height` int(11) NOT NULL DEFAULT '800',
+  `readnum` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`game`)
 ) 
+
+  
+  CREATE TABLE `minigame`.`tbl_board_free` (
+  `no` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(30) NOT NULL,
+  `subject` VARCHAR(300) NOT NULL,
+  `content` VARCHAR(3000) NOT NULL,
+  `readnum` INT NOT NULL,
+  `rdate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`no`),
+  INDEX `fk_board_free_idx` (`email` ASC) VISIBLE,
+  CONSTRAINT `fk_board_free`
+    FOREIGN KEY (`email`)
+    REFERENCES `minigame`.`tbl_member` (`email`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
+  
+  
+  
+  CREATE TABLE `minigame`.`tbl_boardlist` (
+  `no` INT NOT NULL AUTO_INCREMENT,
+  `tablename` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`no`));
+  
+  
+  
+  ////////////
+  게임
+  
+  컬러게임 
+  ALTER TABLE `minigame`.`colorgame` 
+ADD INDEX `fk_colorgame_email_idx` (`email` ASC) VISIBLE;
+;
+ALTER TABLE `minigame`.`colorgame` 
+ADD CONSTRAINT `fk_colorgame_email`
+  FOREIGN KEY (`email`)
+  REFERENCES `minigame`.`tbl_member` (`email`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+  
   
 

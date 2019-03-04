@@ -7,10 +7,11 @@
   <resultMap type="com.bumbing.domain.CommentVO" id="commentMap">
     <id property="no" column="no"/>
     <result property="email" column="email"/>
-    <result property="userName" column="username"/>
+    <result property="name" column="username"/>
     <result property="regDate" column="rdate"/>
     <result property="comment" column="comment"/>
     <result property="score" column="score"/>
+    <result property="report" column="report"/>
   </resultMap>
  
   <select id="count"  resultType="long">
@@ -30,6 +31,10 @@ FROM
 WHERE game= #{game} order by no desc limit #{start},#{amount}
   </select>
   
+  
+   <select id="commentBanList" resultMap="commentMap">
+ 	select * from tbl_comment, tbl_game,tbl_member where tbl_game.game=tbl_comment.game and tbl_comment.email=tbl_member.email  and report>0
+ </select>
   <insert id="add" parameterType="com.bumbing.domain.CommentVO">
   	insert into tbl_comment(email,score,comment,game) values(#{email},#{score},#{comment},#{game})
   </insert>
@@ -38,4 +43,8 @@ WHERE game= #{game} order by no desc limit #{start},#{amount}
 	delete from tbl_comment where no=#{no}
   </delete>
   
+  
+  <select id="avg">
+  	select avg(score) from tbl_comment where game =#{value};
+  </select>
 </mapper>

@@ -1,0 +1,396 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "Level",
+    "sceneWidth": 960,
+    "sceneHeight": 540,
+    "generateOnSave": false,
+    "enableStepping": false,
+    "stepWidth": 12,
+    "stepHeight": 12,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "\tthis.fBall.body.onWorldBounds = new Phaser.Signal();\n\tthis.fBall.body.onWorldBounds.add(setBounce, this);\n\tthis.fBall.body.onCollide = new Phaser.Signal();\n\n\tgraphics2 = this.game.add.graphics(0, 0);\n\tgraphics2.lineStyle(4, 0xffd900, 1);\n\tgraphics3 = this.game.add.graphics(0, 0);\n\tgraphics3.lineStyle(4, 0xA6EC8, 1);\n\ttimer = this.game.time.create(true);\n\ttimer.repeat(2000, 1 ,turnTimer, this, turn=1);\n\ttimer.start();\n\t\t\n\t\n\tthis.fHomeTeam.onChildInputDown.add(set, this);\n\tthis.fHomeTeam.onChildInputDown.add(setArrow, this);\n\tthis.fHomeTeam.onChildInputUp.add(shoot, this);\n\t\n\tthis.fAwayTeam.onChildInputDown.add(set, this);\n\tthis.fAwayTeam.onChildInputDown.add(setArrow, this);\n\tthis.fAwayTeam.onChildInputUp.add(shoot, this);\n\t\n\ttest(this.fHomeTeam.checkAll(\"body.velocity.x\", 0));\n\tcheck(this);"
+  },
+  "stateSettings": {
+    "scaleMode": "SHOW_ALL",
+    "pageAlignHorizontally": true,
+    "stageBackgroundColor": [
+      255,
+      255,
+      255
+    ],
+    "rendererRoundPixels": true,
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 1,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "8a0fc0bc-e3be-4656-9585-f855ac8ba0bb",
+    "info": {
+      "editorName": "Level",
+      "setAll": [],
+      "children": [
+        {
+          "type": "image",
+          "id": "f5e62dff-b942-4815-9d38-2f13f1fc47ef",
+          "asset": "0",
+          "info": {
+            "editorName": "field",
+            "editorField": true,
+            "x": 480,
+            "y": 270,
+            "anchor.x": 0.5,
+            "anchor.y": 0.5
+          }
+        },
+        {
+          "type": "group",
+          "id": "3ab2893f-cb45-4858-864e-f7a3157e8eff",
+          "info": {
+            "editorName": "awayTeam",
+            "editorField": true,
+            "x": -264,
+            "y": -36,
+            "physicsGroup": true,
+            "setAll": [
+              {
+                "key": "body.collideWorldBounds",
+                "value": "true"
+              },
+              {
+                "key": "body.bounce.x",
+                "value": "0.5"
+              },
+              {
+                "key": "body.bounce.y",
+                "value": "0.5"
+              },
+              {
+                "key": "body.drag.x",
+                "value": "200"
+              },
+              {
+                "key": "body.drag.y",
+                "value": "200"
+              },
+              {
+                "key": "body.maxVelocity.x",
+                "value": "600"
+              },
+              {
+                "key": "body.maxVelocity.y",
+                "value": "600"
+              }
+            ],
+            "children": [
+              {
+                "type": "image",
+                "id": "1712e415-e674-42d1-b35a-2fc40acdcc68",
+                "asset": "1",
+                "info": {
+                  "editorName": "korea1_5",
+                  "editorField": true,
+                  "x": 972,
+                  "y": 312,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "4e34aec0-2f51-41b7-a5fa-f95bb08b0cab",
+                "asset": "1",
+                "info": {
+                  "editorName": "korea1_4",
+                  "editorField": true,
+                  "x": 1128,
+                  "y": 312,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "a33be247-ab97-4f5a-a7bc-de3ab3893489",
+                "asset": "1",
+                "info": {
+                  "editorName": "korea1_3",
+                  "editorField": true,
+                  "x": 984,
+                  "y": 144,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "041d5487-c57b-4959-b089-348503fc55a3",
+                "asset": "1",
+                "info": {
+                  "editorName": "korea1_2",
+                  "editorField": true,
+                  "x": 984,
+                  "y": 468,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "ea90ad3e-9c83-4769-80c1-8dc094beccbe",
+                "asset": "1",
+                "info": {
+                  "editorName": "korea1_1",
+                  "editorField": true,
+                  "x": 876,
+                  "y": 312,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "group",
+          "id": "26797830-21a4-4ad1-bcfd-998ddf20a11f",
+          "info": {
+            "editorName": "homeTeam",
+            "editorField": true,
+            "x": -258,
+            "y": -200,
+            "physicsGroup": true,
+            "setAll": [
+              {
+                "key": "body.collideWorldBounds",
+                "value": "true"
+              },
+              {
+                "key": "body.bounce.x",
+                "value": "0.5"
+              },
+              {
+                "key": "body.bounce.y",
+                "value": "0.5"
+              },
+              {
+                "key": "body.drag.x",
+                "value": "200"
+              },
+              {
+                "key": "body.drag.y",
+                "value": "100"
+              },
+              {
+                "key": "body.maxVelocity.x",
+                "value": "600"
+              },
+              {
+                "key": "body.maxVelocity.y",
+                "value": "600"
+              }
+            ],
+            "children": [
+              {
+                "type": "image",
+                "id": "9018d71c-8a05-48bf-92af-9d5e5b799179",
+                "asset": "2",
+                "info": {
+                  "editorName": "korea_5",
+                  "editorField": true,
+                  "x": 588,
+                  "y": 396,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "67c43857-7748-4db4-a53a-65eb9882dabb",
+                "asset": "2",
+                "info": {
+                  "editorName": "korea_4",
+                  "editorField": true,
+                  "x": 588,
+                  "y": 552,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "c0a4d16e-619e-4264-af54-782424628fff",
+                "asset": "2",
+                "info": {
+                  "editorName": "korea_3",
+                  "editorField": true,
+                  "x": 408,
+                  "y": 348,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "bd48aaea-4068-45f7-a52f-d637e7e19871",
+                "asset": "2",
+                "info": {
+                  "editorName": "korea_2",
+                  "editorField": true,
+                  "x": 408,
+                  "y": 588,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              },
+              {
+                "type": "image",
+                "id": "7418971b-71c2-41c3-a41e-3e40f0fd00cd",
+                "asset": "2",
+                "info": {
+                  "editorName": "korea_1",
+                  "editorField": true,
+                  "x": 492,
+                  "y": 468,
+                  "anchor.x": 0.5,
+                  "anchor.y": 0.5,
+                  "body": {"type": "ARCADE_RECT"}
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "group",
+          "id": "03d4b081-b868-4846-a3af-ffa3d3286de2",
+          "info": {
+            "editorName": "goal",
+            "physicsGroup": true,
+            "setAll": [],
+            "children": [
+              {
+                "type": "image",
+                "id": "c6674053-bc8a-4d16-931b-e2a3884493cb",
+                "asset": "3",
+                "info": {
+                  "editorName": "goalPost",
+                  "editorField": true,
+                  "x": -87,
+                  "y": 208,
+                  "body": {
+                    "type": "ARCADE_RECT",
+                    "offsetX": 60,
+                    "offsetY": 30,
+                    "moves": false,
+                    "width": 40,
+                    "height": 60
+                  }
+                }
+              },
+              {
+                "type": "image",
+                "id": "91baeec3-5097-4bae-93f3-d7072cedb097",
+                "asset": "4",
+                "info": {
+                  "editorName": "goalPost1",
+                  "editorField": true,
+                  "x": 944,
+                  "y": 211,
+                  "body": {
+                    "type": "ARCADE_RECT",
+                    "offsetY": 30,
+                    "moves": false,
+                    "width": 40,
+                    "height": 64.63397216796875
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "11855337-bbe2-4063-ad74-7b1bf1bbd79f",
+          "asset": "5",
+          "info": {
+            "editorName": "ball",
+            "editorField": true,
+            "x": 480,
+            "y": 274,
+            "anchor.x": 0.5,
+            "anchor.y": 0.5,
+            "body": {
+              "type": "ARCADE_RECT",
+              "collideWorldBounds": true,
+              "bounceX": 0.9,
+              "bounceY": 0.9,
+              "maxVelocityX": 800,
+              "maxVelocityY": 800,
+              "dragX": 200,
+              "dragY": 200,
+              "frictionY": 1,
+              "maxAngular": 800
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "field"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "korea2"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "korea"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "goalPost1"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "goalPost2"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "ball"
+    }
+  },
+  "prefab-table": {}
+}

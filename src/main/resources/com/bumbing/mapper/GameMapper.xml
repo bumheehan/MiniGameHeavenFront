@@ -11,11 +11,19 @@
     <result property="height" column="height"/>
   </resultMap>
 
-
+  <select id="gameList" resultType="com.bumbing.domain.GameVO">
+ 	select * from tbl_game
+ </select>
+ 
   <select id="game" resultMap="gameMap">
 	select * from tbl_game where game = #{game}
   </select>
-  
+  <update id="read">
+  	update  tbl_game set readnum=readnum+1 where game =#{game}
+  </update>
+  <update id="init">
+  	update  tbl_game set readnum=0
+  </update>
   <insert id="add" parameterType="com.bumbing.domain.GameVO">
   	insert into tbl_game(gamename,width,height) values(#{gameName},#{width},#{height})
   </insert>

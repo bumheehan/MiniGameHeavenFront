@@ -1,0 +1,177 @@
+{
+  "img": [
+    {
+      "type": "image",
+      "key": "ball",
+      "url": "assets/img/ball.png",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key": "field",
+      "url": "assets/img/field.jpg",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key": "korea",
+      "url": "assets/img/korea.png",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key": "korea2",
+      "url": "assets/img/korea2.png",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key": "ball2",
+      "url": "assets/img/ball2.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "arrow",
+      "url": "assets/img/arrow.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "goalPost1",
+      "url": "assets/img/goalPost1.png",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key": "goalPost2",
+      "url": "assets/img/goalPost2.png",
+      "overwrite": true
+    },
+    {
+      "type": "script",
+      "key": "boot",
+      "url": "assets/canvas/Boot.js"
+    },
+    {
+      "type": "script",
+      "key": "Menu",
+      "url": "assets/canvas/Menu.js"
+    },
+    {
+      "type": "image",
+      "key": "menu",
+      "url": "assets/img/menu.png",
+      "overwrite": false
+    },
+    {
+      "type": "script",
+      "key": "Result",
+      "url": "assets/canvas/Result.js"
+    },
+    {
+      "type": "script",
+      "key": "Rules",
+      "url": "assets/canvas/Rules.js"
+    },
+    {
+      "type": "image",
+      "key": "startButton",
+      "url": "assets/img/startButton.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "goal",
+      "url": "assets/img/goal.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "trophies",
+      "url": "assets/img/trophies.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "logo",
+      "url": "assets/img/logo.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "neonLogo",
+      "url": "assets/img/neonLogo.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "retry",
+      "url": "assets/img/retry.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "rules",
+      "url": "assets/img/rules.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "menuButton",
+      "url": "assets/img/menuButton.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "rulesMenu",
+      "url": "assets/img/rulesMenu.png",
+      "overwrite": false
+    }
+  ],
+  "sound": [
+    {
+      "type": "audio",
+      "key": "goal",
+      "urls": ["assets/sound/goal.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "gameEnd",
+      "urls": ["assets/sound/gameEnd.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "gameStart",
+      "urls": ["assets/sound/gameStart.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "kick",
+      "urls": ["assets/sound/kick.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "bgm2",
+      "urls": ["assets/sound/bgm2.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "bgm1",
+      "urls": ["assets/sound/bgm1.mp3"],
+      "autoDecode": true
+    }
+  ],
+  "meta": {
+    "generated": "1551067827109",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}

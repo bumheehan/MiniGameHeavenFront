@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bumbing.mapper.CardRankingMapper">
+	<!--  result map 사용법 -->
+	
+	<!-- type= DTO, id = 식별자   -->
+	<!-- 
+	<resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="funkyNumber" property="funkyNumber"/>
+		<result column="roundingMode" property="roundingMode"/>
+	</resultMap>
+	
+	 -->
+	
+	<!--  id는 mapper 클래스의 메소드명 -->
+	<select id="getRankList" resultType="com.bumbing.domain.cardGameDTO" >
+		select colorgame.email,username,record,c1,c2,co,rdate from colorgame,tbl_member where colorgame.email=tbl_member.email and c1 = #{c1} and c2=#{c2} and co =#{co} order by record limit 0,15;
+	</select>
+	
+	
+	<insert id="addRank">
+		INSERT INTO colorgame(email,record,c1,c2,co) values(#{email},#{record},#{c1},#{c2},#{co})
+	</insert>
+	
+	<select id="getRank" resultType="com.bumbing.domain.cardGameDTO" >
+	<![CDATA[
+		select count(*)+1 as "rank" from colorgame where c1 = #{c1} and c2=#{c2} and co =#{co} and record<#{record};
+	]]>
+	</select>
+
+
+</mapper>

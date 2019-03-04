@@ -1,0 +1,100 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "Menu",
+    "sceneWidth": 960,
+    "sceneHeight": 540,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "_rules.onInputUp.add(showRules, this);\n_startButton.onInputUp.add(startGame, this);"
+  },
+  "stateSettings": {
+    "pageAlignHorizontally": true,
+    "pageAlignVertically": true,
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "4a29000b-2294-439f-a1bd-74545c323112",
+    "info": {
+      "editorName": "Menu",
+      "setAll": [],
+      "children": [
+        {
+          "type": "image",
+          "id": "3aa40778-ea55-422e-8677-bb234bbef9f1",
+          "asset": "0",
+          "info": {
+            "editorName": "logo",
+            "x": 1,
+            "y": -1
+          }
+        },
+        {
+          "type": "button",
+          "id": "a80699a3-7433-4a0d-8c78-56121af27bf9",
+          "asset": "1",
+          "info": {
+            "editorName": "startButton",
+            "x": 400,
+            "y": 433,
+            "scale.x": 0.3,
+            "scale.y": 0.3
+          }
+        },
+        {
+          "type": "button",
+          "id": "f49fb833-e948-409a-8812-82cc8caed3f6",
+          "asset": "2",
+          "info": {
+            "editorName": "rules",
+            "x": 401,
+            "y": 386,
+            "scale.x": 0.2,
+            "scale.y": 0.2
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "logo"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "startButton"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "img",
+      "asset": "rules"
+    }
+  },
+  "prefab-table": {}
+}

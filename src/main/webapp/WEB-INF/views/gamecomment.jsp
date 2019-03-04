@@ -21,7 +21,7 @@
 <body>
 
 	<%@ include file="loading.html" %>
-
+	
         <div id="CommentArea_100">
             <h3>100자평쓰기</h3>
             <p>총 <strong>${pagingVO.count}</strong>개</p>
@@ -88,7 +88,7 @@
                    		<c:forEach var="item" items="${list}">
                    			 <li class="fir">
                             <dl id="ct_164671">
-                                <dd class="nick">${item.userName}</dd>
+                                <dd class="nick">${item.name}</dd>
                                 <dd class="star">
 
                                    <div class="star">

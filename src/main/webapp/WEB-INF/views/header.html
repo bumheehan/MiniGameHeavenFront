@@ -1,18 +1,20 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/header.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <header class="header">
+
+	
     <nav>
 
         <div><img src="${pageContext.request.contextPath}/resources/res/mainlogo.png" alt="" class="logotext"></div>
         <ul class="menul">
-            <li><a href="http://www.applabo.xyz/">HOME</a></li>
-            <li><a href="#">GAME</a></li>
+            <li><a href="http://www.applabo.xyz/"><span class="neon">HOME</span></a></li>
+            <li><a href="#"></a></li>
         </ul>
         <ul class="menur">
-            <li><a href="#">BOARD</a></li>
+            <li><a href="#"></a></li>
             <li>
             
             <sec:authorize access="isAnonymous()">
@@ -21,14 +23,14 @@
                     <a href="http://www.applabo.xyz/signup">
 
                         <div>
-                            SIGN UP
+                            <span class="neon1">SIGN UP</span>
                         </div>
                     </a>
 
 
                     <a href="http://www.applabo.xyz/login">
                         <div>
-                            LOGIN
+                            <span class="neon1">LOGIN</span>
                         </div>
                     </a>
 
@@ -38,20 +40,24 @@
 			</sec:authorize>
 			
 			<sec:authorize access="isAuthenticated()">
-			
+			<input type="hidden" id="email" value="<sec:authentication property="principal.member.email"/>"/>
+	
 				  <div class="sign login">
-                   <div class="p1"><img src="${pageContext.request.contextPath}/resources/res/user.png" alt="" class="user">
-                    <div class="usert"><strong><sec:authentication property="principal.username"/></strong></div></div>
+                   <div class="p1">
+                   <img src="${pageContext.request.contextPath}/resources/res/user.png" alt="" class="user">
+                   
+  
+                    <div class="usert"><strong><sec:authentication property="principal.member.name"/></strong></div></div>
                     
                     <div class="p2" style="display: none"><a href="http://www.applabo.xyz/user?email=<sec:authentication property="principal.member.email"/>">
                         <div>
-                            PROFILE
+                            <span class="neon1">PROFILE</span>
                         </div>
                     </a>
                     
                     <form action="/logout" method="post">
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-                        <button type="submit">LOGOUT</button>
+                        <button type="submit"><span class="neon1">LOGOUT</span></button>
                     </form>
                    </div>
                      
@@ -73,10 +79,10 @@
     function header(st, lastScrollTop) {
         if (st < lastScrollTop) {
             //$(".header").stop().animate({top:"0px"},500);
-            $(".header").slideDown()
+            $(".header").stop().slideDown()
         } else {
             //$(".header").stop().animate({top:"-100px"},500);
-            $(".header").slideUp()
+            $(".header").stop().slideUp()
         }
     }
     
@@ -92,6 +98,12 @@
     	    })
     }
    
-    
+    <sec:authorize access="isAuthenticated()">
+    var profile =<sec:authentication property="principal.member.profile"/>
+	var email = document.querySelector("#email").value;
+	if(profile ==1){
+		document.querySelector(".user").src ="/res/profile/"+email;
+	}
+	</sec:authorize>
 
 </script>
