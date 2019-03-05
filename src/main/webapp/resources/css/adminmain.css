@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#test{
+	margin-top : 150px;
+	margin-bottom : 100px;
+	margin-left : 250px;
+	height : 400px;
+}
+#visitor_chart{
+	width : 1000px;
+}
+#slider{
+	margin-top : 100px;
+	margin-left : 250px;
+}

@@ -127,21 +127,21 @@ nav{
     height: 60px;
     border-radius: 10px;
     margin-bottom: 5px;
+    background: rgba(255,255,255,0.5);
     
 }
-.usert strong{
+.usert{
     font-family:sans-serif;
     width: 100%;
     font-size: 20px;
     text-align:center;
     color: aliceblue;
     text-overflow:ellipsis;
-    overflow:hidden;
     white-space: nowrap;
 }
 
 .logotext:hover{
-    transform: scale(10) translateY(30px);
+    transform: scale(2) translateY(10px);
 }
 .headerdummy {
     height: 100px;
@@ -165,6 +165,15 @@ nav{
   color: #228DFF;
   animation: none;
 }
+.neon4{
+	 animation: neon2 1.5s ease-in-out infinite alternate;
+	 font-family: fantasy;
+	 text-align: center;
+}
+.neonbox{
+	 animation: neon4 1.5s ease-in-out infinite alternate;
+
+}
 @keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
@@ -182,4 +191,14 @@ nav{
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
   }
 }
+
+ @keyframes neon4 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
 

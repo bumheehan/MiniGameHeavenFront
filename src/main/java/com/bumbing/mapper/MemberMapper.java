@@ -4,24 +4,27 @@ package com.bumbing.mapper;
 import java.util.List;
 
 import com.bumbing.domain.AuthVO;
+import com.bumbing.domain.CertiVO;
 import com.bumbing.domain.MemberVO;
 
 public interface MemberMapper {
 
 	public MemberVO read(String email);
 	public List<MemberVO> memList();
-	
+	public int readcount(MemberVO mem);
 	public int signUp(MemberVO mem);
+	
+	public int delMem(MemberVO mem);
 	
 	public int activeUser(String email);
 	
 	public void addAuth(AuthVO au);
 	
-	public void addCerti(MemberVO mem);
+	public void addCerti(CertiVO cer);
 	
 	public void delCerti(String email);
 	
-	public String selCerti(String key);
+	public CertiVO selCerti(String key);
 
 	public void delAuth(String email,String auth);
 	

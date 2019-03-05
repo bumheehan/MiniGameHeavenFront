@@ -1,0 +1,86 @@
+@charset "UTF-8";
+		.background{
+		    width: 100%;
+		    height: 100%;
+		    position: fixed;
+		 /*    background-image: linear-gradient(#c8f3fc,#ffffff); */
+		 	/* background-color: black; */
+		    background-size: cover;
+		    overflow : scroll;
+		    margin-top : 100px;
+		    margin-left : 200px;
+		    
+		}
+        body{
+			
+          font-size: 15px;
+        }
+        table{
+        	text-align : center;
+        }
+        h1{
+            /* font-family: 'Press Start 2P', cursive; */
+            /* margin: 10px 0px; */
+        }
+        a{
+          text-decoration : none;
+            font-size: 20px;
+        }
+        table{
+          border-top : 2px solid grey;
+          border-bottom : 2px solid grey;
+          border-spacing : 0;
+          position:relative;
+        }
+       	thead tr:first-child{
+        	background-color: red;
+        }
+      /*   th{
+        	background-color: red;
+            font-family: inherit;
+          	border-bottom: 2px solid grey;
+        } */
+        tr{
+        	height: 50px;
+        }
+        td{
+          border-bottom: 1px dotted lightgrey;
+         
+            font-size : 20px;
+        }
+        td:nth-child(5){
+          width:75px;
+          text-align : center;
+        }
+
+        .wrap{
+          width: 30%;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 20px;
+            
+        }
+        .psid{
+          width:583px;
+        font-family: 'Cute Font', cursive;
+        }
+        #psId{
+          border : 1px solid pink;
+          background : pink;
+          font-family: 'Cute Font', cursive;
+          font-size: 20px;
+        }
+     .tabbed_area 
+{
+  margin-top:30px;
+	border:2px solid #494e52;
+	background-color:#636d76;
+	padding:8px;	
+}
+     
+#admin_gameboard{
+	margin-top : 150px;
+	margin-bottom : 100px;
+	margin-left : 250px;
+}

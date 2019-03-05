@@ -184,7 +184,8 @@
             if (pc) {
                 let formData = document.querySelector("#form");
                 formData.submit();
-                location.href="http://www.applabo.xyz";
+                
+                
 
             } else {
             	swing(pwdchk.parentElement);

@@ -268,9 +268,9 @@ public class AdminController {
 		return data;
 
 	}
-	/*
+	
 	@GetMapping("admin/adminmain")
-	public void main() {
+	public void adminmain() {
 		
 	}
 	
@@ -358,5 +358,5 @@ public class AdminController {
 		
 		return jsonObject2;
 	}
-	*/
+	
 }

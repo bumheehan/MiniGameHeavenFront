@@ -27,7 +27,7 @@
 		</div>
 	</div>
     <div class="user_box">
-        <div class="logintxt">PROFILE</div>
+        <div class="logintxt"><span class="neon2">PROFILE</span></div>
         <div class="prof_box">
             <div class="pic_box">
 
@@ -158,10 +158,11 @@
         }
         
         let am ="<sec:authentication property="principal.member.aboutMe"/>";
-        if(am!="" || am=="null"){
+        if(am!=""){
         	 var ab = document.querySelector("#abtinput");
-        	 
         	 ab.innerHTML=am;
+        	 
+        	 
         }
                 
         
@@ -208,7 +209,7 @@
                         });
             	}else{
             		 document.querySelectorAll(".error")[0].style.color=""
-                     input(document.querySelectorAll(".error")[0],"WORNG FORMAT!!");
+                     input(document.querySelectorAll(".error")[0],"WRONG FORMAT!!");
             		 ajax_nm=false;
             	}
         		

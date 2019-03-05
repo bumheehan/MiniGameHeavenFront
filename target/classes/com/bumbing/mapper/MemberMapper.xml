@@ -37,6 +37,12 @@ select * from tbl_member
 
 </select>
 
+<select id="readcount"  parameterType="com.bumbing.domain.MemberVO" resultType="int">
+	select count(*) from tbl_member where email=#{email}
+ </select>
+<delete id="delMem" parameterType="com.bumbing.domain.MemberVO">
+	delete from tbl_member where email=#{email}
+  </delete>
   <insert id="signUp" parameterType="com.bumbing.domain.MemberVO">
   	insert into tbl_member(email,pwd,username) values(#{email},#{pwd},#{name})
   </insert>
@@ -53,16 +59,16 @@ select * from tbl_member
    update tbl_member set state=1 where email='${value}'
   </update>
   
-  <insert id="addCerti" parameterType="com.bumbing.domain.MemberVO">
-  	insert into tbl_certi values(#{email},#{key})
+  <insert id="addCerti" parameterType="com.bumbing.domain.CertiVO">
+  	insert into tbl_certi values(#{email},#{key},#{type})
   </insert>
   
   <delete id="delCerti">
 	delete from tbl_certi where email=#{email}  
   </delete>
   
-  <select id="selCerti" resultType="String">
-	select email from tbl_certi certi where certi.key= #{key} 
+  <select id="selCerti" resultType="com.bumbing.domain.CertiVO">
+	select * from tbl_certi certi where certi.key= #{value} 
   </select>
  
  <update id="changePwd" parameterType="com.bumbing.domain.MemberVO" >
@@ -70,11 +76,11 @@ select * from tbl_member
   </update>
   
   <select id="emchk" parameterType="com.bumbing.domain.MemberVO" resultType="String">
-  	select count(*) from tbl_member where email = #{email}
+  	select count(*) from tbl_member where email = #{email} and state =1
   </select>
   
   <select id="namechk" parameterType="com.bumbing.domain.MemberVO" resultType="String">
-  	select count(*) from tbl_member where username = #{name}
+  	select count(*) from tbl_member where username = #{name} and state =1
   </select>
   
   

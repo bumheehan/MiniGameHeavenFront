@@ -42,8 +42,7 @@
 
    .logintxt {
        display: block;
-       font-size: 70px;
-       white-space: nowrap;
+     
        margin-top: 50px;
        margin-bottom: 50px;
        text-align: center;
@@ -350,5 +349,21 @@
 	  .ndisp{
    		display: none;
    }
+   
+  .neon2 {
+	  font-size: 70px;
+       white-space: nowrap;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+  }
 
    
